@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="An interactive data storytelling demo about emotional granularity and the shrinking vocabulary of feeling."
+    />
+    <title>The Atrophy of Emotional Granularity</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,650;9..144,800&family=Nunito:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js" defer></script>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#experiment">Skip to the interaction</a>
+
+    <header class="site-header">
+      <a class="wordmark" href="#top" aria-label="The Atrophy of Emotional Granularity">
+        <span class="wordmark-mark">AEG</span>
+        <span>Emotion Vocabulary Lab</span>
+      </a>
+      <nav aria-label="Page">
+        <a href="#experiment">Play</a>
+        <a href="#handoff">Data story</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="page-title">
+        <div class="hero-copy">
+          <p class="eyebrow">Data Storytelling opening game</p>
+          <h1 id="page-title">
+            What if <br class="mobile-only" />your
+            <span class="plain-title">feelings <br class="mobile-only" />had</span>
+            <span class="resolution-word">resolution?</span>
+          </h1>
+          <p class="lede">
+            Before the charts appear, step into a small scene.<br />
+            Write what it feels like from the inside.<br />
+            Then see how finely your language names it.
+          </p>
+          <a class="primary-link" href="#experiment">
+            <i data-lucide="sparkles" aria-hidden="true"></i>
+            Start the scene
+          </a>
+        </div>
+
+        <div class="hero-stage" aria-hidden="true">
+          <img class="sticker sticker-brain" src="assets/openmoji/1F9E0.svg" alt="" />
+          <img class="sticker sticker-palette" src="assets/openmoji/1F3A8.svg" alt="" />
+          <img class="sticker sticker-speech" src="assets/openmoji/1F5E8.svg" alt="" />
+          <img class="sticker sticker-masks" src="assets/openmoji/1F3AD.svg" alt="" />
+          <div class="word-cloud">
+            <span>annoyed</span>
+            <span>restless</span>
+            <span>relieved</span>
+            <span>homesick</span>
+            <span>indignant</span>
+            <span>tender</span>
+            <span>ashamed</span>
+            <span>jubilant</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="story-strip" aria-label="Project premise">
+        <p>
+          Modern interfaces often compress feeling into a few buttons: like, angry,
+          sad, wow. Our project asks whether emotional language is becoming flatter,
+          and whether rare, precise feeling words are giving way to simpler ones.
+        </p>
+      </section>
+
+      <section id="experiment" class="experiment" aria-labelledby="experiment-title">
+        <div class="section-label">
+          <span>01</span>
+          <span>Interactive entry point</span>
+        </div>
+
+        <div class="experiment-grid">
+          <article class="scenario-panel" aria-live="polite">
+            <div class="panel-top">
+              <div>
+                <p class="mini-label">Your random scene</p>
+                <h2 id="experiment-title">Borrow a moment. Name the feeling.</h2>
+              </div>
+              <button id="shuffleScenario" class="icon-button" type="button" title="Shuffle scenario">
+                <i data-lucide="refresh-cw" aria-hidden="true"></i>
+                <span class="sr-only">Shuffle scenario</span>
+              </button>
+            </div>
+
+            <div class="scenario-card" id="scenarioCard">
+              <div class="scenario-meta">
+                <span id="scenarioEmotion">Joy</span>
+                <span id="scenarioIntensity">Everyday intensity</span>
+              </div>
+              <p id="scenarioText"></p>
+              <div class="scenario-actions" aria-label="Scenario language">
+                <button id="scenarioEn" class="pill active" type="button">English</button>
+                <button id="scenarioZh" class="pill" type="button">中文</button>
+              </div>
+            </div>
+
+            <div class="writing-panel">
+              <label for="responseText">Write your inner description</label>
+              <textarea
+                id="responseText"
+                rows="8"
+                maxlength="1400"
+                placeholder="Example: I felt more than just bad. I felt..."
+              ></textarea>
+              <div class="writing-footer">
+                <span id="charCount">0 / 1400</span>
+                <button id="analyzeButton" class="analyze-button" type="button">
+                  <i data-lucide="scan-text" aria-hidden="true"></i>
+                  Analyze granularity
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <aside class="result-panel" id="resultPanel" aria-live="polite">
+            <div class="empty-state" id="emptyState">
+              <img src="assets/openmoji/1F52E.svg" alt="" />
+              <p class="mini-label">Granularity meter</p>
+              <h2>A score appears after you write.</h2>
+              <p>
+                The analysis looks for emotional specificity, mixed feelings,
+                causal detail, and whether your words stay broad or become precise.
+              </p>
+            </div>
+
+            <div class="result-state hidden" id="resultState">
+              <div class="score-ring" style="--score: 0">
+                <div>
+                  <span id="scoreValue">0</span>
+                  <small>/100</small>
+                </div>
+              </div>
+
+              <div class="result-copy">
+                <p class="mini-label" id="analysisSource">LLM analysis</p>
+                <h2 id="scoreBand">Muted palette</h2>
+                <p id="scoreSummary"></p>
+              </div>
+
+              <div class="chip-group" id="emotionChips" aria-label="Detected emotions"></div>
+
+              <div class="result-columns">
+                <div>
+                  <h3>Granular signals</h3>
+                  <ul id="signalList"></ul>
+                </div>
+                <div>
+                  <h3>Flattening signals</h3>
+                  <ul id="flatList"></ul>
+                </div>
+              </div>
+
+              <div class="rewrite-box">
+                <p class="mini-label">One more precise version</p>
+                <p id="rewriteText"></p>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section id="handoff" class="handoff" aria-labelledby="handoff-title">
+        <div class="section-label">
+          <span>02</span>
+          <span>Bridge to the data evidence</span>
+        </div>
+        <div class="handoff-inner">
+          <div>
+            <h2 id="handoff-title">Now zoom out from one answer to culture.</h2>
+            <p>
+              The opening game makes the audience feel the problem first. Your
+              teammates can place the Google Books Ngram and Reddit analysis here,
+              showing how the ratio of rare and literary emotion words changes over
+              time.
+            </p>
+          </div>
+          <a class="secondary-link" href="#top">
+            <i data-lucide="arrow-up" aria-hidden="true"></i>
+            Replay opening
+          </a>
+        </div>
+
+        <div class="data-slots" aria-label="Future chart slots">
+          <div class="data-slot">
+            <span>Chart slot A</span>
+            <strong>Books: rare/literary vs. basic words</strong>
+          </div>
+          <div class="data-slot">
+            <span>Chart slot B</span>
+            <strong>Platform language and compressed reactions</strong>
+          </div>
+          <div class="data-slot">
+            <span>Chart slot C</span>
+            <strong>Audience reflection or class survey</strong>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>
+        Built for a classroom data storytelling demo. Text is sent to the analysis
+        endpoint only when the API is configured. OpenMoji assets are used under
+        CC BY-SA 4.0.
+      </p>
+    </footer>
+  </body>
+</html>

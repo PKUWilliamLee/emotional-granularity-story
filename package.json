@@ -1,0 +1,16 @@
+{
+  "name": "emotional-granularity-story",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Interactive data storytelling opening game about emotional granularity.",
+  "scripts": {
+    "start": "vercel dev",
+    "check": "node --check api/analyze.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "devDependencies": {
+    "vercel": "^54.9.1"
+  }
+}
