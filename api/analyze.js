@@ -1,4 +1,5 @@
 const DEEPSEEK_ENDPOINT = "https://api.deepseek.com/chat/completions";
+const DEFAULT_MODEL = "deepseek-v4-flash";
 
 module.exports = async function handler(req, res) {
   res.setHeader("Content-Type", "application/json; charset=utf-8");
@@ -32,45 +33,56 @@ module.exports = async function handler(req, res) {
   }
 
   try {
+    const model = process.env.DEEPSEEK_MODEL || DEFAULT_MODEL;
+    const thinkingMode = process.env.DEEPSEEK_THINKING === "enabled" ? "enabled" : "disabled";
+    const requestBody = {
+      model,
+      max_tokens: 780,
+      response_format: { type: "json_object" },
+      messages: [
+        {
+          role: "system",
+          content:
+            "You are an expert evaluator for a classroom data storytelling demo about emotional granularity. Analyze how precisely a user names their inner feeling. Return JSON only. Be supportive, concise, and concrete. Do not diagnose mental health. The UI is English, but the user may write in English or Chinese."
+        },
+        {
+          role: "user",
+          content: JSON.stringify({
+            task:
+              "Score the emotional granularity of the user's response to the scenario. Reward specific emotion labels, mixed emotions, bodily sensation, causal detail, tension, and precise imagery. Penalize vague compressed expressions such as just 'bad', 'fine', 'annoyed', 'emo', 'whatever', '无语', '麻了' when they are not developed.",
+            outputSchema: {
+              score: "integer 0-100",
+              band: "one of: Muted palette, Soft-focus feeling, Emerging granularity, High-resolution palette",
+              summary: "2 sentences max, English",
+              detectedEmotions: "array of 3-6 short emotion labels, can include Chinese if user wrote Chinese",
+              granularSignals: "array of 2-4 concrete signals",
+              flatteningSignals: "array of 2-4 concrete signals",
+              rewrite: "one more emotionally granular version of the user's feeling, same language as the user when possible, 1 sentence"
+            },
+            scenario,
+            scenarioZh,
+            scenarioEmotion,
+            userResponse: text
+          })
+        }
+      ]
+    };
+
+    if (model.startsWith("deepseek-v4-")) {
+      requestBody.thinking = { type: thinkingMode };
+    }
+
+    if (thinkingMode === "disabled") {
+      requestBody.temperature = 0.25;
+    }
+
     const response = await fetch(DEEPSEEK_ENDPOINT, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
         Authorization: `Bearer ${process.env.DEEPSEEK_API_KEY}`
       },
-      body: JSON.stringify({
-        model: "deepseek-chat",
-        temperature: 0.25,
-        max_tokens: 780,
-        response_format: { type: "json_object" },
-        messages: [
-          {
-            role: "system",
-            content:
-              "You are an expert evaluator for a classroom data storytelling demo about emotional granularity. Analyze how precisely a user names their inner feeling. Return JSON only. Be supportive, concise, and concrete. Do not diagnose mental health. The UI is English, but the user may write in English or Chinese."
-          },
-          {
-            role: "user",
-            content: JSON.stringify({
-              task:
-                "Score the emotional granularity of the user's response to the scenario. Reward specific emotion labels, mixed emotions, bodily sensation, causal detail, tension, and precise imagery. Penalize vague compressed expressions such as just 'bad', 'fine', 'annoyed', 'emo', 'whatever', '无语', '麻了' when they are not developed.",
-              outputSchema: {
-                score: "integer 0-100",
-                band: "one of: Muted palette, Soft-focus feeling, Emerging granularity, High-resolution palette",
-                summary: "2 sentences max, English",
-                detectedEmotions: "array of 3-6 short emotion labels, can include Chinese if user wrote Chinese",
-                granularSignals: "array of 2-4 concrete signals",
-                flatteningSignals: "array of 2-4 concrete signals",
-                rewrite: "one more emotionally granular version of the user's feeling, same language as the user when possible, 1 sentence"
-              },
-              scenario,
-              scenarioZh,
-              scenarioEmotion,
-              userResponse: text
-            })
-          }
-        ]
-      })
+      body: JSON.stringify(requestBody)
     });
 
     if (!response.ok) {

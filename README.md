@@ -19,6 +19,15 @@ Add this environment variable in Vercel:
 DEEPSEEK_API_KEY=your_deepseek_key_here
 ```
 
+Optional model controls:
+
+```text
+DEEPSEEK_MODEL=deepseek-v4-flash
+DEEPSEEK_THINKING=disabled
+```
+
+Use `DEEPSEEK_MODEL=deepseek-v4-pro` if you want a stronger but more expensive model. Use `DEEPSEEK_THINKING=enabled` only if you want slower, more reasoning-heavy analysis.
+
 Then import the GitHub repository into Vercel. The frontend calls `/api/analyze`, and the serverless function reads the key from Vercel's environment variables.
 
 ## Local development
