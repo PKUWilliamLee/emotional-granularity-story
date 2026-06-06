@@ -186,7 +186,9 @@ const els = {
   signalList: document.querySelector("#signalList"),
   flatList: document.querySelector("#flatList"),
   rewriteText: document.querySelector("#rewriteText"),
-  analysisSource: document.querySelector("#analysisSource")
+  analysisSource: document.querySelector("#analysisSource"),
+  dataStoryNav: document.querySelector("#dataStoryNav"),
+  postGameSections: document.querySelectorAll(".post-game-section")
 };
 
 function init() {
@@ -303,6 +305,7 @@ function coerceArray(value, fallback) {
 function renderResult(result, source) {
   els.emptyState.classList.add("hidden");
   els.resultState.classList.remove("hidden");
+  revealPostGameSections();
   els.resultPanel.scrollIntoView({ behavior: "smooth", block: "nearest" });
 
   els.analysisSource.textContent = source;
@@ -315,6 +318,16 @@ function renderResult(result, source) {
   fillList(els.emotionChips, result.detectedEmotions, "span");
   fillList(els.signalList, result.granularSignals, "li");
   fillList(els.flatList, result.flatteningSignals, "li");
+}
+
+function revealPostGameSections() {
+  els.postGameSections.forEach((section) => section.classList.remove("hidden"));
+
+  if (els.dataStoryNav) {
+    els.dataStoryNav.href = "#handoff";
+    els.dataStoryNav.classList.remove("locked-link");
+    els.dataStoryNav.removeAttribute("aria-disabled");
+  }
 }
 
 function animateScore(target) {

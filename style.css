@@ -139,6 +139,11 @@ button {
   background: #fff;
 }
 
+.site-header nav a.locked-link {
+  color: var(--muted);
+  cursor: default;
+}
+
 .hero {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(320px, 0.86fr);
@@ -698,6 +703,11 @@ textarea:focus {
 .secondary-link {
   background: var(--lemon);
   white-space: nowrap;
+}
+
+.continue-link {
+  justify-self: stretch;
+  margin-top: 0.15rem;
 }
 
 .data-slots {

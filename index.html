@@ -28,7 +28,7 @@
       </a>
       <nav aria-label="Page">
         <a href="#experiment">Play</a>
-        <a href="#handoff">Data story</a>
+        <a id="dataStoryNav" class="locked-link" href="#experiment" aria-disabled="true">Data story</a>
       </nav>
     </header>
 
@@ -42,9 +42,9 @@
             <span class="resolution-word">resolution?</span>
           </h1>
           <p class="lede">
-            Before the charts appear, step into a small scene.<br />
-            Write what it feels like from the inside.<br />
-            Then see how finely your language names it.
+            Do our words still capture the full texture of what we feel?<br />
+            This project explores the decline of emotional granularity in modern language.<br />
+            Start with a short scene, describe your inner state, and see how precise your emotional vocabulary is.
           </p>
           <a class="primary-link" href="#experiment">
             <i data-lucide="sparkles" aria-hidden="true"></i>
@@ -68,14 +68,6 @@
             <span>jubilant</span>
           </div>
         </div>
-      </section>
-
-      <section class="story-strip" aria-label="Project premise">
-        <p>
-          Modern interfaces often compress feeling into a few buttons: like, angry,
-          sad, wow. Our project asks whether emotional language is becoming flatter,
-          and whether rare, precise feeling words are giving way to simpler ones.
-        </p>
       </section>
 
       <section id="experiment" class="experiment" aria-labelledby="experiment-title">
@@ -169,46 +161,43 @@
                 <p class="mini-label">One more precise version</p>
                 <p id="rewriteText"></p>
               </div>
+
+              <a id="continueEvidence" class="secondary-link continue-link" href="#handoff">
+                <i data-lucide="arrow-down" aria-hidden="true"></i>
+                Continue to the evidence
+              </a>
             </div>
           </aside>
         </div>
       </section>
 
-      <section id="handoff" class="handoff" aria-labelledby="handoff-title">
+      <section id="handoff" class="handoff post-game-section hidden" aria-labelledby="handoff-title">
         <div class="section-label">
           <span>02</span>
-          <span>Bridge to the data evidence</span>
+          <span>From your score to the evidence</span>
         </div>
         <div class="handoff-inner">
           <div>
-            <h2 id="handoff-title">Now zoom out from one answer to culture.</h2>
+            <h2 id="handoff-title">Did your emotional granularity score surprise you?</h2>
             <p>
-              The opening game makes the audience feel the problem first. Your
-              teammates can place the Google Books Ngram and Reddit analysis here,
-              showing how the ratio of rare and literary emotion words changes over
-              time.
+              Now we move from your answer to larger evidence. The following
+              analysis explores whether emotional vocabulary has become less precise
+              over time.
             </p>
           </div>
-          <a class="secondary-link" href="#top">
-            <i data-lucide="arrow-up" aria-hidden="true"></i>
-            Replay opening
+          <a class="secondary-link" href="#analysis-opening">
+            <i data-lucide="arrow-down" aria-hidden="true"></i>
+            Start the analysis
           </a>
         </div>
+      </section>
 
-        <div class="data-slots" aria-label="Future chart slots">
-          <div class="data-slot">
-            <span>Chart slot A</span>
-            <strong>Books: rare/literary vs. basic words</strong>
-          </div>
-          <div class="data-slot">
-            <span>Chart slot B</span>
-            <strong>Platform language and compressed reactions</strong>
-          </div>
-          <div class="data-slot">
-            <span>Chart slot C</span>
-            <strong>Audience reflection or class survey</strong>
-          </div>
-        </div>
+      <section id="analysis-opening" class="story-strip post-game-section hidden" aria-label="Analysis opening">
+        <p>
+          Modern interfaces often compress feeling into a few buttons: like, angry,
+          sad, wow. Our project asks whether emotional language is becoming flatter,
+          and whether rare, precise feeling words are giving way to simpler ones.
+        </p>
       </section>
     </main>
 
