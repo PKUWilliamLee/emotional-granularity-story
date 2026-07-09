@@ -1,0 +1,96 @@
+{
+  "taxonomy": "shaver",
+  "window": 2,
+  "intensifiers": [
+    "absolutely",
+    "completely",
+    "damn",
+    "deeply",
+    "extremely",
+    "freaking",
+    "fucking",
+    "hella",
+    "incredibly",
+    "insanely",
+    "literally",
+    "pretty",
+    "quite",
+    "really",
+    "ridiculously",
+    "seriously",
+    "so",
+    "super",
+    "too",
+    "totally",
+    "utterly",
+    "very"
+  ],
+  "emotions": [
+    {
+      "emotion": "love",
+      "intensified_basic": 120,
+      "bare_basic": 2656,
+      "tier2": 8,
+      "precise": 6,
+      "total": 2790,
+      "precise_share_pct": 0.22,
+      "intensified_per_precise": 20.0,
+      "reliable": true
+    },
+    {
+      "emotion": "joy",
+      "intensified_basic": 75,
+      "bare_basic": 1103,
+      "tier2": 33,
+      "precise": 2,
+      "total": 1213,
+      "precise_share_pct": 0.16,
+      "intensified_per_precise": 37.5,
+      "reliable": true
+    },
+    {
+      "emotion": "anger",
+      "intensified_basic": 30,
+      "bare_basic": 615,
+      "tier2": 274,
+      "precise": 4,
+      "total": 923,
+      "precise_share_pct": 0.43,
+      "intensified_per_precise": 7.5,
+      "reliable": true
+    },
+    {
+      "emotion": "sadness",
+      "intensified_basic": 23,
+      "bare_basic": 655,
+      "tier2": 104,
+      "precise": 3,
+      "total": 785,
+      "precise_share_pct": 0.38,
+      "intensified_per_precise": 7.7,
+      "reliable": true
+    },
+    {
+      "emotion": "fear",
+      "intensified_basic": 21,
+      "bare_basic": 537,
+      "tier2": 20,
+      "precise": 4,
+      "total": 582,
+      "precise_share_pct": 0.69,
+      "intensified_per_precise": 5.2,
+      "reliable": true
+    },
+    {
+      "emotion": "surprise",
+      "intensified_basic": 5,
+      "bare_basic": 106,
+      "tier2": 0,
+      "precise": 0,
+      "total": 111,
+      "precise_share_pct": 0.0,
+      "intensified_per_precise": null,
+      "reliable": true
+    }
+  ]
+}

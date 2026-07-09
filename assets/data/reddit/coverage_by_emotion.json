@@ -1,0 +1,164 @@
+[
+  {
+    "emotion": "love",
+    "n": 2576,
+    "covered": 2060,
+    "coverage_pct": 80.0
+  },
+  {
+    "emotion": "nervousness",
+    "n": 208,
+    "covered": 137,
+    "coverage_pct": 65.9
+  },
+  {
+    "emotion": "pride",
+    "n": 142,
+    "covered": 85,
+    "coverage_pct": 59.9
+  },
+  {
+    "emotion": "disgust",
+    "n": 1013,
+    "covered": 567,
+    "coverage_pct": 56.0
+  },
+  {
+    "emotion": "fear",
+    "n": 764,
+    "covered": 414,
+    "coverage_pct": 54.2
+  },
+  {
+    "emotion": "joy",
+    "n": 1785,
+    "covered": 965,
+    "coverage_pct": 54.1
+  },
+  {
+    "emotion": "sadness",
+    "n": 1625,
+    "covered": 846,
+    "coverage_pct": 52.1
+  },
+  {
+    "emotion": "optimism",
+    "n": 1976,
+    "covered": 954,
+    "coverage_pct": 48.3
+  },
+  {
+    "emotion": "embarrassment",
+    "n": 375,
+    "covered": 174,
+    "coverage_pct": 46.4
+  },
+  {
+    "emotion": "relief",
+    "n": 182,
+    "covered": 81,
+    "coverage_pct": 44.5
+  },
+  {
+    "emotion": "disappointment",
+    "n": 1583,
+    "covered": 655,
+    "coverage_pct": 41.4
+  },
+  {
+    "emotion": "excitement",
+    "n": 1052,
+    "covered": 377,
+    "coverage_pct": 35.8
+  },
+  {
+    "emotion": "caring",
+    "n": 1375,
+    "covered": 477,
+    "coverage_pct": 34.7
+  },
+  {
+    "emotion": "grief",
+    "n": 96,
+    "covered": 31,
+    "coverage_pct": 32.3
+  },
+  {
+    "emotion": "surprise",
+    "n": 1330,
+    "covered": 403,
+    "coverage_pct": 30.3
+  },
+  {
+    "emotion": "remorse",
+    "n": 669,
+    "covered": 197,
+    "coverage_pct": 29.4
+  },
+  {
+    "emotion": "anger",
+    "n": 1960,
+    "covered": 539,
+    "coverage_pct": 27.5
+  },
+  {
+    "emotion": "desire",
+    "n": 801,
+    "covered": 199,
+    "coverage_pct": 24.8
+  },
+  {
+    "emotion": "annoyance",
+    "n": 3093,
+    "covered": 695,
+    "coverage_pct": 22.5
+  },
+  {
+    "emotion": "admiration",
+    "n": 5122,
+    "covered": 1108,
+    "coverage_pct": 21.6
+  },
+  {
+    "emotion": "gratitude",
+    "n": 3372,
+    "covered": 695,
+    "coverage_pct": 20.6
+  },
+  {
+    "emotion": "curiosity",
+    "n": 2723,
+    "covered": 536,
+    "coverage_pct": 19.7
+  },
+  {
+    "emotion": "realization",
+    "n": 1382,
+    "covered": 272,
+    "coverage_pct": 19.7
+  },
+  {
+    "emotion": "disapproval",
+    "n": 2581,
+    "covered": 502,
+    "coverage_pct": 19.4
+  },
+  {
+    "emotion": "confusion",
+    "n": 1673,
+    "covered": 323,
+    "coverage_pct": 19.3
+  },
+  {
+    "emotion": "approval",
+    "n": 3687,
+    "covered": 616,
+    "coverage_pct": 16.7
+  },
+  {
+    "emotion": "amusement",
+    "n": 2895,
+    "covered": 466,
+    "coverage_pct": 16.1
+  }
+]

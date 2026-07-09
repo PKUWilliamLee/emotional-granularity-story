@@ -1,0 +1,302 @@
+{
+  "window": 2,
+  "intensifiers": [
+    "absolutely",
+    "completely",
+    "damn",
+    "deeply",
+    "extremely",
+    "freaking",
+    "fucking",
+    "hella",
+    "incredibly",
+    "insanely",
+    "literally",
+    "pretty",
+    "quite",
+    "really",
+    "ridiculously",
+    "seriously",
+    "so",
+    "super",
+    "too",
+    "totally",
+    "utterly",
+    "very"
+  ],
+  "tiers": [
+    {
+      "tier": 1,
+      "occurrences": 14108,
+      "boosted": 1407,
+      "boost_rate_pct": 10.0,
+      "dict_words": 145
+    },
+    {
+      "tier": 2,
+      "occurrences": 951,
+      "boosted": 86,
+      "boost_rate_pct": 9.0,
+      "dict_words": 141
+    },
+    {
+      "tier": 3,
+      "occurrences": 98,
+      "boosted": 9,
+      "boost_rate_pct": 9.2,
+      "dict_words": 146
+    }
+  ],
+  "top_bigrams": [
+    {
+      "bigram": "so happy",
+      "count": 78,
+      "tier": 1
+    },
+    {
+      "bigram": "so glad",
+      "count": 76,
+      "tier": 1
+    },
+    {
+      "bigram": "so bad",
+      "count": 70,
+      "tier": 1
+    },
+    {
+      "bigram": "too bad",
+      "count": 60,
+      "tier": 1
+    },
+    {
+      "bigram": "really bad",
+      "count": 50,
+      "tier": 1
+    },
+    {
+      "bigram": "really hope",
+      "count": 50,
+      "tier": 1
+    },
+    {
+      "bigram": "so sad",
+      "count": 42,
+      "tier": 1
+    },
+    {
+      "bigram": "really love",
+      "count": 36,
+      "tier": 1
+    },
+    {
+      "bigram": "so proud",
+      "count": 28,
+      "tier": 1
+    },
+    {
+      "bigram": "really appreciate",
+      "count": 25,
+      "tier": 1
+    },
+    {
+      "bigram": "very happy",
+      "count": 22,
+      "tier": 1
+    },
+    {
+      "bigram": "so excited",
+      "count": 21,
+      "tier": 1
+    },
+    {
+      "bigram": "so sweet",
+      "count": 20,
+      "tier": 1
+    },
+    {
+      "bigram": "pretty bad",
+      "count": 19,
+      "tier": 1
+    },
+    {
+      "bigram": "absolutely love",
+      "count": 18,
+      "tier": 1
+    },
+    {
+      "bigram": "really sad",
+      "count": 17,
+      "tier": 1
+    },
+    {
+      "bigram": "very bad",
+      "count": 17,
+      "tier": 1
+    },
+    {
+      "bigram": "so love",
+      "count": 15,
+      "tier": 1
+    },
+    {
+      "bigram": "fucking love",
+      "count": 15,
+      "tier": 1
+    },
+    {
+      "bigram": "very sad",
+      "count": 14,
+      "tier": 1
+    },
+    {
+      "bigram": "so angry",
+      "count": 13,
+      "tier": 1
+    },
+    {
+      "bigram": "really hate",
+      "count": 13,
+      "tier": 1
+    },
+    {
+      "bigram": "really glad",
+      "count": 12,
+      "tier": 1
+    },
+    {
+      "bigram": "too love",
+      "count": 11,
+      "tier": 1
+    },
+    {
+      "bigram": "so disappointed",
+      "count": 9,
+      "tier": 1
+    },
+    {
+      "bigram": "so confused",
+      "count": 9,
+      "tier": 1
+    },
+    {
+      "bigram": "very sweet",
+      "count": 9,
+      "tier": 1
+    },
+    {
+      "bigram": "so jealous",
+      "count": 8,
+      "tier": 1
+    },
+    {
+      "bigram": "too excited",
+      "count": 8,
+      "tier": 1
+    },
+    {
+      "bigram": "so upset",
+      "count": 8,
+      "tier": 1
+    },
+    {
+      "bigram": "really excited",
+      "count": 8,
+      "tier": 1
+    },
+    {
+      "bigram": "too hope",
+      "count": 8,
+      "tier": 1
+    },
+    {
+      "bigram": "really happy",
+      "count": 8,
+      "tier": 1
+    },
+    {
+      "bigram": "super happy",
+      "count": 7,
+      "tier": 1
+    },
+    {
+      "bigram": "so hope",
+      "count": 7,
+      "tier": 1
+    },
+    {
+      "bigram": "too afraid",
+      "count": 7,
+      "tier": 1
+    },
+    {
+      "bigram": "really disappointed",
+      "count": 7,
+      "tier": 1
+    },
+    {
+      "bigram": "so awkward",
+      "count": 7,
+      "tier": 1
+    },
+    {
+      "bigram": "very disappointed",
+      "count": 7,
+      "tier": 1
+    },
+    {
+      "bigram": "so worried",
+      "count": 7,
+      "tier": 1
+    },
+    {
+      "bigram": "damn love",
+      "count": 7,
+      "tier": 1
+    },
+    {
+      "bigram": "so mad",
+      "count": 6,
+      "tier": 1
+    },
+    {
+      "bigram": "fucking hate",
+      "count": 6,
+      "tier": 1
+    },
+    {
+      "bigram": "really miss",
+      "count": 6,
+      "tier": 1
+    },
+    {
+      "bigram": "really hurt",
+      "count": 6,
+      "tier": 1
+    },
+    {
+      "bigram": "so cringe",
+      "count": 6,
+      "tier": 2
+    },
+    {
+      "bigram": "pretty sad",
+      "count": 6,
+      "tier": 1
+    },
+    {
+      "bigram": "very surprised",
+      "count": 6,
+      "tier": 1
+    },
+    {
+      "bigram": "pretty sweet",
+      "count": 5,
+      "tier": 1
+    },
+    {
+      "bigram": "completely lost",
+      "count": 5,
+      "tier": 1
+    }
+  ]
+}

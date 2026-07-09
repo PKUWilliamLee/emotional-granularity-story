@@ -1,0 +1,23 @@
+[
+  {
+    "tier": 1,
+    "tokens": 12329,
+    "share_pct": 93.84,
+    "dict_words": 145,
+    "tokens_per_dict_word": 85.0
+  },
+  {
+    "tier": 2,
+    "tokens": 735,
+    "share_pct": 5.59,
+    "dict_words": 141,
+    "tokens_per_dict_word": 5.2
+  },
+  {
+    "tier": 3,
+    "tokens": 74,
+    "share_pct": 0.56,
+    "dict_words": 146,
+    "tokens_per_dict_word": 0.5
+  }
+]

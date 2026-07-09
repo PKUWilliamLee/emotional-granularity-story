@@ -1,0 +1,601 @@
+side,movie_title,emo_types,n_nrc_categories,nrc_entropy
+human,101 Reykjavík,2,2,1.0
+ai,101 Reykjavík,5,1,-0.0
+human,12 Angry Men,3,4,1.9182958340544896
+ai,12 Angry Men,1,2,1.0
+human,17000 Block,1,0,0.0
+ai,17000 Block,1,1,-0.0
+human,"20,000 Years in Sing Sing",3,4,1.9709505944546688
+ai,"20,000 Years in Sing Sing",2,6,2.584962500721156
+human,7 to 10 Days,3,2,1.0
+ai,7 to 10 Days,4,4,1.9219280948873625
+human,8 Mile,2,2,1.0
+ai,8 Mile,3,2,1.0
+human,A Brief History of Time,1,0,0.0
+ai,A Brief History of Time,1,0,0.0
+human,A Face in the Crowd,0,0,0.0
+ai,A Face in the Crowd,4,4,1.9219280948873625
+human,A History of Violence,5,4,1.9502120649147463
+ai,A History of Violence,2,1,-0.0
+human,A Name for Evil,1,0,0.0
+ai,A Name for Evil,7,3,1.584962500721156
+human,A Noose Is Waiting for You Trinity,0,0,0.0
+ai,A Noose Is Waiting for You Trinity,3,7,2.646439344671016
+human,A Series of Unfortunate Events,0,0,0.0
+ai,A Series of Unfortunate Events,5,3,1.3709505944546687
+human,A Story Written with Water,1,0,0.0
+ai,A Story Written with Water,1,1,-0.0
+human,A Touch of Larceny,6,5,2.2516291673878226
+ai,A Touch of Larceny,4,1,-0.0
+human,ABCD,1,0,0.0
+ai,ABCD,1,0,0.0
+human,Agent Orange,1,1,-0.0
+ai,Agent Orange,1,0,0.0
+human,Akkare Akkare Akkare,1,1,-0.0
+ai,Akkare Akkare Akkare,1,0,0.0
+human,All About My Mother,1,0,0.0
+ai,All About My Mother,3,0,0.0
+human,All Dogs Go to Heaven,4,4,2.0
+ai,All Dogs Go to Heaven,3,2,0.9182958340544896
+human,All Monsters Attack,2,3,1.584962500721156
+ai,All Monsters Attack,3,8,3.0
+human,All the Way,1,4,2.0
+ai,All the Way,4,1,-0.0
+human,Almost Famous,1,3,1.584962500721156
+ai,Almost Famous,6,5,2.2516291673878226
+human,Ants in the Pantry,1,0,0.0
+ai,Ants in the Pantry,0,0,0.0
+human,Back Alley Oproar,4,6,2.584962500721156
+ai,Back Alley Oproar,2,5,2.321928094887362
+human,Bangkok Dangerous,5,6,2.5216406363433186
+ai,Bangkok Dangerous,6,7,2.7192945256669794
+human,Barbara the Barbarian,0,0,0.0
+ai,Barbara the Barbarian,2,4,2.0
+human,Battle of the Bulge,1,4,2.0
+ai,Battle of the Bulge,1,4,2.0
+human,Battletruck,3,4,2.0
+ai,Battletruck,5,5,2.251629167387823
+human,Beauty and the Beast,2,2,1.0
+ai,Beauty and the Beast,3,1,-0.0
+human,Belphegor: Phantom of the Louvre,2,2,1.0
+ai,Belphegor: Phantom of the Louvre,4,8,2.9219280948873623
+human,Best of the Best,1,1,-0.0
+ai,Best of the Best,2,1,-0.0
+human,Beverly Hills Cop,0,0,0.0
+ai,Beverly Hills Cop,1,1,-0.0
+human,Beyond the Darkness,2,0,0.0
+ai,Beyond the Darkness,6,4,1.9219280948873625
+human,Beyond the Poseidon Adventure,1,0,0.0
+ai,Beyond the Poseidon Adventure,1,0,0.0
+human,Big Hearted Herbert,2,3,1.584962500721156
+ai,Big Hearted Herbert,1,0,0.0
+human,Black Joy,1,3,1.584962500721156
+ai,Black Joy,4,2,0.9182958340544896
+human,Blind Beast,4,2,1.0
+ai,Blind Beast,4,3,1.521928094887362
+human,Bloodmoon,5,7,2.7219280948873625
+ai,Bloodmoon,2,2,1.0
+human,Blue Car,4,8,2.9219280948873623
+ai,Blue Car,5,4,1.8423709931771084
+human,Body Rock,2,3,1.584962500721156
+ai,Body Rock,1,0,0.0
+human,Branded to Kill,1,0,0.0
+ai,Branded to Kill,1,2,1.0
+human,Brat 2,1,2,1.0
+ai,Brat 2,2,1,-0.0
+human,Brilliantovaya ruka,1,0,0.0
+ai,Brilliantovaya ruka,3,2,1.0
+human,Bus Stop,1,1,-0.0
+ai,Bus Stop,4,6,2.521928094887362
+human,C.S.A.: The Confederate States of America,6,5,2.251629167387823
+ai,C.S.A.: The Confederate States of America,3,2,1.0
+human,Camille des Lilas et les voleurs d'enfants,1,0,0.0
+ai,Camille des Lilas et les voleurs d'enfants,4,1,-0.0
+human,Can que,0,0,0.0
+ai,Can que,2,1,-0.0
+human,Cannibal Holocaust,2,0,0.0
+ai,Cannibal Holocaust,2,0,0.0
+human,Casablanca,1,0,0.0
+ai,Casablanca,6,6,2.5032583347756456
+human,Casanova's Big Night,11,5,2.2516291673878226
+ai,Casanova's Big Night,5,5,2.231270254607576
+human,Champions,0,0,0.0
+ai,Champions,0,0,0.0
+human,Chilly Scenes of Winter,5,6,2.5
+ai,Chilly Scenes of Winter,5,6,2.5032583347756456
+human,Clue,0,0,0.0
+ai,Clue,1,0,0.0
+human,Cold Light,2,0,0.0
+ai,Cold Light,3,2,0.9182958340544896
+human,Columbo: Double Exposure,2,0,0.0
+ai,Columbo: Double Exposure,2,2,1.0
+human,Crimes of the Heart,0,0,0.0
+ai,Crimes of the Heart,3,0,0.0
+human,Crimetime,2,4,2.0
+ai,Crimetime,1,0,0.0
+human,Crissie Sheridan,1,0,0.0
+ai,Crissie Sheridan,3,3,1.584962500721156
+human,Crosswalk,0,0,0.0
+ai,Crosswalk,3,4,1.9182958340544891
+human,Crystal Voyager,0,0,0.0
+ai,Crystal Voyager,2,3,1.584962500721156
+human,Dahshat,13,7,2.6081108934918174
+ai,Dahshat,5,0,0.0
+human,Danmarks sjoveste mand,13,7,2.4996981431844145
+ai,Danmarks sjoveste mand,5,5,2.321928094887362
+human,David (I),1,2,1.0
+ai,David (I),3,1,-0.0
+human,Dead Cert,1,3,1.584962500721156
+ai,Dead Cert,2,3,1.584962500721156
+human,Deadly Dreams,4,0,0.0
+ai,Deadly Dreams,5,5,2.235926350629033
+human,Death Wish 3,2,4,1.9709505944546688
+ai,Death Wish 3,1,0,0.0
+human,Desperation Highway,2,4,2.0
+ai,Desperation Highway,2,4,1.9182958340544896
+human,Deuces,2,1,-0.0
+ai,Deuces,1,4,2.0
+human,"Die Sister, Die!",3,2,1.0
+ai,"Die Sister, Die!",5,6,2.584962500721156
+human,Doctor Zhivago,6,4,1.8423709931771088
+ai,Doctor Zhivago,3,6,2.5032583347756456
+human,Don't Turn the Other Cheek,1,4,2.0
+ai,Don't Turn the Other Cheek,1,0,0.0
+human,Donnybrook,5,7,2.7219280948873625
+ai,Donnybrook,0,0,0.0
+human,Doragon heddo,3,7,2.807354922057604
+ai,Doragon heddo,4,1,-0.0
+human,Downfall,2,3,1.584962500721156
+ai,Downfall,2,1,-0.0
+human,Early to Bed,3,1,-0.0
+ai,Early to Bed,1,0,0.0
+human,El día que me amen,4,3,1.5
+ai,El día que me amen,5,2,0.9182958340544896
+human,Emmanuelle,10,8,2.8423709931771093
+ai,Emmanuelle,3,0,0.0
+human,Endless Night (I),12,8,2.9044984515601637
+ai,Endless Night (I),6,6,2.469670487371862
+human,Eroica,1,0,0.0
+ai,Eroica,3,1,-0.0
+human,Es fing so harmlos an,5,5,2.321928094887362
+ai,Es fing so harmlos an,4,6,2.521640636343318
+human,Evilenko,4,1,-0.0
+ai,Evilenko,2,2,1.0
+human,Fat Pizza,3,3,1.584962500721156
+ai,Fat Pizza,1,0,0.0
+human,Fishing with Gandhi,5,4,1.8423709931771088
+ai,Fishing with Gandhi,2,1,-0.0
+human,Fitzcarraldo,3,4,1.8910611120726528
+ai,Fitzcarraldo,2,4,2.0
+human,"Frank McKlusky, C.I.",6,1,-0.0
+ai,"Frank McKlusky, C.I.",3,1,-0.0
+human,Freeway,6,8,2.7732698037311407
+ai,Freeway,1,1,-0.0
+human,From Here to Eternity,2,2,1.0
+ai,From Here to Eternity,2,6,2.5216406363433186
+human,Fuelin' Around,1,0,0.0
+ai,Fuelin' Around,1,1,-0.0
+human,Gabrielle,2,0,0.0
+ai,Gabrielle,3,1,-0.0
+human,Gallipoli,3,1,-0.0
+ai,Gallipoli,2,1,-0.0
+human,Gambit,4,2,0.9709505944546686
+ai,Gambit,2,3,1.584962500721156
+human,Gator,1,1,-0.0
+ai,Gator,2,0,0.0
+human,Get Rich or Die Tryin',2,4,1.9056390622295665
+ai,Get Rich or Die Tryin',0,0,0.0
+human,Ghost in the Machine,4,5,2.2516291673878226
+ai,Ghost in the Machine,5,2,1.0
+human,Graveless,1,2,1.0
+ai,Graveless,7,4,1.8585552118703144
+human,Grimm,5,4,1.5487949406953985
+ai,Grimm,5,1,-0.0
+human,Gyeolhoneun michinjishida,5,7,2.738011806396905
+ai,Gyeolhoneun michinjishida,3,7,2.725480556997868
+human,Hail the Conquering Hero,0,0,0.0
+ai,Hail the Conquering Hero,2,0,0.0
+human,Hamlet,3,1,-0.0
+ai,Hamlet,2,3,1.584962500721156
+human,Harlan County U.S.A.,0,0,0.0
+ai,Harlan County U.S.A.,2,2,1.0
+human,Harmony Cats,1,1,-0.0
+ai,Harmony Cats,2,4,2.0
+human,"He Said, She Said",1,4,2.0
+ai,"He Said, She Said",2,6,2.584962500721156
+human,Heinous Crime,6,4,1.9709505944546688
+ai,Heinous Crime,4,2,0.8112781244591328
+human,Hinokio,1,0,0.0
+ai,Hinokio,5,2,1.0
+human,Holy Smoke,1,1,-0.0
+ai,Holy Smoke,3,2,0.9182958340544896
+human,Hope Floats,5,3,1.5
+ai,Hope Floats,9,7,2.7045348998193437
+human,Horror House,9,6,2.2459600998912124
+ai,Horror House,4,3,1.5
+human,Hot Summer in the City,2,8,3.0
+ai,Hot Summer in the City,4,2,0.9182958340544896
+human,House of Whipcord,10,8,2.86658710582896
+ai,House of Whipcord,4,5,2.321928094887362
+human,Idemo dalje,1,0,0.0
+ai,Idemo dalje,3,2,0.9182958340544896
+human,Il siero della vanità,2,0,0.0
+ai,Il siero della vanità,3,4,1.9219280948873625
+human,In God We Trust (or Gimme That Prime Time Religion),1,3,1.584962500721156
+ai,In God We Trust (or Gimme That Prime Time Religion),2,0,0.0
+human,In the Mood for Love,2,0,0.0
+ai,In the Mood for Love,6,6,2.5654483718208256
+human,Interstella 5555: The 5tory of the 5ecret 5tar 5ystem,2,1,-0.0
+ai,Interstella 5555: The 5tory of the 5ecret 5tar 5ystem,2,0,0.0
+human,Jekyll,3,4,1.974937501201927
+ai,Jekyll,4,6,2.584962500721156
+human,Jury Duty,0,0,0.0
+ai,Jury Duty,2,0,0.0
+human,King Solomon's Treasure,0,0,0.0
+ai,King Solomon's Treasure,0,0,0.0
+human,Kisses and Caroms,1,0,0.0
+ai,Kisses and Caroms,2,1,-0.0
+human,Kukushka,3,1,-0.0
+ai,Kukushka,4,2,0.8112781244591328
+human,L.A. Law: Pilot,2,4,2.0
+ai,L.A. Law: Pilot,0,0,0.0
+human,La leggenda del rubino malese,5,6,2.481714572986073
+ai,La leggenda del rubino malese,2,0,0.0
+human,La moglie di mio padre,5,4,1.7924812503605778
+ai,La moglie di mio padre,4,3,1.5
+human,Last Stand,0,0,0.0
+ai,Last Stand,3,4,2.0
+human,Le Bossu,2,0,0.0
+ai,Le Bossu,1,1,-0.0
+human,Le Boucher,0,0,0.0
+ai,Le Boucher,2,2,1.0
+human,Le Samouraï,1,0,0.0
+ai,Le Samouraï,3,1,-0.0
+human,Les Dames du Bois de Boulogne,10,5,2.197159723424149
+ai,Les Dames du Bois de Boulogne,3,1,-0.0
+human,Let's Be Friends!,4,5,2.1556390622295662
+ai,Let's Be Friends!,3,4,2.0
+human,Limbo (I),1,3,1.584962500721156
+ai,Limbo (I),2,1,-0.0
+human,Lion of the Desert,1,3,1.584962500721156
+ai,Lion of the Desert,4,6,2.5216406363433186
+human,Liu jai yim taam,4,4,1.971335285306981
+ai,Liu jai yim taam,5,7,2.721928094887362
+human,Love Letter,3,4,1.950212064914747
+ai,Love Letter,6,6,2.5216406363433186
+human,Love Streams,1,0,0.0
+ai,Love Streams,6,2,1.0
+human,Luminarias,1,0,0.0
+ai,Luminarias,2,3,1.584962500721156
+human,Main Khiladi Tu Anari,2,0,0.0
+ai,Main Khiladi Tu Anari,1,0,0.0
+human,Man About Town,1,0,0.0
+ai,Man About Town,2,1,-0.0
+human,Mardi Gras Massacre,5,4,1.7924812503605778
+ai,Mardi Gras Massacre,5,1,-0.0
+human,Mary Poppins,9,7,2.7516291673878226
+ai,Mary Poppins,3,1,-0.0
+human,Melinda and Melinda,4,2,1.0
+ai,Melinda and Melinda,1,0,0.0
+human,Merci pour le Chocolat,2,1,-0.0
+ai,Merci pour le Chocolat,1,1,-0.0
+human,Mo' Money,1,4,2.0
+ai,Mo' Money,1,0,0.0
+human,Montana Belle,2,0,0.0
+ai,Montana Belle,2,6,2.5
+human,Mr. Bones (I),1,4,2.0
+ai,Mr. Bones (I),2,1,-0.0
+human,Mulholland Falls,3,4,1.9056390622295665
+ai,Mulholland Falls,2,4,2.0
+human,Mumbai Express,1,2,1.0
+ai,Mumbai Express,5,2,1.0
+human,Neutral Port,1,0,0.0
+ai,Neutral Port,2,2,1.0
+human,Ngo si seoi,3,4,2.0
+ai,Ngo si seoi,1,1,-0.0
+human,Nick Name & the Normals,3,1,-0.0
+ai,Nick Name & the Normals,2,0,0.0
+human,Night of the Zombies,1,2,1.0
+ai,Night of the Zombies,5,4,2.0
+human,Nightmare Alley,1,2,1.0
+ai,Nightmare Alley,1,1,-0.0
+human,Nine Deaths of the Ninja,5,4,2.0
+ai,Nine Deaths of the Ninja,2,5,2.321928094887362
+human,No Man's Land (I),2,1,-0.0
+ai,No Man's Land (I),4,4,1.9219280948873625
+human,No Room for the Groom,4,1,-0.0
+ai,No Room for the Groom,5,5,2.197159723424149
+human,Norang meori 2,4,1,-0.0
+ai,Norang meori 2,2,3,1.584962500721156
+human,"North and South, Book II",4,3,1.584962500721156
+ai,"North and South, Book II",1,1,-0.0
+human,On the Old Spanish Trail,2,0,0.0
+ai,On the Old Spanish Trail,2,4,2.0
+human,One Six Right,3,0,0.0
+ai,One Six Right,5,4,2.0
+human,"One, Two, Three",5,5,2.25
+ai,"One, Two, Three",2,4,2.0
+human,Ooru naito rongu: Sanji,2,3,1.584962500721156
+ai,Ooru naito rongu: Sanji,3,0,0.0
+human,Operation Delta Force 3: Clear Target,1,3,1.584962500721156
+ai,Operation Delta Force 3: Clear Target,3,4,2.0
+human,Ordinary People,7,4,1.9784845935086517
+ai,Ordinary People,5,2,1.0
+human,Out Cold,3,1,-0.0
+ai,Out Cold,2,1,-0.0
+human,Pajama Party,1,0,0.0
+ai,Pajama Party,3,7,2.75
+human,Pamuk Prenses ve 7 cüceler,1,2,1.0
+ai,Pamuk Prenses ve 7 cüceler,1,0,0.0
+human,Payne,1,0,0.0
+ai,Payne,3,1,-0.0
+human,Pearl Harbor II: Pearlmageddon,4,4,2.0
+ai,Pearl Harbor II: Pearlmageddon,2,4,2.0
+human,Pierscien i róza,3,2,1.0
+ai,Pierscien i róza,4,4,2.0
+human,Poem 8,2,1,-0.0
+ai,Poem 8,2,0,0.0
+human,Porco Rosso,3,5,2.2516291673878226
+ai,Porco Rosso,4,1,-0.0
+human,Pots and Pans,2,4,1.9219280948873625
+ai,Pots and Pans,1,3,1.584962500721156
+human,Pourquoi pas!,3,4,2.0
+ai,Pourquoi pas!,4,0,0.0
+human,Priest,4,2,1.0
+ai,Priest,1,4,2.0
+human,Province 77,1,1,-0.0
+ai,Province 77,5,5,2.1180782093497093
+human,Reach for the Sky,0,0,0.0
+ai,Reach for the Sky,3,5,2.321928094887362
+human,"Ready, Willing and Able",2,3,1.584962500721156
+ai,"Ready, Willing and Able",1,0,0.0
+human,Red Riding Hood,2,4,2.0
+ai,Red Riding Hood,4,2,1.0
+human,Resan till Melonia,2,4,1.9219280948873625
+ai,Resan till Melonia,3,2,1.0
+human,Richard Pryor: Live on the Sunset Strip,0,0,0.0
+ai,Richard Pryor: Live on the Sunset Strip,0,0,0.0
+human,Ring of Terror,5,2,1.0
+ai,Ring of Terror,5,2,1.0
+human,Roger & Me,10,6,2.355388542207534
+ai,Roger & Me,4,2,0.9182958340544896
+human,Rush,1,0,0.0
+ai,Rush,2,3,1.584962500721156
+human,Safe House,4,1,-0.0
+ai,Safe House,5,7,2.6464393446710157
+human,Savage Honeymoon,0,0,0.0
+ai,Savage Honeymoon,1,3,1.584962500721156
+human,Screenplay: The Black and Blue Lamp,2,4,2.0
+ai,Screenplay: The Black and Blue Lamp,2,2,0.9182958340544896
+human,Season for Assassins,2,4,2.0
+ai,Season for Assassins,3,2,0.8112781244591328
+human,Secret Agent X-9,3,4,2.0
+ai,Secret Agent X-9,1,3,1.584962500721156
+human,Shamus,2,6,2.584962500721156
+ai,Shamus,1,0,0.0
+human,Shankara,6,8,2.78845045730829
+ai,Shankara,0,0,0.0
+human,Shantytown,0,0,0.0
+ai,Shantytown,2,7,2.807354922057604
+human,Shock Corridor,1,1,-0.0
+ai,Shock Corridor,3,1,-0.0
+human,Shoulder Arms,3,0,0.0
+ai,Shoulder Arms,6,6,2.584962500721156
+human,Shu jian en chou lu,1,0,0.0
+ai,Shu jian en chou lu,1,0,0.0
+human,Sister Emanuelle,1,0,0.0
+ai,Sister Emanuelle,1,2,1.0
+human,Skies Above,2,2,1.0
+ai,Skies Above,5,2,1.0
+human,So Glad I Made It,5,3,1.3709505944546687
+ai,So Glad I Made It,5,4,1.9182958340544891
+human,Sorority Babes in the Slimeball Bowl-O-Rama,2,0,0.0
+ai,Sorority Babes in the Slimeball Bowl-O-Rama,4,1,-0.0
+human,Spider,3,1,-0.0
+ai,Spider,3,3,1.584962500721156
+human,Stan Kann: The Happiest Man in the World,5,5,2.1626441180472606
+ai,Stan Kann: The Happiest Man in the World,5,4,1.9219280948873625
+human,Stardom,2,3,1.584962500721156
+ai,Stardom,0,0,0.0
+human,Stepmom,5,4,1.9182958340544896
+ai,Stepmom,2,1,-0.0
+human,Stick,5,8,2.855388542207534
+ai,Stick,2,4,2.0
+human,Stille Nacht,1,4,2.0
+ai,Stille Nacht,4,1,-0.0
+human,Stone Cold,0,0,0.0
+ai,Stone Cold,0,0,0.0
+human,Sunshine,1,0,0.0
+ai,Sunshine,1,1,-0.0
+human,Swashbuckler,0,0,0.0
+ai,Swashbuckler,3,6,2.584962500721156
+human,Tengoku no honya - koibi,6,4,1.895461844238322
+ai,Tengoku no honya - koibi,7,2,0.9182958340544896
+human,Tere Naam,2,6,2.584962500721156
+ai,Tere Naam,6,6,2.413088436425758
+human,"Texas, Brooklyn & Heaven",1,4,2.0
+ai,"Texas, Brooklyn & Heaven",3,6,2.521640636343318
+human,The Arrangement,1,4,2.0
+ai,The Arrangement,1,0,0.0
+human,The Biggest Fan,4,6,2.5032583347756456
+ai,The Biggest Fan,2,4,2.0
+human,The Bitter Tea of General Yen,4,6,2.5220552088742005
+ai,The Bitter Tea of General Yen,4,6,2.5032583347756456
+human,The Blade Master,4,3,1.584962500721156
+ai,The Blade Master,1,0,0.0
+human,The Blue Max,4,4,1.9502120649147463
+ai,The Blue Max,1,1,-0.0
+human,The Boa Friend,1,0,0.0
+ai,The Boa Friend,2,1,-0.0
+human,The Boys Next Door,3,0,0.0
+ai,The Boys Next Door,2,1,-0.0
+human,The Cement Garden,3,5,2.25
+ai,The Cement Garden,5,5,2.1280852788913944
+human,The Church,2,0,0.0
+ai,The Church,3,0,0.0
+human,The Civil War,0,0,0.0
+ai,The Civil War,1,2,1.0
+human,The Clan of the Cave Bear,2,4,1.9219280948873625
+ai,The Clan of the Cave Bear,2,2,1.0
+human,The Curse of the Jade Scorpion,1,0,0.0
+ai,The Curse of the Jade Scorpion,3,4,2.0
+human,The Cyclops,8,6,2.4056390622295662
+ai,The Cyclops,4,1,-0.0
+human,The Daytrippers,2,1,-0.0
+ai,The Daytrippers,4,1,-0.0
+human,The Dirtwater Dynasty,1,2,1.0
+ai,The Dirtwater Dynasty,1,0,0.0
+human,The Duchess of Buffalo,1,0,0.0
+ai,The Duchess of Buffalo,3,5,2.235926350629033
+human,The Family Way,3,4,1.9182958340544891
+ai,The Family Way,6,5,2.1556390622295662
+human,The Ghost of Greville Lodge,3,0,0.0
+ai,The Ghost of Greville Lodge,7,3,1.5
+human,The Great Challenge,3,5,2.321928094887362
+ai,The Great Challenge,2,1,-0.0
+human,The Great Ziegfeld,3,1,-0.0
+ai,The Great Ziegfeld,1,0,0.0
+human,The Hamster Cage,3,3,1.5
+ai,The Hamster Cage,4,5,2.321928094887362
+human,The Haunting of Morella,2,0,0.0
+ai,The Haunting of Morella,8,7,2.807354922057604
+human,The Land of College Prophets,2,3,1.584962500721156
+ai,The Land of College Prophets,1,2,1.0
+human,The Legend of Hell House,4,5,2.113283334294875
+ai,The Legend of Hell House,6,4,1.811278124459133
+human,The Legend of the Lone Ranger,2,3,1.584962500721156
+ai,The Legend of the Lone Ranger,2,1,-0.0
+human,The Lickerish Quartet,3,2,1.0
+ai,The Lickerish Quartet,1,0,0.0
+human,The Life: What's Your Pleasure?,1,1,-0.0
+ai,The Life: What's Your Pleasure?,4,1,-0.0
+human,The Little Polar Bear 2: The Mysterious Island,0,0,0.0
+ai,The Little Polar Bear 2: The Mysterious Island,2,2,1.0
+human,The Lost Angel,5,5,2.155023969395552
+ai,The Lost Angel,4,1,-0.0
+human,The Lost World: Jurassic Park,2,4,2.0
+ai,The Lost World: Jurassic Park,3,1,-0.0
+human,The Love Trap,2,3,1.584962500721156
+ai,The Love Trap,5,6,2.5
+human,The Magical World of Disney: Bride of Boogedy,2,3,1.5
+ai,The Magical World of Disney: Bride of Boogedy,5,2,0.9182958340544896
+human,The Man Who Knew Too Much,1,0,0.0
+ai,The Man Who Knew Too Much,1,1,-0.0
+human,The Man with Bogart's Face,0,0,0.0
+ai,The Man with Bogart's Face,2,0,0.0
+human,The Miracle Worker,7,3,1.5
+ai,The Miracle Worker,2,2,1.0
+human,The Monster,3,4,2.0
+ai,The Monster,1,0,0.0
+human,The Moon-Spinners,2,2,1.0
+ai,The Moon-Spinners,2,1,-0.0
+human,The Muppets Take Manhattan,1,0,0.0
+ai,The Muppets Take Manhattan,2,4,2.0
+human,The Nutty Professor,4,3,1.584962500721156
+ai,The Nutty Professor,6,3,1.521928094887362
+human,The Off Season,5,1,-0.0
+ai,The Off Season,4,1,-0.0
+human,The Pink Panther,1,0,0.0
+ai,The Pink Panther,2,4,2.0
+human,The Pirate,6,4,1.9182958340544891
+ai,The Pirate,4,7,2.725480556997868
+human,The Prisoner of Zenda,7,6,2.5566567074628237
+ai,The Prisoner of Zenda,3,8,2.9139770731827523
+human,The Psychic Parrot,2,5,2.321928094887362
+ai,The Psychic Parrot,3,4,2.0
+human,The Reckless Moment,4,5,2.321928094887362
+ai,The Reckless Moment,2,1,-0.0
+human,The Rockville Slayer,3,6,2.584962500721156
+ai,The Rockville Slayer,2,4,2.0
+human,The Ropes,0,0,0.0
+ai,The Ropes,2,4,2.0
+human,The Sandlot,2,3,1.584962500721156
+ai,The Sandlot,3,2,1.0
+human,The Sea Change,1,3,1.584962500721156
+ai,The Sea Change,2,1,-0.0
+human,The Secret of My Success,1,0,0.0
+ai,The Secret of My Success,4,4,2.0
+human,The Spanish Prisoner,2,0,0.0
+ai,The Spanish Prisoner,3,2,0.9182958340544896
+human,The Spoilers,3,1,-0.0
+ai,The Spoilers,2,0,0.0
+human,The Story of Alfred Nobel,1,0,0.0
+ai,The Story of Alfred Nobel,1,0,0.0
+human,The Story of Esther Costello,5,3,1.5
+ai,The Story of Esther Costello,1,0,0.0
+human,The Tree in a Test Tube,2,2,1.0
+ai,The Tree in a Test Tube,1,0,0.0
+human,The Vigilantes Return,3,4,2.0
+ai,The Vigilantes Return,1,1,-0.0
+human,The Virgin of Liverpool,1,0,0.0
+ai,The Virgin of Liverpool,2,0,0.0
+human,The Watcher (I),4,4,1.9182958340544896
+ai,The Watcher (I),1,2,1.0
+human,The Wayward Bus,3,3,1.584962500721156
+ai,The Wayward Bus,1,4,2.0
+human,The White Tower,1,0,0.0
+ai,The White Tower,1,2,1.0
+human,The Wicked Lady,3,0,0.0
+ai,The Wicked Lady,4,2,0.9182958340544896
+human,The Zodiac,4,4,1.9182958340544891
+ai,The Zodiac,3,0,0.0
+human,They Met in Bombay,3,2,1.0
+ai,They Met in Bombay,3,7,2.725480556997868
+human,Three Way,2,0,0.0
+ai,Three Way,4,4,1.9219280948873625
+human,Thriller: Death in Small Doses,3,2,1.0
+ai,Thriller: Death in Small Doses,4,5,2.321928094887362
+human,To Die For,0,0,0.0
+ai,To Die For,1,1,-0.0
+human,Tomorrow Never Dies,2,7,2.807354922057604
+ai,Tomorrow Never Dies,1,0,0.0
+human,Tooba,2,1,-0.0
+ai,Tooba,3,1,-0.0
+human,Touched by Love,3,4,2.0
+ai,Touched by Love,5,1,-0.0
+human,Troll 2,3,4,1.9898980954642875
+ai,Troll 2,2,4,2.0
+human,Tube Tales,2,0,0.0
+ai,Tube Tales,4,1,-0.0
+human,Turtles Can Fly,4,5,2.321928094887362
+ai,Turtles Can Fly,3,3,1.584962500721156
+human,Tushka,0,0,0.0
+ai,Tushka,4,4,2.0
+human,Two for the Road,4,6,2.584962500721156
+ai,Two for the Road,3,7,2.73345859334435
+human,Two Idiots in Hollywood,3,2,1.0
+ai,Two Idiots in Hollywood,1,0,0.0
+human,Under the Boardwalk,3,1,-0.0
+ai,Under the Boardwalk,3,1,-0.0
+human,"Vendetta: No Conscience, No Mercy",3,5,2.321928094887362
+ai,"Vendetta: No Conscience, No Mercy",3,1,-0.0
+human,Violent Shit III: Infantry of Doom,1,0,0.0
+ai,Violent Shit III: Infantry of Doom,3,4,2.0
+human,Vital,3,1,-0.0
+ai,Vital,7,1,-0.0
+human,Walking Back,4,6,2.5216406363433186
+ai,Walking Back,1,1,-0.0
+human,Watch Me When I Kill,2,4,1.974937501201927
+ai,Watch Me When I Kill,0,0,0.0
+human,Welt Spiegel Kino,0,0,0.0
+ai,Welt Spiegel Kino,4,5,2.25
+human,When Ocean Meets Sky,2,2,1.0
+ai,When Ocean Meets Sky,4,1,-0.0
+human,Where the Lilies Bloom,3,3,1.584962500721156
+ai,Where the Lilies Bloom,3,2,1.0
+human,Where the Sidewalk Ends,1,0,0.0
+ai,Where the Sidewalk Ends,4,4,2.0
+human,Whole New Thing,2,0,0.0
+ai,Whole New Thing,5,1,-0.0
+human,Wind River,2,4,2.0
+ai,Wind River,6,2,0.8112781244591328
+human,Witchcraft,3,4,1.9219280948873625
+ai,Witchcraft,5,4,2.0
+human,Xanadu,4,4,1.9502120649147463
+ai,Xanadu,2,3,1.584962500721156
+human,Xue fu rong,2,5,2.281036112553424
+ai,Xue fu rong,3,3,1.584962500721156
+human,Zatoichi and the Chess Expert,1,3,1.584962500721156
+ai,Zatoichi and the Chess Expert,3,1,-0.0
+human,Zelary,1,0,0.0
+ai,Zelary,4,1,-0.0

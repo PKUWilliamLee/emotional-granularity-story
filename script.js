@@ -193,6 +193,7 @@ const els = {
 
 function init() {
   renderScenario();
+  renderDataStory();
   els.shuffleScenario.addEventListener("click", shuffleScenario);
   els.scenarioEn.addEventListener("click", () => setScenarioLanguage("en"));
   els.scenarioZh.addEventListener("click", () => setScenarioLanguage("zh"));
@@ -433,6 +434,610 @@ function countWordLikeUnits(text) {
 
 function clamp(value, min, max) {
   return Math.min(max, Math.max(min, value));
+}
+
+const dataFiles = {
+  wordMap: "assets/data/vocabulary/word_map.json",
+  entropy: "assets/data/books/entropy_nrc_plot.json",
+  trends: "assets/data/books/word_trends_hybrid.csv",
+  redditFunnel: "assets/data/reddit/coverage_funnel.json",
+  redditTier: "assets/data/reddit/tier_usage.json",
+  redditSummary: "assets/data/reddit/validation_summary.json",
+  concentration: "assets/data/ai-human/fig_1_concentration.csv",
+  tierComposition: "assets/data/ai-human/fig_6_tier_composition.csv",
+  signatureWords: "assets/data/ai-human/fig_4_signature_words.csv",
+  nrcComposition: "assets/data/ai-human/fig_5_nrc_composition.csv"
+};
+
+async function renderDataStory() {
+  try {
+    const [
+      wordMap,
+      entropy,
+      trends,
+      redditFunnel,
+      redditTier,
+      redditSummary,
+      concentration,
+      tierComposition,
+      signatureWords,
+      nrcComposition
+    ] = await Promise.all([
+      loadJson(dataFiles.wordMap),
+      loadJson(dataFiles.entropy),
+      loadCsv(dataFiles.trends),
+      loadJson(dataFiles.redditFunnel),
+      loadJson(dataFiles.redditTier),
+      loadJson(dataFiles.redditSummary),
+      loadCsv(dataFiles.concentration),
+      loadCsv(dataFiles.tierComposition),
+      loadCsv(dataFiles.signatureWords),
+      loadCsv(dataFiles.nrcComposition)
+    ]);
+
+    renderWordMap(wordMap);
+    renderEntropyChart(entropy);
+    renderWordTrendChart(trends);
+    renderRedditFunnel(redditFunnel, redditSummary);
+    renderRedditTierChart(redditTier);
+    renderConcentrationChart(concentration);
+    renderTierCompositionChart(tierComposition);
+    renderSignatureWordsChart(signatureWords);
+    renderNrcChart(nrcComposition);
+  } catch (error) {
+    document.querySelectorAll(".chart-frame > div:last-child").forEach((chart) => {
+      if (!chart.children.length) {
+        chart.innerHTML = '<p class="chart-error">Local data could not be loaded. Open this site through http://localhost:3000 instead of opening index.html directly, then refresh.</p>';
+      }
+    });
+  }
+}
+
+async function loadJson(path) {
+  const response = await fetch(path);
+  if (!response.ok) throw new Error(`Could not load ${path}`);
+  return response.json();
+}
+
+async function loadCsv(path) {
+  const response = await fetch(path);
+  if (!response.ok) throw new Error(`Could not load ${path}`);
+  return parseCsv(await response.text());
+}
+
+function parseCsv(text) {
+  const rows = [];
+  let row = [];
+  let cell = "";
+  let inQuotes = false;
+
+  for (let i = 0; i < text.length; i += 1) {
+    const char = text[i];
+    const next = text[i + 1];
+
+    if (char === '"' && inQuotes && next === '"') {
+      cell += '"';
+      i += 1;
+    } else if (char === '"') {
+      inQuotes = !inQuotes;
+    } else if (char === "," && !inQuotes) {
+      row.push(cell);
+      cell = "";
+    } else if ((char === "\n" || char === "\r") && !inQuotes) {
+      if (char === "\r" && next === "\n") i += 1;
+      row.push(cell);
+      if (row.some((value) => value !== "")) rows.push(row);
+      row = [];
+      cell = "";
+    } else {
+      cell += char;
+    }
+  }
+
+  if (cell || row.length) {
+    row.push(cell);
+    rows.push(row);
+  }
+
+  const headers = rows.shift() || [];
+  return rows.map((values) => Object.fromEntries(headers.map((header, index) => [header, values[index] ?? ""])));
+}
+
+function renderWordMap(words) {
+  const container = document.querySelector("#wordMapChart");
+  if (!container) return;
+  container.innerHTML = "";
+
+  const data = words.filter((word) => word.word && Number.isFinite(Number(word.x)) && Number.isFinite(Number(word.y)));
+  const width = 1200;
+  const height = 760;
+  const padding = 64;
+  const xs = data.map((word) => Number(word.x));
+  const ys = data.map((word) => Number(word.y));
+  const changes = data.map((word) => Number(word.pct_change)).filter(Number.isFinite);
+  const bounds = {
+    minX: Math.min(...xs),
+    maxX: Math.max(...xs),
+    minY: Math.min(...ys),
+    maxY: Math.max(...ys)
+  };
+  const negative = changes.filter((value) => value < 0).sort((a, b) => a - b);
+  const positive = changes.filter((value) => value >= 0).sort((a, b) => a - b);
+  const low = quantile(negative, 0.05) ?? -1;
+  const high = quantile(positive, 0.95) ?? 1;
+
+  const svg = createSvg("svg");
+  svg.setAttribute("viewBox", `0 0 ${width} ${height}`);
+  svg.setAttribute("role", "img");
+  svg.setAttribute("aria-label", `Zoomable semantic map of ${data.length} emotion words`);
+
+  const layer = createSvg("g");
+  const axisX = createSvg("line");
+  axisX.setAttribute("class", "map-axis");
+  axisX.setAttribute("x1", "0");
+  axisX.setAttribute("x2", String(width));
+  axisX.setAttribute("y1", String(height / 2));
+  axisX.setAttribute("y2", String(height / 2));
+  const axisY = createSvg("line");
+  axisY.setAttribute("class", "map-axis");
+  axisY.setAttribute("x1", String(width / 2));
+  axisY.setAttribute("x2", String(width / 2));
+  axisY.setAttribute("y1", "0");
+  axisY.setAttribute("y2", String(height));
+  layer.append(axisX, axisY);
+
+  const tooltip = document.createElement("div");
+  tooltip.className = "word-map-tooltip";
+  container.append(svg, tooltip);
+
+  const nodes = data.map((word) => {
+    const tier = getTier(word);
+    const node = createSvg("text");
+    const x = scale(Number(word.x), bounds.minX, bounds.maxX, padding, width - padding);
+    const y = scale(Number(word.y), bounds.minY, bounds.maxY, height - padding, padding);
+    const change = Number(word.pct_change);
+    node.classList.add("map-word");
+    node.dataset.word = word.word.toLowerCase();
+    node.dataset.tier = String(tier);
+    node.setAttribute("x", x.toFixed(2));
+    node.setAttribute("y", y.toFixed(2));
+    node.setAttribute("font-size", String(tier === 3 ? 13 : tier === 2 ? 12 : 11));
+    node.setAttribute("fill", trendColor(change, low, high));
+    node.textContent = word.word;
+    node.addEventListener("pointerenter", (event) => showWordTooltip(event, tooltip, word, tier, change));
+    node.addEventListener("pointermove", (event) => positionWordTooltip(event, tooltip));
+    node.addEventListener("pointerleave", () => tooltip.classList.remove("visible"));
+    layer.appendChild(node);
+    return { node, word, x, y };
+  });
+
+  svg.appendChild(layer);
+
+  const state = { scale: 1, x: 0, y: 0, dragging: false, startX: 0, startY: 0, originX: 0, originY: 0 };
+  const applyTransform = () => {
+    layer.setAttribute("transform", `translate(${state.x} ${state.y}) scale(${state.scale})`);
+  };
+  const zoomAt = (factor, centerX = container.clientWidth / 2, centerY = container.clientHeight / 2) => {
+    const nextScale = clamp(state.scale * factor, 0.55, 8);
+    const ratio = nextScale / state.scale;
+    state.x = centerX - (centerX - state.x) * ratio;
+    state.y = centerY - (centerY - state.y) * ratio;
+    state.scale = nextScale;
+    applyTransform();
+  };
+
+  container.addEventListener("wheel", (event) => {
+    event.preventDefault();
+    const rect = container.getBoundingClientRect();
+    zoomAt(event.deltaY < 0 ? 1.16 : 0.86, event.clientX - rect.left, event.clientY - rect.top);
+  }, { passive: false });
+
+  container.addEventListener("pointerdown", (event) => {
+    state.dragging = true;
+    state.startX = event.clientX;
+    state.startY = event.clientY;
+    state.originX = state.x;
+    state.originY = state.y;
+    container.setPointerCapture(event.pointerId);
+  });
+
+  container.addEventListener("pointermove", (event) => {
+    if (!state.dragging) return;
+    state.x = state.originX + event.clientX - state.startX;
+    state.y = state.originY + event.clientY - state.startY;
+    applyTransform();
+  });
+
+  container.addEventListener("pointerup", (event) => {
+    state.dragging = false;
+    if (container.hasPointerCapture(event.pointerId)) container.releasePointerCapture(event.pointerId);
+  });
+
+  container.addEventListener("pointercancel", () => {
+    state.dragging = false;
+  });
+
+  const resetMap = () => {
+    state.scale = 1;
+    state.x = 0;
+    state.y = 0;
+    applyTransform();
+  };
+
+  document.querySelector("#wordMapZoomIn")?.addEventListener("click", () => zoomAt(1.28));
+  document.querySelector("#wordMapZoomOut")?.addEventListener("click", () => zoomAt(0.78));
+  document.querySelector("#wordMapReset")?.addEventListener("click", resetMap);
+
+  const search = document.querySelector("#wordMapSearch");
+  search?.addEventListener("input", () => {
+    const query = search.value.trim().toLowerCase();
+    let match = null;
+    nodes.forEach((item) => {
+      const isMatch = Boolean(query && item.word.word.toLowerCase().includes(query));
+      item.node.classList.toggle("is-highlighted", isMatch);
+      item.node.classList.toggle("is-dimmed", Boolean(query && !isMatch));
+      if (!match && isMatch) match = item;
+    });
+
+    if (match) {
+      state.scale = Math.max(state.scale, 2.5);
+      state.x = container.clientWidth / 2 - match.x * state.scale;
+      state.y = container.clientHeight / 2 - match.y * state.scale;
+      applyTransform();
+    } else if (!query) {
+      nodes.forEach((item) => item.node.classList.remove("is-dimmed", "is-highlighted"));
+    }
+  });
+
+  if (window.lucide) {
+    window.lucide.createIcons();
+  }
+}
+
+function getTier(word) {
+  const tierLabel = Array.isArray(word.emotions) ? word.emotions.find((label) => /^Tier/.test(label)) : "";
+  const tier = Number((tierLabel || "").replace(/\D/g, ""));
+  return tier || 1;
+}
+
+function createSvg(tagName) {
+  return document.createElementNS("http://www.w3.org/2000/svg", tagName);
+}
+
+function trendColor(value, low, high) {
+  if (!Number.isFinite(value)) return "#8a8578";
+  if (value < 0) {
+    const amount = clamp(Math.abs(value / low), 0, 1);
+    return mixHex("#d8d3c6", "#b33b32", amount);
+  }
+  const amount = clamp(value / high, 0, 1);
+  return mixHex("#d8d3c6", "#2d8f69", amount);
+}
+
+function mixHex(from, to, amount) {
+  const a = hexToRgb(from);
+  const b = hexToRgb(to);
+  const rgb = a.map((channel, index) => Math.round(channel + (b[index] - channel) * amount));
+  return `rgb(${rgb[0]}, ${rgb[1]}, ${rgb[2]})`;
+}
+
+function hexToRgb(hex) {
+  const clean = hex.replace("#", "");
+  return [0, 2, 4].map((start) => parseInt(clean.slice(start, start + 2), 16));
+}
+
+function quantile(values, q) {
+  if (!values.length) return null;
+  const position = (values.length - 1) * q;
+  const base = Math.floor(position);
+  const rest = position - base;
+  return values[base + 1] === undefined ? values[base] : values[base] + rest * (values[base + 1] - values[base]);
+}
+
+function showWordTooltip(event, tooltip, word, tier, change) {
+  const emotions = Array.isArray(word.emotions) ? word.emotions.filter((label) => !/^Tier/.test(label)).join(", ") : "";
+  tooltip.innerHTML = `<strong>${escapeHtml(word.word)}</strong>Tier ${tier}${emotions ? ` · ${escapeHtml(emotions)}` : ""}<br>Trend: ${formatSigned(change)}%`;
+  tooltip.classList.add("visible");
+  positionWordTooltip(event, tooltip);
+}
+
+function positionWordTooltip(event, tooltip) {
+  const rect = tooltip.parentElement.getBoundingClientRect();
+  tooltip.style.left = `${event.clientX - rect.left}px`;
+  tooltip.style.top = `${event.clientY - rect.top}px`;
+}
+
+function escapeHtml(value) {
+  return String(value)
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#039;");
+}
+
+function renderEntropyChart(rows) {
+  const container = document.querySelector("#entropyChart");
+  if (!container) return;
+  container.innerHTML = "";
+  const grouped = groupBy(rows, "emotion");
+  const emotionOrder = ["joy", "trust", "disgust", "sadness", "anger", "fear", "anticipation", "surprise"];
+
+  emotionOrder.forEach((emotion) => {
+    const points = (grouped[emotion] || []).sort((a, b) => Number(a.decade) - Number(b.decade));
+    if (!points.length) return;
+    const row = document.createElement("div");
+    row.className = "spark-row";
+
+    const label = document.createElement("span");
+    label.className = "spark-name";
+    label.textContent = emotion;
+
+    const track = document.createElement("div");
+    track.className = "spark-track";
+    const line = document.createElement("div");
+    line.className = "spark-line";
+    line.appendChild(createSparkline(points.map((point) => Number(point.index)), 88, 106));
+    track.appendChild(line);
+
+    const value = document.createElement("span");
+    value.className = "spark-value";
+    const change = Number(points.at(-1).index) - Number(points[0].index);
+    value.textContent = `${formatSigned(change)} pts`;
+
+    row.append(label, track, value);
+    container.appendChild(row);
+  });
+}
+
+function createSparkline(values, min, max) {
+  const svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+  svg.setAttribute("viewBox", "0 0 100 30");
+  svg.setAttribute("preserveAspectRatio", "none");
+  const path = document.createElementNS("http://www.w3.org/2000/svg", "path");
+  const d = values.map((value, index) => {
+    const x = scale(index, 0, values.length - 1, 4, 96);
+    const y = scale(value, min, max, 25, 5);
+    return `${index ? "L" : "M"} ${x.toFixed(2)} ${y.toFixed(2)}`;
+  }).join(" ");
+  path.setAttribute("d", d);
+  svg.appendChild(path);
+  return svg;
+}
+
+function renderWordTrendChart(rows) {
+  const container = document.querySelector("#wordTrendChart");
+  if (!container) return;
+  container.innerHTML = "";
+  const parsed = rows.map((row) => ({ word: row.Phrase, pct: Number(row.pct_change) })).filter((row) => Number.isFinite(row.pct));
+  const rising = parsed.sort((a, b) => b.pct - a.pct).slice(0, 6);
+  const falling = [...parsed].sort((a, b) => a.pct - b.pct).slice(0, 6);
+
+  container.appendChild(createTrendLane("Rising words", rising, "rising"));
+  container.appendChild(createTrendLane("Falling words", falling, "falling"));
+}
+
+function createTrendLane(title, words, className) {
+  const lane = document.createElement("div");
+  lane.className = `trend-lane ${className}`;
+  const heading = document.createElement("h4");
+  heading.textContent = title;
+  lane.appendChild(heading);
+  words.forEach((word) => {
+    const chip = document.createElement("div");
+    chip.className = "trend-chip";
+    const label = document.createElement("span");
+    label.textContent = word.word;
+    const value = document.createElement("span");
+    value.textContent = `${formatSigned(word.pct)}%`;
+    chip.append(label, value);
+    lane.appendChild(chip);
+  });
+  return lane;
+}
+
+function renderRedditFunnel(funnel, summary) {
+  const container = document.querySelector("#redditFunnelChart");
+  if (!container) return;
+  container.innerHTML = "";
+  const total = Number(summary.n_emotional) || Number(funnel[0]?.count) || 1;
+  const rows = [
+    { label: "Emotional comments", count: total, color: "var(--sky)" },
+    { label: "With dictionary word", count: Number(funnel[1]?.count) || 0, color: "var(--mint)" },
+    { label: "No dictionary word", count: total - (Number(funnel[1]?.count) || 0), color: "var(--violet)" }
+  ];
+
+  rows.forEach((row) => {
+    container.appendChild(createHorizontalBar("funnel", row.label, row.count, total, row.color, `${formatNumber(row.count)} comments`));
+  });
+}
+
+function renderRedditTierChart(rows) {
+  const container = document.querySelector("#redditTierChart");
+  if (!container) return;
+  container.innerHTML = "";
+  rows.forEach((row) => {
+    container.appendChild(createHorizontalBar("bar", `Tier ${row.tier}`, Number(row.share_pct), 100, tierColor(Number(row.tier)), `${Number(row.share_pct).toFixed(2)}%`));
+  });
+}
+
+function renderConcentrationChart(rows) {
+  const container = document.querySelector("#concentrationChart");
+  if (!container) return;
+  container.innerHTML = "";
+  rows.forEach((row) => {
+    const side = row.side || row[""];
+    const card = document.createElement("article");
+    card.className = "comparison-card";
+    const title = document.createElement("h4");
+    title.textContent = side;
+    const number = document.createElement("div");
+    number.className = "comparison-number";
+    number.textContent = Number(row.distinct_types).toFixed(0);
+    const copy = document.createElement("p");
+    copy.textContent = `${percent(row.top10_share)} of tokens come from the top 10 words; Gini = ${Number(row.gini).toFixed(2)}.`;
+    card.append(title, number, copy);
+    container.appendChild(card);
+  });
+}
+
+function renderTierCompositionChart(rows) {
+  const container = document.querySelector("#tierCompositionChart");
+  if (!container) return;
+  container.innerHTML = "";
+  const sides = ["human", "ai"];
+  sides.forEach((side) => {
+    const row = document.createElement("div");
+    row.className = "stack-row";
+    const label = document.createElement("span");
+    label.className = "stack-label";
+    label.textContent = side;
+    const track = document.createElement("div");
+    track.className = "stack-track";
+
+    rows.forEach((item) => {
+      const share = Number(item[`${side}_share`]);
+      const segment = document.createElement("span");
+      segment.className = "stack-segment";
+      segment.style.setProperty("--w", `${share * 100}%`);
+      segment.style.setProperty("--fill", tierColor(Number(item.tier)));
+      segment.textContent = `${Math.round(share * 100)}%`;
+      segment.title = `Tier ${item.tier}: ${percent(share)}`;
+      track.appendChild(segment);
+    });
+
+    row.append(label, track);
+    container.appendChild(row);
+  });
+}
+
+function renderSignatureWordsChart(rows) {
+  const container = document.querySelector("#signatureWordsChart");
+  if (!container) return;
+  container.innerHTML = "";
+  const parsed = rows
+    .filter((row) => row.in_figure === "True")
+    .map((row) => ({ word: row.word, bias: Number(row.log2_ai_over_human), tier: Number(row.tier) }))
+    .filter((row) => Number.isFinite(row.bias));
+  const human = parsed.filter((row) => row.bias < 0).sort((a, b) => a.bias - b.bias).slice(0, 8);
+  const ai = parsed.filter((row) => row.bias > 0).sort((a, b) => b.bias - a.bias).slice(0, 8);
+
+  container.appendChild(createSignatureSide("More human", human, "var(--sky)"));
+  container.appendChild(createSignatureSide("More AI", ai, "var(--lemon)"));
+}
+
+function createSignatureSide(title, words, color) {
+  const side = document.createElement("div");
+  side.className = "signature-side";
+  const heading = document.createElement("h4");
+  heading.textContent = title;
+  side.appendChild(heading);
+  const max = Math.max(...words.map((word) => Math.abs(word.bias)), 1);
+
+  words.forEach((word) => {
+    const row = document.createElement("div");
+    row.className = "word-bias";
+    const label = document.createElement("span");
+    label.textContent = word.word;
+    const track = document.createElement("div");
+    track.className = "bias-track";
+    const fill = document.createElement("div");
+    fill.className = "bias-fill";
+    fill.style.setProperty("--w", `${scale(Math.abs(word.bias), 0, max, 12, 100)}%`);
+    fill.style.setProperty("--fill", color);
+    track.appendChild(fill);
+    const value = document.createElement("span");
+    value.textContent = word.bias.toFixed(1);
+    row.append(label, track, value);
+    side.appendChild(row);
+  });
+
+  return side;
+}
+
+function renderNrcChart(rows) {
+  const container = document.querySelector("#nrcChart");
+  if (!container) return;
+  container.innerHTML = "";
+  rows.forEach((row) => {
+    const wrapper = document.createElement("div");
+    wrapper.className = "nrc-row";
+    const name = document.createElement("span");
+    name.className = "nrc-name";
+    name.textContent = row.nrc_category;
+    const pair = document.createElement("div");
+    pair.className = "nrc-pair";
+    pair.appendChild(createMiniTrack(Number(row.human_share), "Human", "var(--sky)"));
+    pair.appendChild(createMiniTrack(Number(row.ai_share), "AI", "var(--coral)"));
+    wrapper.append(name, pair);
+    container.appendChild(wrapper);
+  });
+}
+
+function createMiniTrack(share, label, color) {
+  const track = document.createElement("div");
+  track.className = "nrc-track";
+  track.title = `${label}: ${percent(share)}`;
+  const fill = document.createElement("div");
+  fill.className = "nrc-fill";
+  fill.style.setProperty("--w", `${share * 100}%`);
+  fill.style.setProperty("--fill", color);
+  track.appendChild(fill);
+  return track;
+}
+
+function createHorizontalBar(type, labelText, value, max, color, valueText) {
+  const row = document.createElement("div");
+  row.className = `${type}-step`;
+  const label = document.createElement("span");
+  label.className = `${type === "funnel" ? "funnel" : "bar"}-label`;
+  label.textContent = labelText;
+  const track = document.createElement("div");
+  track.className = `${type === "funnel" ? "funnel" : "bar"}-track`;
+  const fill = document.createElement("div");
+  fill.className = `${type === "funnel" ? "funnel" : "bar"}-fill`;
+  fill.style.setProperty("--w", `${scale(value, 0, max, 0, 100)}%`);
+  fill.style.setProperty("--fill", color);
+  track.appendChild(fill);
+  const text = document.createElement("span");
+  text.className = `${type === "funnel" ? "funnel" : "bar"}-value`;
+  text.textContent = valueText;
+  row.append(label, track, text);
+  return row;
+}
+
+function groupBy(rows, key) {
+  return rows.reduce((groups, row) => {
+    const value = row[key];
+    groups[value] = groups[value] || [];
+    groups[value].push(row);
+    return groups;
+  }, {});
+}
+
+function scale(value, inputMin, inputMax, outputMin, outputMax) {
+  if (inputMax === inputMin) return (outputMin + outputMax) / 2;
+  return outputMin + ((value - inputMin) / (inputMax - inputMin)) * (outputMax - outputMin);
+}
+
+function tierColor(tier) {
+  if (tier === 0) return "var(--violet)";
+  if (tier === 1) return "var(--lemon)";
+  if (tier === 2) return "var(--sky)";
+  return "var(--coral)";
+}
+
+function formatNumber(value) {
+  return new Intl.NumberFormat("en-US").format(Math.round(value));
+}
+
+function formatSigned(value) {
+  const rounded = Math.abs(value) >= 100 ? Math.round(value) : Number(value).toFixed(1);
+  return `${value >= 0 ? "+" : "-"}${String(rounded).replace("-", "")}`;
+}
+
+function percent(value) {
+  return `${(Number(value) * 100).toFixed(1)}%`;
 }
 
 init();

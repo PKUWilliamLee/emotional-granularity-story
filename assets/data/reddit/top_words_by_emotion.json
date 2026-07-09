@@ -1,0 +1,5307 @@
+{
+  "admiration": {
+    "n_comments": 5122,
+    "reliable": true,
+    "top_by_frequency": [
+      {
+        "word": "love",
+        "tier": 1,
+        "freq": 316,
+        "pct_of_emotion": 25.42,
+        "log_odds": 0.18
+      },
+      {
+        "word": "appreciate",
+        "tier": 1,
+        "freq": 152,
+        "pct_of_emotion": 12.23,
+        "log_odds": 2.208
+      },
+      {
+        "word": "glad",
+        "tier": 1,
+        "freq": 79,
+        "pct_of_emotion": 6.36,
+        "log_odds": 0.28
+      },
+      {
+        "word": "hope",
+        "tier": 1,
+        "freq": 77,
+        "pct_of_emotion": 6.19,
+        "log_odds": -0.342
+      },
+      {
+        "word": "happy",
+        "tier": 1,
+        "freq": 67,
+        "pct_of_emotion": 5.39,
+        "log_odds": -0.112
+      },
+      {
+        "word": "sweet",
+        "tier": 1,
+        "freq": 58,
+        "pct_of_emotion": 4.67,
+        "log_odds": 1.789
+      },
+      {
+        "word": "bad",
+        "tier": 1,
+        "freq": 53,
+        "pct_of_emotion": 4.26,
+        "log_odds": -0.854
+      },
+      {
+        "word": "proud",
+        "tier": 1,
+        "freq": 44,
+        "pct_of_emotion": 3.54,
+        "log_odds": 1.534
+      },
+      {
+        "word": "crazy",
+        "tier": 1,
+        "freq": 26,
+        "pct_of_emotion": 2.09,
+        "log_odds": 0.382
+      },
+      {
+        "word": "hate",
+        "tier": 1,
+        "freq": 19,
+        "pct_of_emotion": 1.53,
+        "log_odds": -1.048
+      },
+      {
+        "word": "miss",
+        "tier": 1,
+        "freq": 16,
+        "pct_of_emotion": 1.29,
+        "log_odds": -0.619
+      },
+      {
+        "word": "sad",
+        "tier": 1,
+        "freq": 13,
+        "pct_of_emotion": 1.05,
+        "log_odds": -1.06
+      },
+      {
+        "word": "awful",
+        "tier": 1,
+        "freq": 12,
+        "pct_of_emotion": 0.97,
+        "log_odds": -0.234
+      },
+      {
+        "word": "alone",
+        "tier": 1,
+        "freq": 11,
+        "pct_of_emotion": 0.88,
+        "log_odds": -0.063
+      },
+      {
+        "word": "jealous",
+        "tier": 1,
+        "freq": 11,
+        "pct_of_emotion": 0.88,
+        "log_odds": 1.118
+      }
+    ],
+    "top_by_distinctiveness": [
+      {
+        "word": "appreciate",
+        "tier": 1,
+        "freq": 152,
+        "pct_of_emotion": 12.23,
+        "log_odds": 2.208
+      },
+      {
+        "word": "sweet",
+        "tier": 1,
+        "freq": 58,
+        "pct_of_emotion": 4.67,
+        "log_odds": 1.789
+      },
+      {
+        "word": "proud",
+        "tier": 1,
+        "freq": 44,
+        "pct_of_emotion": 3.54,
+        "log_odds": 1.534
+      },
+      {
+        "word": "petty",
+        "tier": 1,
+        "freq": 6,
+        "pct_of_emotion": 0.48,
+        "log_odds": 1.183
+      },
+      {
+        "word": "jealous",
+        "tier": 1,
+        "freq": 11,
+        "pct_of_emotion": 0.88,
+        "log_odds": 1.118
+      },
+      {
+        "word": "dark",
+        "tier": 1,
+        "freq": 10,
+        "pct_of_emotion": 0.8,
+        "log_odds": 0.594
+      },
+      {
+        "word": "content",
+        "tier": 1,
+        "freq": 6,
+        "pct_of_emotion": 0.48,
+        "log_odds": 0.547
+      },
+      {
+        "word": "crazy",
+        "tier": 1,
+        "freq": 26,
+        "pct_of_emotion": 2.09,
+        "log_odds": 0.382
+      },
+      {
+        "word": "glad",
+        "tier": 1,
+        "freq": 79,
+        "pct_of_emotion": 6.36,
+        "log_odds": 0.28
+      },
+      {
+        "word": "loving",
+        "tier": 1,
+        "freq": 7,
+        "pct_of_emotion": 0.56,
+        "log_odds": 0.213
+      },
+      {
+        "word": "love",
+        "tier": 1,
+        "freq": 316,
+        "pct_of_emotion": 25.42,
+        "log_odds": 0.18
+      },
+      {
+        "word": "alive",
+        "tier": 1,
+        "freq": 5,
+        "pct_of_emotion": 0.4,
+        "log_odds": 0.169
+      },
+      {
+        "word": "mad",
+        "tier": 1,
+        "freq": 8,
+        "pct_of_emotion": 0.64,
+        "log_odds": 0.082
+      },
+      {
+        "word": "alone",
+        "tier": 1,
+        "freq": 11,
+        "pct_of_emotion": 0.88,
+        "log_odds": -0.063
+      },
+      {
+        "word": "crap",
+        "tier": 1,
+        "freq": 5,
+        "pct_of_emotion": 0.4,
+        "log_odds": -0.111
+      }
+    ]
+  },
+  "approval": {
+    "n_comments": 3687,
+    "reliable": true,
+    "top_by_frequency": [
+      {
+        "word": "love",
+        "tier": 1,
+        "freq": 110,
+        "pct_of_emotion": 16.13,
+        "log_odds": -0.388
+      },
+      {
+        "word": "bad",
+        "tier": 1,
+        "freq": 76,
+        "pct_of_emotion": 11.14,
+        "log_odds": 0.071
+      },
+      {
+        "word": "glad",
+        "tier": 1,
+        "freq": 29,
+        "pct_of_emotion": 4.25,
+        "log_odds": -0.231
+      },
+      {
+        "word": "happy",
+        "tier": 1,
+        "freq": 29,
+        "pct_of_emotion": 4.25,
+        "log_odds": -0.432
+      },
+      {
+        "word": "hope",
+        "tier": 1,
+        "freq": 28,
+        "pct_of_emotion": 4.11,
+        "log_odds": -0.83
+      },
+      {
+        "word": "hate",
+        "tier": 1,
+        "freq": 21,
+        "pct_of_emotion": 3.08,
+        "log_odds": -0.396
+      },
+      {
+        "word": "worry",
+        "tier": 1,
+        "freq": 18,
+        "pct_of_emotion": 2.64,
+        "log_odds": 0.645
+      },
+      {
+        "word": "appreciate",
+        "tier": 1,
+        "freq": 16,
+        "pct_of_emotion": 2.35,
+        "log_odds": -0.005
+      },
+      {
+        "word": "sweet",
+        "tier": 1,
+        "freq": 11,
+        "pct_of_emotion": 1.61,
+        "log_odds": 0.359
+      },
+      {
+        "word": "crazy",
+        "tier": 1,
+        "freq": 11,
+        "pct_of_emotion": 1.61,
+        "log_odds": 0.028
+      },
+      {
+        "word": "lost",
+        "tier": 1,
+        "freq": 11,
+        "pct_of_emotion": 1.61,
+        "log_odds": 0.298
+      },
+      {
+        "word": "sad",
+        "tier": 1,
+        "freq": 10,
+        "pct_of_emotion": 1.47,
+        "log_odds": -0.767
+      },
+      {
+        "word": "miss",
+        "tier": 1,
+        "freq": 10,
+        "pct_of_emotion": 1.47,
+        "log_odds": -0.537
+      },
+      {
+        "word": "safe",
+        "tier": 1,
+        "freq": 10,
+        "pct_of_emotion": 1.47,
+        "log_odds": 0.698
+      },
+      {
+        "word": "alone",
+        "tier": 1,
+        "freq": 8,
+        "pct_of_emotion": 1.17,
+        "log_odds": 0.164
+      }
+    ],
+    "top_by_distinctiveness": [
+      {
+        "word": "prepared",
+        "tier": 1,
+        "freq": 5,
+        "pct_of_emotion": 0.73,
+        "log_odds": 1.763
+      },
+      {
+        "word": "alive",
+        "tier": 1,
+        "freq": 7,
+        "pct_of_emotion": 1.03,
+        "log_odds": 1.069
+      },
+      {
+        "word": "safe",
+        "tier": 1,
+        "freq": 10,
+        "pct_of_emotion": 1.47,
+        "log_odds": 0.698
+      },
+      {
+        "word": "worry",
+        "tier": 1,
+        "freq": 18,
+        "pct_of_emotion": 2.64,
+        "log_odds": 0.645
+      },
+      {
+        "word": "interested",
+        "tier": 1,
+        "freq": 7,
+        "pct_of_emotion": 1.03,
+        "log_odds": 0.616
+      },
+      {
+        "word": "loving",
+        "tier": 1,
+        "freq": 6,
+        "pct_of_emotion": 0.88,
+        "log_odds": 0.607
+      },
+      {
+        "word": "regret",
+        "tier": 1,
+        "freq": 6,
+        "pct_of_emotion": 0.88,
+        "log_odds": 0.579
+      },
+      {
+        "word": "dark",
+        "tier": 1,
+        "freq": 5,
+        "pct_of_emotion": 0.73,
+        "log_odds": 0.426
+      },
+      {
+        "word": "sweet",
+        "tier": 1,
+        "freq": 11,
+        "pct_of_emotion": 1.61,
+        "log_odds": 0.359
+      },
+      {
+        "word": "lost",
+        "tier": 1,
+        "freq": 11,
+        "pct_of_emotion": 1.61,
+        "log_odds": 0.298
+      },
+      {
+        "word": "worried",
+        "tier": 1,
+        "freq": 6,
+        "pct_of_emotion": 0.88,
+        "log_odds": 0.19
+      },
+      {
+        "word": "alone",
+        "tier": 1,
+        "freq": 8,
+        "pct_of_emotion": 1.17,
+        "log_odds": 0.164
+      },
+      {
+        "word": "bad",
+        "tier": 1,
+        "freq": 76,
+        "pct_of_emotion": 11.14,
+        "log_odds": 0.071
+      },
+      {
+        "word": "crazy",
+        "tier": 1,
+        "freq": 11,
+        "pct_of_emotion": 1.61,
+        "log_odds": 0.028
+      },
+      {
+        "word": "appreciate",
+        "tier": 1,
+        "freq": 16,
+        "pct_of_emotion": 2.35,
+        "log_odds": -0.005
+      }
+    ]
+  },
+  "gratitude": {
+    "n_comments": 3372,
+    "reliable": true,
+    "top_by_frequency": [
+      {
+        "word": "appreciate",
+        "tier": 1,
+        "freq": 127,
+        "pct_of_emotion": 16.45,
+        "log_odds": 2.348
+      },
+      {
+        "word": "glad",
+        "tier": 1,
+        "freq": 118,
+        "pct_of_emotion": 15.28,
+        "log_odds": 1.181
+      },
+      {
+        "word": "love",
+        "tier": 1,
+        "freq": 94,
+        "pct_of_emotion": 12.18,
+        "log_odds": -0.658
+      },
+      {
+        "word": "hope",
+        "tier": 1,
+        "freq": 70,
+        "pct_of_emotion": 9.07,
+        "log_odds": 0.0
+      },
+      {
+        "word": "happy",
+        "tier": 1,
+        "freq": 64,
+        "pct_of_emotion": 8.29,
+        "log_odds": 0.282
+      },
+      {
+        "word": "bad",
+        "tier": 1,
+        "freq": 30,
+        "pct_of_emotion": 3.89,
+        "log_odds": -0.989
+      },
+      {
+        "word": "hate",
+        "tier": 1,
+        "freq": 22,
+        "pct_of_emotion": 2.85,
+        "log_odds": -0.457
+      },
+      {
+        "word": "alone",
+        "tier": 1,
+        "freq": 15,
+        "pct_of_emotion": 1.94,
+        "log_odds": 0.707
+      },
+      {
+        "word": "thankful",
+        "tier": 2,
+        "freq": 12,
+        "pct_of_emotion": 1.55,
+        "log_odds": 3.689
+      },
+      {
+        "word": "sweet",
+        "tier": 1,
+        "freq": 12,
+        "pct_of_emotion": 1.55,
+        "log_odds": 0.341
+      },
+      {
+        "word": "miss",
+        "tier": 1,
+        "freq": 11,
+        "pct_of_emotion": 1.42,
+        "log_odds": -0.552
+      },
+      {
+        "word": "worry",
+        "tier": 1,
+        "freq": 9,
+        "pct_of_emotion": 1.17,
+        "log_odds": -0.177
+      },
+      {
+        "word": "content",
+        "tier": 1,
+        "freq": 7,
+        "pct_of_emotion": 0.91,
+        "log_odds": 1.157
+      },
+      {
+        "word": "safe",
+        "tier": 1,
+        "freq": 7,
+        "pct_of_emotion": 0.91,
+        "log_odds": 0.224
+      },
+      {
+        "word": "proud",
+        "tier": 1,
+        "freq": 7,
+        "pct_of_emotion": 0.91,
+        "log_odds": -0.097
+      }
+    ],
+    "top_by_distinctiveness": [
+      {
+        "word": "thankful",
+        "tier": 2,
+        "freq": 12,
+        "pct_of_emotion": 1.55,
+        "log_odds": 3.689
+      },
+      {
+        "word": "appreciate",
+        "tier": 1,
+        "freq": 127,
+        "pct_of_emotion": 16.45,
+        "log_odds": 2.348
+      },
+      {
+        "word": "glad",
+        "tier": 1,
+        "freq": 118,
+        "pct_of_emotion": 15.28,
+        "log_odds": 1.181
+      },
+      {
+        "word": "content",
+        "tier": 1,
+        "freq": 7,
+        "pct_of_emotion": 0.91,
+        "log_odds": 1.157
+      },
+      {
+        "word": "alone",
+        "tier": 1,
+        "freq": 15,
+        "pct_of_emotion": 1.94,
+        "log_odds": 0.707
+      },
+      {
+        "word": "sweet",
+        "tier": 1,
+        "freq": 12,
+        "pct_of_emotion": 1.55,
+        "log_odds": 0.341
+      },
+      {
+        "word": "happy",
+        "tier": 1,
+        "freq": 64,
+        "pct_of_emotion": 8.29,
+        "log_odds": 0.282
+      },
+      {
+        "word": "safe",
+        "tier": 1,
+        "freq": 7,
+        "pct_of_emotion": 0.91,
+        "log_odds": 0.224
+      },
+      {
+        "word": "hope",
+        "tier": 1,
+        "freq": 70,
+        "pct_of_emotion": 9.07,
+        "log_odds": 0.0
+      },
+      {
+        "word": "proud",
+        "tier": 1,
+        "freq": 7,
+        "pct_of_emotion": 0.91,
+        "log_odds": -0.097
+      },
+      {
+        "word": "worry",
+        "tier": 1,
+        "freq": 9,
+        "pct_of_emotion": 1.17,
+        "log_odds": -0.177
+      },
+      {
+        "word": "excited",
+        "tier": 1,
+        "freq": 7,
+        "pct_of_emotion": 0.91,
+        "log_odds": -0.302
+      },
+      {
+        "word": "hate",
+        "tier": 1,
+        "freq": 22,
+        "pct_of_emotion": 2.85,
+        "log_odds": -0.457
+      },
+      {
+        "word": "miss",
+        "tier": 1,
+        "freq": 11,
+        "pct_of_emotion": 1.42,
+        "log_odds": -0.552
+      },
+      {
+        "word": "lost",
+        "tier": 1,
+        "freq": 5,
+        "pct_of_emotion": 0.65,
+        "log_odds": -0.583
+      }
+    ]
+  },
+  "annoyance": {
+    "n_comments": 3093,
+    "reliable": true,
+    "top_by_frequency": [
+      {
+        "word": "bad",
+        "tier": 1,
+        "freq": 133,
+        "pct_of_emotion": 16.79,
+        "log_odds": 0.539
+      },
+      {
+        "word": "hate",
+        "tier": 1,
+        "freq": 100,
+        "pct_of_emotion": 12.63,
+        "log_odds": 1.15
+      },
+      {
+        "word": "love",
+        "tier": 1,
+        "freq": 33,
+        "pct_of_emotion": 4.17,
+        "log_odds": -1.736
+      },
+      {
+        "word": "crazy",
+        "tier": 1,
+        "freq": 23,
+        "pct_of_emotion": 2.9,
+        "log_odds": 0.667
+      },
+      {
+        "word": "horrible",
+        "tier": 1,
+        "freq": 22,
+        "pct_of_emotion": 2.78,
+        "log_odds": 0.893
+      },
+      {
+        "word": "mad",
+        "tier": 1,
+        "freq": 20,
+        "pct_of_emotion": 2.53,
+        "log_odds": 1.528
+      },
+      {
+        "word": "annoyed",
+        "tier": 1,
+        "freq": 19,
+        "pct_of_emotion": 2.4,
+        "log_odds": 3.676
+      },
+      {
+        "word": "awful",
+        "tier": 1,
+        "freq": 19,
+        "pct_of_emotion": 2.4,
+        "log_odds": 0.671
+      },
+      {
+        "word": "crap",
+        "tier": 1,
+        "freq": 17,
+        "pct_of_emotion": 2.15,
+        "log_odds": 1.656
+      },
+      {
+        "word": "insult",
+        "tier": 1,
+        "freq": 15,
+        "pct_of_emotion": 1.89,
+        "log_odds": 1.517
+      },
+      {
+        "word": "shame",
+        "tier": 1,
+        "freq": 15,
+        "pct_of_emotion": 1.89,
+        "log_odds": 0.754
+      },
+      {
+        "word": "hope",
+        "tier": 1,
+        "freq": 14,
+        "pct_of_emotion": 1.77,
+        "log_odds": -1.648
+      },
+      {
+        "word": "creepy",
+        "tier": 1,
+        "freq": 13,
+        "pct_of_emotion": 1.64,
+        "log_odds": 1.098
+      },
+      {
+        "word": "hurt",
+        "tier": 1,
+        "freq": 13,
+        "pct_of_emotion": 1.64,
+        "log_odds": 0.021
+      },
+      {
+        "word": "angry",
+        "tier": 1,
+        "freq": 13,
+        "pct_of_emotion": 1.64,
+        "log_odds": 0.858
+      }
+    ],
+    "top_by_distinctiveness": [
+      {
+        "word": "annoyed",
+        "tier": 1,
+        "freq": 19,
+        "pct_of_emotion": 2.4,
+        "log_odds": 3.676
+      },
+      {
+        "word": "cursed",
+        "tier": 2,
+        "freq": 5,
+        "pct_of_emotion": 0.63,
+        "log_odds": 2.41
+      },
+      {
+        "word": "offended",
+        "tier": 2,
+        "freq": 7,
+        "pct_of_emotion": 0.88,
+        "log_odds": 1.703
+      },
+      {
+        "word": "crap",
+        "tier": 1,
+        "freq": 17,
+        "pct_of_emotion": 2.15,
+        "log_odds": 1.656
+      },
+      {
+        "word": "jealous",
+        "tier": 1,
+        "freq": 12,
+        "pct_of_emotion": 1.52,
+        "log_odds": 1.645
+      },
+      {
+        "word": "delusional",
+        "tier": 2,
+        "freq": 5,
+        "pct_of_emotion": 0.63,
+        "log_odds": 1.58
+      },
+      {
+        "word": "rage",
+        "tier": 1,
+        "freq": 5,
+        "pct_of_emotion": 0.63,
+        "log_odds": 1.53
+      },
+      {
+        "word": "mad",
+        "tier": 1,
+        "freq": 20,
+        "pct_of_emotion": 2.53,
+        "log_odds": 1.528
+      },
+      {
+        "word": "insult",
+        "tier": 1,
+        "freq": 15,
+        "pct_of_emotion": 1.89,
+        "log_odds": 1.517
+      },
+      {
+        "word": "hate",
+        "tier": 1,
+        "freq": 100,
+        "pct_of_emotion": 12.63,
+        "log_odds": 1.15
+      },
+      {
+        "word": "creepy",
+        "tier": 1,
+        "freq": 13,
+        "pct_of_emotion": 1.64,
+        "log_odds": 1.098
+      },
+      {
+        "word": "dislike",
+        "tier": 2,
+        "freq": 6,
+        "pct_of_emotion": 0.76,
+        "log_odds": 1.093
+      },
+      {
+        "word": "trash",
+        "tier": 1,
+        "freq": 10,
+        "pct_of_emotion": 1.26,
+        "log_odds": 1.061
+      },
+      {
+        "word": "silly",
+        "tier": 1,
+        "freq": 5,
+        "pct_of_emotion": 0.63,
+        "log_odds": 1.009
+      },
+      {
+        "word": "horrible",
+        "tier": 1,
+        "freq": 22,
+        "pct_of_emotion": 2.78,
+        "log_odds": 0.893
+      }
+    ]
+  },
+  "amusement": {
+    "n_comments": 2895,
+    "reliable": true,
+    "top_by_frequency": [
+      {
+        "word": "love",
+        "tier": 1,
+        "freq": 102,
+        "pct_of_emotion": 19.58,
+        "log_odds": -0.24
+      },
+      {
+        "word": "bad",
+        "tier": 1,
+        "freq": 55,
+        "pct_of_emotion": 10.56,
+        "log_odds": -0.039
+      },
+      {
+        "word": "hope",
+        "tier": 1,
+        "freq": 23,
+        "pct_of_emotion": 4.41,
+        "log_odds": -0.801
+      },
+      {
+        "word": "crazy",
+        "tier": 1,
+        "freq": 23,
+        "pct_of_emotion": 4.41,
+        "log_odds": 1.024
+      },
+      {
+        "word": "glad",
+        "tier": 1,
+        "freq": 20,
+        "pct_of_emotion": 3.84,
+        "log_odds": -0.382
+      },
+      {
+        "word": "miss",
+        "tier": 1,
+        "freq": 16,
+        "pct_of_emotion": 3.07,
+        "log_odds": 0.157
+      },
+      {
+        "word": "hate",
+        "tier": 1,
+        "freq": 15,
+        "pct_of_emotion": 2.88,
+        "log_odds": -0.507
+      },
+      {
+        "word": "sad",
+        "tier": 1,
+        "freq": 15,
+        "pct_of_emotion": 2.88,
+        "log_odds": -0.141
+      },
+      {
+        "word": "happy",
+        "tier": 1,
+        "freq": 11,
+        "pct_of_emotion": 2.11,
+        "log_odds": -1.169
+      },
+      {
+        "word": "mad",
+        "tier": 1,
+        "freq": 11,
+        "pct_of_emotion": 2.11,
+        "log_odds": 1.196
+      },
+      {
+        "word": "worry",
+        "tier": 1,
+        "freq": 8,
+        "pct_of_emotion": 1.54,
+        "log_odds": 0.041
+      },
+      {
+        "word": "confused",
+        "tier": 1,
+        "freq": 8,
+        "pct_of_emotion": 1.54,
+        "log_odds": 0.463
+      },
+      {
+        "word": "silly",
+        "tier": 1,
+        "freq": 8,
+        "pct_of_emotion": 1.54,
+        "log_odds": 1.892
+      },
+      {
+        "word": "cringe",
+        "tier": 2,
+        "freq": 7,
+        "pct_of_emotion": 1.34,
+        "log_odds": 0.647
+      },
+      {
+        "word": "lost",
+        "tier": 1,
+        "freq": 7,
+        "pct_of_emotion": 1.34,
+        "log_odds": 0.072
+      }
+    ],
+    "top_by_distinctiveness": [
+      {
+        "word": "silly",
+        "tier": 1,
+        "freq": 8,
+        "pct_of_emotion": 1.54,
+        "log_odds": 1.892
+      },
+      {
+        "word": "triggered",
+        "tier": 1,
+        "freq": 5,
+        "pct_of_emotion": 0.96,
+        "log_odds": 1.839
+      },
+      {
+        "word": "dislike",
+        "tier": 2,
+        "freq": 5,
+        "pct_of_emotion": 0.96,
+        "log_odds": 1.256
+      },
+      {
+        "word": "mad",
+        "tier": 1,
+        "freq": 11,
+        "pct_of_emotion": 2.11,
+        "log_odds": 1.196
+      },
+      {
+        "word": "crazy",
+        "tier": 1,
+        "freq": 23,
+        "pct_of_emotion": 4.41,
+        "log_odds": 1.024
+      },
+      {
+        "word": "awkward",
+        "tier": 1,
+        "freq": 6,
+        "pct_of_emotion": 1.15,
+        "log_odds": 0.75
+      },
+      {
+        "word": "trash",
+        "tier": 1,
+        "freq": 5,
+        "pct_of_emotion": 0.96,
+        "log_odds": 0.695
+      },
+      {
+        "word": "interested",
+        "tier": 1,
+        "freq": 6,
+        "pct_of_emotion": 1.15,
+        "log_odds": 0.686
+      },
+      {
+        "word": "cringe",
+        "tier": 2,
+        "freq": 7,
+        "pct_of_emotion": 1.34,
+        "log_odds": 0.647
+      },
+      {
+        "word": "confused",
+        "tier": 1,
+        "freq": 8,
+        "pct_of_emotion": 1.54,
+        "log_odds": 0.463
+      },
+      {
+        "word": "shock",
+        "tier": 1,
+        "freq": 5,
+        "pct_of_emotion": 0.96,
+        "log_odds": 0.175
+      },
+      {
+        "word": "miss",
+        "tier": 1,
+        "freq": 16,
+        "pct_of_emotion": 3.07,
+        "log_odds": 0.157
+      },
+      {
+        "word": "lost",
+        "tier": 1,
+        "freq": 7,
+        "pct_of_emotion": 1.34,
+        "log_odds": 0.072
+      },
+      {
+        "word": "worry",
+        "tier": 1,
+        "freq": 8,
+        "pct_of_emotion": 1.54,
+        "log_odds": 0.041
+      },
+      {
+        "word": "sweet",
+        "tier": 1,
+        "freq": 6,
+        "pct_of_emotion": 1.15,
+        "log_odds": -0.017
+      }
+    ]
+  },
+  "curiosity": {
+    "n_comments": 2723,
+    "reliable": true,
+    "top_by_frequency": [
+      {
+        "word": "curious",
+        "tier": 1,
+        "freq": 142,
+        "pct_of_emotion": 23.87,
+        "log_odds": 4.984
+      },
+      {
+        "word": "love",
+        "tier": 1,
+        "freq": 57,
+        "pct_of_emotion": 9.58,
+        "log_odds": -0.941
+      },
+      {
+        "word": "bad",
+        "tier": 1,
+        "freq": 35,
+        "pct_of_emotion": 5.88,
+        "log_odds": -0.609
+      },
+      {
+        "word": "miss",
+        "tier": 1,
+        "freq": 24,
+        "pct_of_emotion": 4.03,
+        "log_odds": 0.467
+      },
+      {
+        "word": "interested",
+        "tier": 1,
+        "freq": 18,
+        "pct_of_emotion": 3.03,
+        "log_odds": 1.784
+      },
+      {
+        "word": "hate",
+        "tier": 1,
+        "freq": 17,
+        "pct_of_emotion": 2.86,
+        "log_odds": -0.492
+      },
+      {
+        "word": "hope",
+        "tier": 1,
+        "freq": 15,
+        "pct_of_emotion": 2.52,
+        "log_odds": -1.333
+      },
+      {
+        "word": "happy",
+        "tier": 1,
+        "freq": 15,
+        "pct_of_emotion": 2.52,
+        "log_odds": -0.975
+      },
+      {
+        "word": "hurt",
+        "tier": 1,
+        "freq": 11,
+        "pct_of_emotion": 1.85,
+        "log_odds": 0.099
+      },
+      {
+        "word": "crazy",
+        "tier": 1,
+        "freq": 10,
+        "pct_of_emotion": 1.68,
+        "log_odds": 0.048
+      },
+      {
+        "word": "lost",
+        "tier": 1,
+        "freq": 9,
+        "pct_of_emotion": 1.51,
+        "log_odds": 0.211
+      },
+      {
+        "word": "glad",
+        "tier": 1,
+        "freq": 9,
+        "pct_of_emotion": 1.51,
+        "log_odds": -1.276
+      },
+      {
+        "word": "alone",
+        "tier": 1,
+        "freq": 8,
+        "pct_of_emotion": 1.34,
+        "log_odds": 0.28
+      },
+      {
+        "word": "sad",
+        "tier": 1,
+        "freq": 8,
+        "pct_of_emotion": 1.34,
+        "log_odds": -0.867
+      },
+      {
+        "word": "surprise",
+        "tier": 1,
+        "freq": 8,
+        "pct_of_emotion": 1.34,
+        "log_odds": 0.537
+      }
+    ],
+    "top_by_distinctiveness": [
+      {
+        "word": "curious",
+        "tier": 1,
+        "freq": 142,
+        "pct_of_emotion": 23.87,
+        "log_odds": 4.984
+      },
+      {
+        "word": "interested",
+        "tier": 1,
+        "freq": 18,
+        "pct_of_emotion": 3.03,
+        "log_odds": 1.784
+      },
+      {
+        "word": "crap",
+        "tier": 1,
+        "freq": 6,
+        "pct_of_emotion": 1.01,
+        "log_odds": 0.738
+      },
+      {
+        "word": "insult",
+        "tier": 1,
+        "freq": 5,
+        "pct_of_emotion": 0.84,
+        "log_odds": 0.57
+      },
+      {
+        "word": "surprise",
+        "tier": 1,
+        "freq": 8,
+        "pct_of_emotion": 1.34,
+        "log_odds": 0.537
+      },
+      {
+        "word": "miss",
+        "tier": 1,
+        "freq": 24,
+        "pct_of_emotion": 4.03,
+        "log_odds": 0.467
+      },
+      {
+        "word": "confused",
+        "tier": 1,
+        "freq": 8,
+        "pct_of_emotion": 1.34,
+        "log_odds": 0.354
+      },
+      {
+        "word": "upset",
+        "tier": 1,
+        "freq": 5,
+        "pct_of_emotion": 0.84,
+        "log_odds": 0.337
+      },
+      {
+        "word": "scared",
+        "tier": 1,
+        "freq": 6,
+        "pct_of_emotion": 1.01,
+        "log_odds": 0.287
+      },
+      {
+        "word": "mad",
+        "tier": 1,
+        "freq": 5,
+        "pct_of_emotion": 0.84,
+        "log_odds": 0.281
+      },
+      {
+        "word": "alone",
+        "tier": 1,
+        "freq": 8,
+        "pct_of_emotion": 1.34,
+        "log_odds": 0.28
+      },
+      {
+        "word": "shame",
+        "tier": 1,
+        "freq": 7,
+        "pct_of_emotion": 1.18,
+        "log_odds": 0.213
+      },
+      {
+        "word": "lost",
+        "tier": 1,
+        "freq": 9,
+        "pct_of_emotion": 1.51,
+        "log_odds": 0.211
+      },
+      {
+        "word": "hurt",
+        "tier": 1,
+        "freq": 11,
+        "pct_of_emotion": 1.85,
+        "log_odds": 0.099
+      },
+      {
+        "word": "crazy",
+        "tier": 1,
+        "freq": 10,
+        "pct_of_emotion": 1.68,
+        "log_odds": 0.048
+      }
+    ]
+  },
+  "disapproval": {
+    "n_comments": 2581,
+    "reliable": true,
+    "top_by_frequency": [
+      {
+        "word": "bad",
+        "tier": 1,
+        "freq": 145,
+        "pct_of_emotion": 24.91,
+        "log_odds": 0.899
+      },
+      {
+        "word": "hate",
+        "tier": 1,
+        "freq": 59,
+        "pct_of_emotion": 10.14,
+        "log_odds": 0.819
+      },
+      {
+        "word": "love",
+        "tier": 1,
+        "freq": 49,
+        "pct_of_emotion": 8.42,
+        "log_odds": -1.075
+      },
+      {
+        "word": "hope",
+        "tier": 1,
+        "freq": 15,
+        "pct_of_emotion": 2.58,
+        "log_odds": -1.315
+      },
+      {
+        "word": "happy",
+        "tier": 1,
+        "freq": 12,
+        "pct_of_emotion": 2.06,
+        "log_odds": -1.175
+      },
+      {
+        "word": "dislike",
+        "tier": 2,
+        "freq": 12,
+        "pct_of_emotion": 2.06,
+        "log_odds": 2.187
+      },
+      {
+        "word": "awful",
+        "tier": 1,
+        "freq": 12,
+        "pct_of_emotion": 2.06,
+        "log_odds": 0.452
+      },
+      {
+        "word": "miss",
+        "tier": 1,
+        "freq": 11,
+        "pct_of_emotion": 1.89,
+        "log_odds": -0.309
+      },
+      {
+        "word": "hurt",
+        "tier": 1,
+        "freq": 9,
+        "pct_of_emotion": 1.55,
+        "log_odds": -0.082
+      },
+      {
+        "word": "delusional",
+        "tier": 2,
+        "freq": 9,
+        "pct_of_emotion": 1.55,
+        "log_odds": 2.621
+      },
+      {
+        "word": "horrible",
+        "tier": 1,
+        "freq": 9,
+        "pct_of_emotion": 1.55,
+        "log_odds": 0.218
+      },
+      {
+        "word": "crazy",
+        "tier": 1,
+        "freq": 8,
+        "pct_of_emotion": 1.37,
+        "log_odds": -0.154
+      },
+      {
+        "word": "disgust",
+        "tier": 2,
+        "freq": 8,
+        "pct_of_emotion": 1.37,
+        "log_odds": -0.009
+      },
+      {
+        "word": "crap",
+        "tier": 1,
+        "freq": 8,
+        "pct_of_emotion": 1.37,
+        "log_odds": 1.054
+      },
+      {
+        "word": "alone",
+        "tier": 1,
+        "freq": 6,
+        "pct_of_emotion": 1.03,
+        "log_odds": 0.016
+      }
+    ],
+    "top_by_distinctiveness": [
+      {
+        "word": "delusional",
+        "tier": 2,
+        "freq": 9,
+        "pct_of_emotion": 1.55,
+        "log_odds": 2.621
+      },
+      {
+        "word": "dislike",
+        "tier": 2,
+        "freq": 12,
+        "pct_of_emotion": 2.06,
+        "log_odds": 2.187
+      },
+      {
+        "word": "crap",
+        "tier": 1,
+        "freq": 8,
+        "pct_of_emotion": 1.37,
+        "log_odds": 1.054
+      },
+      {
+        "word": "bad",
+        "tier": 1,
+        "freq": 145,
+        "pct_of_emotion": 24.91,
+        "log_odds": 0.899
+      },
+      {
+        "word": "hate",
+        "tier": 1,
+        "freq": 59,
+        "pct_of_emotion": 10.14,
+        "log_odds": 0.819
+      },
+      {
+        "word": "insult",
+        "tier": 1,
+        "freq": 5,
+        "pct_of_emotion": 0.86,
+        "log_odds": 0.589
+      },
+      {
+        "word": "awful",
+        "tier": 1,
+        "freq": 12,
+        "pct_of_emotion": 2.06,
+        "log_odds": 0.452
+      },
+      {
+        "word": "horrible",
+        "tier": 1,
+        "freq": 9,
+        "pct_of_emotion": 1.55,
+        "log_odds": 0.218
+      },
+      {
+        "word": "alone",
+        "tier": 1,
+        "freq": 6,
+        "pct_of_emotion": 1.03,
+        "log_odds": 0.016
+      },
+      {
+        "word": "disgust",
+        "tier": 2,
+        "freq": 8,
+        "pct_of_emotion": 1.37,
+        "log_odds": -0.009
+      },
+      {
+        "word": "hurt",
+        "tier": 1,
+        "freq": 9,
+        "pct_of_emotion": 1.55,
+        "log_odds": -0.082
+      },
+      {
+        "word": "crazy",
+        "tier": 1,
+        "freq": 8,
+        "pct_of_emotion": 1.37,
+        "log_odds": -0.154
+      },
+      {
+        "word": "miss",
+        "tier": 1,
+        "freq": 11,
+        "pct_of_emotion": 1.89,
+        "log_odds": -0.309
+      },
+      {
+        "word": "love",
+        "tier": 1,
+        "freq": 49,
+        "pct_of_emotion": 8.42,
+        "log_odds": -1.075
+      },
+      {
+        "word": "happy",
+        "tier": 1,
+        "freq": 12,
+        "pct_of_emotion": 2.06,
+        "log_odds": -1.175
+      }
+    ]
+  },
+  "love": {
+    "n_comments": 2576,
+    "reliable": true,
+    "top_by_frequency": [
+      {
+        "word": "love",
+        "tier": 1,
+        "freq": 2031,
+        "pct_of_emotion": 81.99,
+        "log_odds": 2.175
+      },
+      {
+        "word": "hope",
+        "tier": 1,
+        "freq": 43,
+        "pct_of_emotion": 1.74,
+        "log_odds": -1.664
+      },
+      {
+        "word": "hate",
+        "tier": 1,
+        "freq": 40,
+        "pct_of_emotion": 1.61,
+        "log_odds": -1.0
+      },
+      {
+        "word": "happy",
+        "tier": 1,
+        "freq": 37,
+        "pct_of_emotion": 1.49,
+        "log_odds": -1.451
+      },
+      {
+        "word": "loving",
+        "tier": 1,
+        "freq": 36,
+        "pct_of_emotion": 1.45,
+        "log_odds": 1.629
+      },
+      {
+        "word": "sweet",
+        "tier": 1,
+        "freq": 25,
+        "pct_of_emotion": 1.01,
+        "log_odds": -0.019
+      },
+      {
+        "word": "bad",
+        "tier": 1,
+        "freq": 23,
+        "pct_of_emotion": 0.93,
+        "log_odds": -2.414
+      },
+      {
+        "word": "miss",
+        "tier": 1,
+        "freq": 20,
+        "pct_of_emotion": 0.81,
+        "log_odds": -1.108
+      },
+      {
+        "word": "mad",
+        "tier": 1,
+        "freq": 9,
+        "pct_of_emotion": 0.36,
+        "log_odds": -0.512
+      },
+      {
+        "word": "crazy",
+        "tier": 1,
+        "freq": 8,
+        "pct_of_emotion": 0.32,
+        "log_odds": -1.557
+      },
+      {
+        "word": "glad",
+        "tier": 1,
+        "freq": 8,
+        "pct_of_emotion": 0.32,
+        "log_odds": -2.772
+      },
+      {
+        "word": "sad",
+        "tier": 1,
+        "freq": 7,
+        "pct_of_emotion": 0.28,
+        "log_odds": -2.378
+      },
+      {
+        "word": "hurt",
+        "tier": 1,
+        "freq": 6,
+        "pct_of_emotion": 0.24,
+        "log_odds": -1.877
+      },
+      {
+        "word": "cross",
+        "tier": 1,
+        "freq": 6,
+        "pct_of_emotion": 0.24,
+        "log_odds": -0.096
+      },
+      {
+        "word": "alone",
+        "tier": 1,
+        "freq": 6,
+        "pct_of_emotion": 0.24,
+        "log_odds": -1.386
+      }
+    ],
+    "top_by_distinctiveness": [
+      {
+        "word": "love",
+        "tier": 1,
+        "freq": 2031,
+        "pct_of_emotion": 81.99,
+        "log_odds": 2.175
+      },
+      {
+        "word": "loving",
+        "tier": 1,
+        "freq": 36,
+        "pct_of_emotion": 1.45,
+        "log_odds": 1.629
+      },
+      {
+        "word": "chicken",
+        "tier": 1,
+        "freq": 5,
+        "pct_of_emotion": 0.2,
+        "log_odds": 0.063
+      },
+      {
+        "word": "sweet",
+        "tier": 1,
+        "freq": 25,
+        "pct_of_emotion": 1.01,
+        "log_odds": -0.019
+      },
+      {
+        "word": "cross",
+        "tier": 1,
+        "freq": 6,
+        "pct_of_emotion": 0.24,
+        "log_odds": -0.096
+      },
+      {
+        "word": "mad",
+        "tier": 1,
+        "freq": 9,
+        "pct_of_emotion": 0.36,
+        "log_odds": -0.512
+      },
+      {
+        "word": "dark",
+        "tier": 1,
+        "freq": 6,
+        "pct_of_emotion": 0.24,
+        "log_odds": -0.661
+      },
+      {
+        "word": "fear",
+        "tier": 1,
+        "freq": 5,
+        "pct_of_emotion": 0.2,
+        "log_odds": -0.898
+      },
+      {
+        "word": "interested",
+        "tier": 1,
+        "freq": 5,
+        "pct_of_emotion": 0.2,
+        "log_odds": -0.988
+      },
+      {
+        "word": "hate",
+        "tier": 1,
+        "freq": 40,
+        "pct_of_emotion": 1.61,
+        "log_odds": -1.0
+      },
+      {
+        "word": "miss",
+        "tier": 1,
+        "freq": 20,
+        "pct_of_emotion": 0.81,
+        "log_odds": -1.108
+      },
+      {
+        "word": "cringe",
+        "tier": 2,
+        "freq": 5,
+        "pct_of_emotion": 0.2,
+        "log_odds": -1.177
+      },
+      {
+        "word": "safe",
+        "tier": 1,
+        "freq": 5,
+        "pct_of_emotion": 0.2,
+        "log_odds": -1.264
+      },
+      {
+        "word": "surprise",
+        "tier": 1,
+        "freq": 5,
+        "pct_of_emotion": 0.2,
+        "log_odds": -1.31
+      },
+      {
+        "word": "alone",
+        "tier": 1,
+        "freq": 6,
+        "pct_of_emotion": 0.24,
+        "log_odds": -1.386
+      }
+    ]
+  },
+  "optimism": {
+    "n_comments": 1976,
+    "reliable": true,
+    "top_by_frequency": [
+      {
+        "word": "hope",
+        "tier": 1,
+        "freq": 710,
+        "pct_of_emotion": 61.0,
+        "log_odds": 2.657
+      },
+      {
+        "word": "love",
+        "tier": 1,
+        "freq": 68,
+        "pct_of_emotion": 5.84,
+        "log_odds": -1.367
+      },
+      {
+        "word": "bad",
+        "tier": 1,
+        "freq": 40,
+        "pct_of_emotion": 3.44,
+        "log_odds": -1.078
+      },
+      {
+        "word": "happy",
+        "tier": 1,
+        "freq": 38,
+        "pct_of_emotion": 3.26,
+        "log_odds": -0.644
+      },
+      {
+        "word": "glad",
+        "tier": 1,
+        "freq": 21,
+        "pct_of_emotion": 1.8,
+        "log_odds": -1.047
+      },
+      {
+        "word": "worry",
+        "tier": 1,
+        "freq": 16,
+        "pct_of_emotion": 1.37,
+        "log_odds": 0.032
+      },
+      {
+        "word": "miss",
+        "tier": 1,
+        "freq": 12,
+        "pct_of_emotion": 1.03,
+        "log_odds": -0.845
+      },
+      {
+        "word": "happiness",
+        "tier": 1,
+        "freq": 9,
+        "pct_of_emotion": 0.77,
+        "log_odds": 0.858
+      },
+      {
+        "word": "excited",
+        "tier": 1,
+        "freq": 9,
+        "pct_of_emotion": 0.77,
+        "log_odds": -0.433
+      },
+      {
+        "word": "hate",
+        "tier": 1,
+        "freq": 9,
+        "pct_of_emotion": 0.77,
+        "log_odds": -1.719
+      },
+      {
+        "word": "alone",
+        "tier": 1,
+        "freq": 9,
+        "pct_of_emotion": 0.77,
+        "log_odds": -0.205
+      },
+      {
+        "word": "appreciate",
+        "tier": 1,
+        "freq": 8,
+        "pct_of_emotion": 0.69,
+        "log_odds": -1.181
+      },
+      {
+        "word": "safe",
+        "tier": 1,
+        "freq": 8,
+        "pct_of_emotion": 0.69,
+        "log_odds": -0.021
+      },
+      {
+        "word": "hopeful",
+        "tier": 2,
+        "freq": 8,
+        "pct_of_emotion": 0.69,
+        "log_odds": 2.277
+      },
+      {
+        "word": "confident",
+        "tier": 1,
+        "freq": 8,
+        "pct_of_emotion": 0.69,
+        "log_odds": 2.103
+      }
+    ],
+    "top_by_distinctiveness": [
+      {
+        "word": "hope",
+        "tier": 1,
+        "freq": 710,
+        "pct_of_emotion": 61.0,
+        "log_odds": 2.657
+      },
+      {
+        "word": "hopeful",
+        "tier": 2,
+        "freq": 8,
+        "pct_of_emotion": 0.69,
+        "log_odds": 2.277
+      },
+      {
+        "word": "confident",
+        "tier": 1,
+        "freq": 8,
+        "pct_of_emotion": 0.69,
+        "log_odds": 2.103
+      },
+      {
+        "word": "happiness",
+        "tier": 1,
+        "freq": 9,
+        "pct_of_emotion": 0.77,
+        "log_odds": 0.858
+      },
+      {
+        "word": "cross",
+        "tier": 1,
+        "freq": 6,
+        "pct_of_emotion": 0.52,
+        "log_odds": 0.684
+      },
+      {
+        "word": "worry",
+        "tier": 1,
+        "freq": 16,
+        "pct_of_emotion": 1.37,
+        "log_odds": 0.032
+      },
+      {
+        "word": "safe",
+        "tier": 1,
+        "freq": 8,
+        "pct_of_emotion": 0.69,
+        "log_odds": -0.021
+      },
+      {
+        "word": "surprise",
+        "tier": 1,
+        "freq": 7,
+        "pct_of_emotion": 0.6,
+        "log_odds": -0.202
+      },
+      {
+        "word": "alone",
+        "tier": 1,
+        "freq": 9,
+        "pct_of_emotion": 0.77,
+        "log_odds": -0.205
+      },
+      {
+        "word": "upset",
+        "tier": 1,
+        "freq": 5,
+        "pct_of_emotion": 0.43,
+        "log_odds": -0.267
+      },
+      {
+        "word": "excited",
+        "tier": 1,
+        "freq": 9,
+        "pct_of_emotion": 0.77,
+        "log_odds": -0.433
+      },
+      {
+        "word": "proud",
+        "tier": 1,
+        "freq": 7,
+        "pct_of_emotion": 0.6,
+        "log_odds": -0.477
+      },
+      {
+        "word": "happy",
+        "tier": 1,
+        "freq": 38,
+        "pct_of_emotion": 3.26,
+        "log_odds": -0.644
+      },
+      {
+        "word": "sweet",
+        "tier": 1,
+        "freq": 6,
+        "pct_of_emotion": 0.52,
+        "log_odds": -0.73
+      },
+      {
+        "word": "miss",
+        "tier": 1,
+        "freq": 12,
+        "pct_of_emotion": 1.03,
+        "log_odds": -0.845
+      }
+    ]
+  },
+  "anger": {
+    "n_comments": 1960,
+    "reliable": true,
+    "top_by_frequency": [
+      {
+        "word": "hate",
+        "tier": 1,
+        "freq": 211,
+        "pct_of_emotion": 32.87,
+        "log_odds": 2.304
+      },
+      {
+        "word": "bad",
+        "tier": 1,
+        "freq": 79,
+        "pct_of_emotion": 12.31,
+        "log_odds": 0.164
+      },
+      {
+        "word": "angry",
+        "tier": 1,
+        "freq": 55,
+        "pct_of_emotion": 8.57,
+        "log_odds": 3.011
+      },
+      {
+        "word": "love",
+        "tier": 1,
+        "freq": 29,
+        "pct_of_emotion": 4.52,
+        "log_odds": -1.681
+      },
+      {
+        "word": "mad",
+        "tier": 1,
+        "freq": 13,
+        "pct_of_emotion": 2.02,
+        "log_odds": 1.206
+      },
+      {
+        "word": "anger",
+        "tier": 1,
+        "freq": 11,
+        "pct_of_emotion": 1.71,
+        "log_odds": 2.868
+      },
+      {
+        "word": "horrible",
+        "tier": 1,
+        "freq": 9,
+        "pct_of_emotion": 1.4,
+        "log_odds": 0.135
+      },
+      {
+        "word": "shame",
+        "tier": 1,
+        "freq": 9,
+        "pct_of_emotion": 1.4,
+        "log_odds": 0.401
+      },
+      {
+        "word": "insult",
+        "tier": 1,
+        "freq": 9,
+        "pct_of_emotion": 1.4,
+        "log_odds": 1.113
+      },
+      {
+        "word": "hope",
+        "tier": 1,
+        "freq": 8,
+        "pct_of_emotion": 1.25,
+        "log_odds": -2.004
+      },
+      {
+        "word": "hurt",
+        "tier": 1,
+        "freq": 8,
+        "pct_of_emotion": 1.25,
+        "log_odds": -0.28
+      },
+      {
+        "word": "trash",
+        "tier": 1,
+        "freq": 8,
+        "pct_of_emotion": 1.25,
+        "log_odds": 1.002
+      },
+      {
+        "word": "disgust",
+        "tier": 2,
+        "freq": 7,
+        "pct_of_emotion": 1.09,
+        "log_odds": -0.222
+      },
+      {
+        "word": "lost",
+        "tier": 1,
+        "freq": 7,
+        "pct_of_emotion": 1.09,
+        "log_odds": -0.101
+      },
+      {
+        "word": "sad",
+        "tier": 1,
+        "freq": 6,
+        "pct_of_emotion": 0.93,
+        "log_odds": -1.204
+      }
+    ],
+    "top_by_distinctiveness": [
+      {
+        "word": "angry",
+        "tier": 1,
+        "freq": 55,
+        "pct_of_emotion": 8.57,
+        "log_odds": 3.011
+      },
+      {
+        "word": "anger",
+        "tier": 1,
+        "freq": 11,
+        "pct_of_emotion": 1.71,
+        "log_odds": 2.868
+      },
+      {
+        "word": "hate",
+        "tier": 1,
+        "freq": 211,
+        "pct_of_emotion": 32.87,
+        "log_odds": 2.304
+      },
+      {
+        "word": "aggressive",
+        "tier": 1,
+        "freq": 6,
+        "pct_of_emotion": 0.93,
+        "log_odds": 1.982
+      },
+      {
+        "word": "pathetic",
+        "tier": 1,
+        "freq": 5,
+        "pct_of_emotion": 0.78,
+        "log_odds": 1.349
+      },
+      {
+        "word": "mad",
+        "tier": 1,
+        "freq": 13,
+        "pct_of_emotion": 2.02,
+        "log_odds": 1.206
+      },
+      {
+        "word": "insult",
+        "tier": 1,
+        "freq": 9,
+        "pct_of_emotion": 1.4,
+        "log_odds": 1.113
+      },
+      {
+        "word": "trash",
+        "tier": 1,
+        "freq": 8,
+        "pct_of_emotion": 1.25,
+        "log_odds": 1.002
+      },
+      {
+        "word": "shame",
+        "tier": 1,
+        "freq": 9,
+        "pct_of_emotion": 1.4,
+        "log_odds": 0.401
+      },
+      {
+        "word": "bad",
+        "tier": 1,
+        "freq": 79,
+        "pct_of_emotion": 12.31,
+        "log_odds": 0.164
+      },
+      {
+        "word": "horrible",
+        "tier": 1,
+        "freq": 9,
+        "pct_of_emotion": 1.4,
+        "log_odds": 0.135
+      },
+      {
+        "word": "lost",
+        "tier": 1,
+        "freq": 7,
+        "pct_of_emotion": 1.09,
+        "log_odds": -0.101
+      },
+      {
+        "word": "disgust",
+        "tier": 2,
+        "freq": 7,
+        "pct_of_emotion": 1.09,
+        "log_odds": -0.222
+      },
+      {
+        "word": "hurt",
+        "tier": 1,
+        "freq": 8,
+        "pct_of_emotion": 1.25,
+        "log_odds": -0.28
+      },
+      {
+        "word": "awful",
+        "tier": 1,
+        "freq": 6,
+        "pct_of_emotion": 0.93,
+        "log_odds": -0.317
+      }
+    ]
+  },
+  "joy": {
+    "n_comments": 1785,
+    "reliable": true,
+    "top_by_frequency": [
+      {
+        "word": "happy",
+        "tier": 1,
+        "freq": 424,
+        "pct_of_emotion": 36.12,
+        "log_odds": 2.324
+      },
+      {
+        "word": "glad",
+        "tier": 1,
+        "freq": 308,
+        "pct_of_emotion": 26.24,
+        "log_odds": 2.102
+      },
+      {
+        "word": "love",
+        "tier": 1,
+        "freq": 101,
+        "pct_of_emotion": 8.6,
+        "log_odds": -0.972
+      },
+      {
+        "word": "hope",
+        "tier": 1,
+        "freq": 40,
+        "pct_of_emotion": 3.41,
+        "log_odds": -0.966
+      },
+      {
+        "word": "joy",
+        "tier": 1,
+        "freq": 21,
+        "pct_of_emotion": 1.79,
+        "log_odds": 2.686
+      },
+      {
+        "word": "crazy",
+        "tier": 1,
+        "freq": 20,
+        "pct_of_emotion": 1.7,
+        "log_odds": 0.151
+      },
+      {
+        "word": "bad",
+        "tier": 1,
+        "freq": 17,
+        "pct_of_emotion": 1.45,
+        "log_odds": -1.941
+      },
+      {
+        "word": "happiness",
+        "tier": 1,
+        "freq": 15,
+        "pct_of_emotion": 1.28,
+        "log_odds": 1.472
+      },
+      {
+        "word": "sweet",
+        "tier": 1,
+        "freq": 13,
+        "pct_of_emotion": 1.11,
+        "log_odds": 0.036
+      },
+      {
+        "word": "pleasure",
+        "tier": 1,
+        "freq": 8,
+        "pct_of_emotion": 0.68,
+        "log_odds": 1.758
+      },
+      {
+        "word": "alone",
+        "tier": 1,
+        "freq": 7,
+        "pct_of_emotion": 0.6,
+        "log_odds": -0.464
+      },
+      {
+        "word": "hurt",
+        "tier": 1,
+        "freq": 7,
+        "pct_of_emotion": 0.6,
+        "log_odds": -0.958
+      },
+      {
+        "word": "worry",
+        "tier": 1,
+        "freq": 7,
+        "pct_of_emotion": 0.6,
+        "log_odds": -0.811
+      },
+      {
+        "word": "loving",
+        "tier": 1,
+        "freq": 6,
+        "pct_of_emotion": 0.51,
+        "log_odds": 0.111
+      },
+      {
+        "word": "hate",
+        "tier": 1,
+        "freq": 6,
+        "pct_of_emotion": 0.51,
+        "log_odds": -2.112
+      }
+    ],
+    "top_by_distinctiveness": [
+      {
+        "word": "joy",
+        "tier": 1,
+        "freq": 21,
+        "pct_of_emotion": 1.79,
+        "log_odds": 2.686
+      },
+      {
+        "word": "happy",
+        "tier": 1,
+        "freq": 424,
+        "pct_of_emotion": 36.12,
+        "log_odds": 2.324
+      },
+      {
+        "word": "glad",
+        "tier": 1,
+        "freq": 308,
+        "pct_of_emotion": 26.24,
+        "log_odds": 2.102
+      },
+      {
+        "word": "pleasure",
+        "tier": 1,
+        "freq": 8,
+        "pct_of_emotion": 0.68,
+        "log_odds": 1.758
+      },
+      {
+        "word": "happiness",
+        "tier": 1,
+        "freq": 15,
+        "pct_of_emotion": 1.28,
+        "log_odds": 1.472
+      },
+      {
+        "word": "blessed",
+        "tier": 1,
+        "freq": 5,
+        "pct_of_emotion": 0.43,
+        "log_odds": 1.215
+      },
+      {
+        "word": "crazy",
+        "tier": 1,
+        "freq": 20,
+        "pct_of_emotion": 1.7,
+        "log_odds": 0.151
+      },
+      {
+        "word": "loving",
+        "tier": 1,
+        "freq": 6,
+        "pct_of_emotion": 0.51,
+        "log_odds": 0.111
+      },
+      {
+        "word": "sweet",
+        "tier": 1,
+        "freq": 13,
+        "pct_of_emotion": 1.11,
+        "log_odds": 0.036
+      },
+      {
+        "word": "dark",
+        "tier": 1,
+        "freq": 5,
+        "pct_of_emotion": 0.43,
+        "log_odds": -0.071
+      },
+      {
+        "word": "safe",
+        "tier": 1,
+        "freq": 6,
+        "pct_of_emotion": 0.51,
+        "log_odds": -0.316
+      },
+      {
+        "word": "alone",
+        "tier": 1,
+        "freq": 7,
+        "pct_of_emotion": 0.6,
+        "log_odds": -0.464
+      },
+      {
+        "word": "proud",
+        "tier": 1,
+        "freq": 5,
+        "pct_of_emotion": 0.43,
+        "log_odds": -0.809
+      },
+      {
+        "word": "worry",
+        "tier": 1,
+        "freq": 7,
+        "pct_of_emotion": 0.6,
+        "log_odds": -0.811
+      },
+      {
+        "word": "excited",
+        "tier": 1,
+        "freq": 6,
+        "pct_of_emotion": 0.51,
+        "log_odds": -0.838
+      }
+    ]
+  },
+  "confusion": {
+    "n_comments": 1673,
+    "reliable": true,
+    "top_by_frequency": [
+      {
+        "word": "confused",
+        "tier": 1,
+        "freq": 99,
+        "pct_of_emotion": 27.2,
+        "log_odds": 4.378
+      },
+      {
+        "word": "bad",
+        "tier": 1,
+        "freq": 40,
+        "pct_of_emotion": 10.99,
+        "log_odds": -0.088
+      },
+      {
+        "word": "love",
+        "tier": 1,
+        "freq": 22,
+        "pct_of_emotion": 6.04,
+        "log_odds": -1.504
+      },
+      {
+        "word": "miss",
+        "tier": 1,
+        "freq": 16,
+        "pct_of_emotion": 4.4,
+        "log_odds": 0.434
+      },
+      {
+        "word": "hate",
+        "tier": 1,
+        "freq": 15,
+        "pct_of_emotion": 4.12,
+        "log_odds": -0.23
+      },
+      {
+        "word": "happy",
+        "tier": 1,
+        "freq": 9,
+        "pct_of_emotion": 2.47,
+        "log_odds": -1.085
+      },
+      {
+        "word": "hurt",
+        "tier": 1,
+        "freq": 9,
+        "pct_of_emotion": 2.47,
+        "log_odds": 0.286
+      },
+      {
+        "word": "cringe",
+        "tier": 2,
+        "freq": 6,
+        "pct_of_emotion": 1.65,
+        "log_odds": 0.771
+      },
+      {
+        "word": "afraid",
+        "tier": 1,
+        "freq": 5,
+        "pct_of_emotion": 1.37,
+        "log_odds": 0.434
+      },
+      {
+        "word": "lost",
+        "tier": 1,
+        "freq": 5,
+        "pct_of_emotion": 1.37,
+        "log_odds": 0.028
+      },
+      {
+        "word": "sad",
+        "tier": 1,
+        "freq": 5,
+        "pct_of_emotion": 1.37,
+        "log_odds": -0.922
+      },
+      {
+        "word": "dark",
+        "tier": 1,
+        "freq": 5,
+        "pct_of_emotion": 1.37,
+        "log_odds": 0.928
+      },
+      {
+        "word": "surprised",
+        "tier": 1,
+        "freq": 4,
+        "pct_of_emotion": 1.1,
+        "log_odds": -0.449
+      },
+      {
+        "word": "glad",
+        "tier": 1,
+        "freq": 4,
+        "pct_of_emotion": 1.1,
+        "log_odds": -1.643
+      },
+      {
+        "word": "sweet",
+        "tier": 1,
+        "freq": 3,
+        "pct_of_emotion": 0.82,
+        "log_odds": -0.377
+      }
+    ],
+    "top_by_distinctiveness": [
+      {
+        "word": "confused",
+        "tier": 1,
+        "freq": 99,
+        "pct_of_emotion": 27.2,
+        "log_odds": 4.378
+      },
+      {
+        "word": "dark",
+        "tier": 1,
+        "freq": 5,
+        "pct_of_emotion": 1.37,
+        "log_odds": 0.928
+      },
+      {
+        "word": "cringe",
+        "tier": 2,
+        "freq": 6,
+        "pct_of_emotion": 1.65,
+        "log_odds": 0.771
+      },
+      {
+        "word": "miss",
+        "tier": 1,
+        "freq": 16,
+        "pct_of_emotion": 4.4,
+        "log_odds": 0.434
+      },
+      {
+        "word": "afraid",
+        "tier": 1,
+        "freq": 5,
+        "pct_of_emotion": 1.37,
+        "log_odds": 0.434
+      },
+      {
+        "word": "hurt",
+        "tier": 1,
+        "freq": 9,
+        "pct_of_emotion": 2.47,
+        "log_odds": 0.286
+      },
+      {
+        "word": "lost",
+        "tier": 1,
+        "freq": 5,
+        "pct_of_emotion": 1.37,
+        "log_odds": 0.028
+      },
+      {
+        "word": "bad",
+        "tier": 1,
+        "freq": 40,
+        "pct_of_emotion": 10.99,
+        "log_odds": -0.088
+      },
+      {
+        "word": "hate",
+        "tier": 1,
+        "freq": 15,
+        "pct_of_emotion": 4.12,
+        "log_odds": -0.23
+      },
+      {
+        "word": "sad",
+        "tier": 1,
+        "freq": 5,
+        "pct_of_emotion": 1.37,
+        "log_odds": -0.922
+      },
+      {
+        "word": "happy",
+        "tier": 1,
+        "freq": 9,
+        "pct_of_emotion": 2.47,
+        "log_odds": -1.085
+      },
+      {
+        "word": "love",
+        "tier": 1,
+        "freq": 22,
+        "pct_of_emotion": 6.04,
+        "log_odds": -1.504
+      }
+    ]
+  },
+  "sadness": {
+    "n_comments": 1625,
+    "reliable": true,
+    "top_by_frequency": [
+      {
+        "word": "sad",
+        "tier": 1,
+        "freq": 298,
+        "pct_of_emotion": 29.74,
+        "log_odds": 3.283
+      },
+      {
+        "word": "bad",
+        "tier": 1,
+        "freq": 129,
+        "pct_of_emotion": 12.87,
+        "log_odds": 0.29
+      },
+      {
+        "word": "miss",
+        "tier": 1,
+        "freq": 75,
+        "pct_of_emotion": 7.49,
+        "log_odds": 1.293
+      },
+      {
+        "word": "hurt",
+        "tier": 1,
+        "freq": 74,
+        "pct_of_emotion": 7.39,
+        "log_odds": 1.826
+      },
+      {
+        "word": "love",
+        "tier": 1,
+        "freq": 36,
+        "pct_of_emotion": 3.59,
+        "log_odds": -1.864
+      },
+      {
+        "word": "hope",
+        "tier": 1,
+        "freq": 29,
+        "pct_of_emotion": 2.89,
+        "log_odds": -1.141
+      },
+      {
+        "word": "lost",
+        "tier": 1,
+        "freq": 28,
+        "pct_of_emotion": 2.79,
+        "log_odds": 0.967
+      },
+      {
+        "word": "hate",
+        "tier": 1,
+        "freq": 17,
+        "pct_of_emotion": 1.7,
+        "log_odds": -0.954
+      },
+      {
+        "word": "happy",
+        "tier": 1,
+        "freq": 16,
+        "pct_of_emotion": 1.6,
+        "log_odds": -1.373
+      },
+      {
+        "word": "lonely",
+        "tier": 1,
+        "freq": 15,
+        "pct_of_emotion": 1.5,
+        "log_odds": 2.401
+      },
+      {
+        "word": "alone",
+        "tier": 1,
+        "freq": 14,
+        "pct_of_emotion": 1.4,
+        "log_odds": 0.396
+      },
+      {
+        "word": "sadness",
+        "tier": 2,
+        "freq": 13,
+        "pct_of_emotion": 1.3,
+        "log_odds": 2.982
+      },
+      {
+        "word": "depression",
+        "tier": 1,
+        "freq": 12,
+        "pct_of_emotion": 1.2,
+        "log_odds": 1.317
+      },
+      {
+        "word": "pathetic",
+        "tier": 1,
+        "freq": 11,
+        "pct_of_emotion": 1.1,
+        "log_odds": 1.916
+      },
+      {
+        "word": "worry",
+        "tier": 1,
+        "freq": 10,
+        "pct_of_emotion": 1.0,
+        "log_odds": -0.309
+      }
+    ],
+    "top_by_distinctiveness": [
+      {
+        "word": "sad",
+        "tier": 1,
+        "freq": 298,
+        "pct_of_emotion": 29.74,
+        "log_odds": 3.283
+      },
+      {
+        "word": "sadness",
+        "tier": 2,
+        "freq": 13,
+        "pct_of_emotion": 1.3,
+        "log_odds": 2.982
+      },
+      {
+        "word": "lonely",
+        "tier": 1,
+        "freq": 15,
+        "pct_of_emotion": 1.5,
+        "log_odds": 2.401
+      },
+      {
+        "word": "pathetic",
+        "tier": 1,
+        "freq": 11,
+        "pct_of_emotion": 1.1,
+        "log_odds": 1.916
+      },
+      {
+        "word": "hurt",
+        "tier": 1,
+        "freq": 74,
+        "pct_of_emotion": 7.39,
+        "log_odds": 1.826
+      },
+      {
+        "word": "suffering",
+        "tier": 1,
+        "freq": 8,
+        "pct_of_emotion": 0.8,
+        "log_odds": 1.8
+      },
+      {
+        "word": "unfortunate",
+        "tier": 1,
+        "freq": 7,
+        "pct_of_emotion": 0.7,
+        "log_odds": 1.675
+      },
+      {
+        "word": "depression",
+        "tier": 1,
+        "freq": 12,
+        "pct_of_emotion": 1.2,
+        "log_odds": 1.317
+      },
+      {
+        "word": "miss",
+        "tier": 1,
+        "freq": 75,
+        "pct_of_emotion": 7.49,
+        "log_odds": 1.293
+      },
+      {
+        "word": "miserable",
+        "tier": 1,
+        "freq": 5,
+        "pct_of_emotion": 0.5,
+        "log_odds": 1.222
+      },
+      {
+        "word": "lost",
+        "tier": 1,
+        "freq": 28,
+        "pct_of_emotion": 2.79,
+        "log_odds": 0.967
+      },
+      {
+        "word": "regret",
+        "tier": 1,
+        "freq": 10,
+        "pct_of_emotion": 1.0,
+        "log_odds": 0.77
+      },
+      {
+        "word": "happiness",
+        "tier": 1,
+        "freq": 6,
+        "pct_of_emotion": 0.6,
+        "log_odds": 0.561
+      },
+      {
+        "word": "alone",
+        "tier": 1,
+        "freq": 14,
+        "pct_of_emotion": 1.4,
+        "log_odds": 0.396
+      },
+      {
+        "word": "bad",
+        "tier": 1,
+        "freq": 129,
+        "pct_of_emotion": 12.87,
+        "log_odds": 0.29
+      }
+    ]
+  },
+  "disappointment": {
+    "n_comments": 1583,
+    "reliable": true,
+    "top_by_frequency": [
+      {
+        "word": "bad",
+        "tier": 1,
+        "freq": 197,
+        "pct_of_emotion": 25.72,
+        "log_odds": 1.009
+      },
+      {
+        "word": "miss",
+        "tier": 1,
+        "freq": 67,
+        "pct_of_emotion": 8.75,
+        "log_odds": 1.398
+      },
+      {
+        "word": "disappointed",
+        "tier": 1,
+        "freq": 40,
+        "pct_of_emotion": 5.22,
+        "log_odds": 3.463
+      },
+      {
+        "word": "lost",
+        "tier": 1,
+        "freq": 39,
+        "pct_of_emotion": 5.09,
+        "log_odds": 1.613
+      },
+      {
+        "word": "upset",
+        "tier": 1,
+        "freq": 39,
+        "pct_of_emotion": 5.09,
+        "log_odds": 2.59
+      },
+      {
+        "word": "hurt",
+        "tier": 1,
+        "freq": 38,
+        "pct_of_emotion": 4.96,
+        "log_odds": 1.215
+      },
+      {
+        "word": "sad",
+        "tier": 1,
+        "freq": 26,
+        "pct_of_emotion": 3.39,
+        "log_odds": 0.094
+      },
+      {
+        "word": "love",
+        "tier": 1,
+        "freq": 19,
+        "pct_of_emotion": 2.48,
+        "log_odds": -2.252
+      },
+      {
+        "word": "hope",
+        "tier": 1,
+        "freq": 18,
+        "pct_of_emotion": 2.35,
+        "log_odds": -1.372
+      },
+      {
+        "word": "hate",
+        "tier": 1,
+        "freq": 18,
+        "pct_of_emotion": 2.35,
+        "log_odds": -0.652
+      },
+      {
+        "word": "disappointment",
+        "tier": 1,
+        "freq": 16,
+        "pct_of_emotion": 2.09,
+        "log_odds": 4.174
+      },
+      {
+        "word": "shame",
+        "tier": 1,
+        "freq": 14,
+        "pct_of_emotion": 1.83,
+        "log_odds": 0.709
+      },
+      {
+        "word": "happy",
+        "tier": 1,
+        "freq": 12,
+        "pct_of_emotion": 1.57,
+        "log_odds": -1.411
+      },
+      {
+        "word": "worried",
+        "tier": 1,
+        "freq": 8,
+        "pct_of_emotion": 1.04,
+        "log_odds": 0.375
+      },
+      {
+        "word": "depression",
+        "tier": 1,
+        "freq": 8,
+        "pct_of_emotion": 1.04,
+        "log_odds": 1.093
+      }
+    ],
+    "top_by_distinctiveness": [
+      {
+        "word": "disappointment",
+        "tier": 1,
+        "freq": 16,
+        "pct_of_emotion": 2.09,
+        "log_odds": 4.174
+      },
+      {
+        "word": "disappointed",
+        "tier": 1,
+        "freq": 40,
+        "pct_of_emotion": 5.22,
+        "log_odds": 3.463
+      },
+      {
+        "word": "upset",
+        "tier": 1,
+        "freq": 39,
+        "pct_of_emotion": 5.09,
+        "log_odds": 2.59
+      },
+      {
+        "word": "unfortunate",
+        "tier": 1,
+        "freq": 6,
+        "pct_of_emotion": 0.78,
+        "log_odds": 1.726
+      },
+      {
+        "word": "lost",
+        "tier": 1,
+        "freq": 39,
+        "pct_of_emotion": 5.09,
+        "log_odds": 1.613
+      },
+      {
+        "word": "miss",
+        "tier": 1,
+        "freq": 67,
+        "pct_of_emotion": 8.75,
+        "log_odds": 1.398
+      },
+      {
+        "word": "hurt",
+        "tier": 1,
+        "freq": 38,
+        "pct_of_emotion": 4.96,
+        "log_odds": 1.215
+      },
+      {
+        "word": "depression",
+        "tier": 1,
+        "freq": 8,
+        "pct_of_emotion": 1.04,
+        "log_odds": 1.093
+      },
+      {
+        "word": "bad",
+        "tier": 1,
+        "freq": 197,
+        "pct_of_emotion": 25.72,
+        "log_odds": 1.009
+      },
+      {
+        "word": "jealous",
+        "tier": 1,
+        "freq": 6,
+        "pct_of_emotion": 0.78,
+        "log_odds": 0.886
+      },
+      {
+        "word": "insult",
+        "tier": 1,
+        "freq": 8,
+        "pct_of_emotion": 1.04,
+        "log_odds": 0.833
+      },
+      {
+        "word": "shame",
+        "tier": 1,
+        "freq": 14,
+        "pct_of_emotion": 1.83,
+        "log_odds": 0.709
+      },
+      {
+        "word": "worried",
+        "tier": 1,
+        "freq": 8,
+        "pct_of_emotion": 1.04,
+        "log_odds": 0.375
+      },
+      {
+        "word": "crap",
+        "tier": 1,
+        "freq": 5,
+        "pct_of_emotion": 0.65,
+        "log_odds": 0.338
+      },
+      {
+        "word": "surprise",
+        "tier": 1,
+        "freq": 7,
+        "pct_of_emotion": 0.91,
+        "log_odds": 0.185
+      }
+    ]
+  },
+  "realization": {
+    "n_comments": 1382,
+    "reliable": true,
+    "top_by_frequency": [
+      {
+        "word": "bad",
+        "tier": 1,
+        "freq": 48,
+        "pct_of_emotion": 15.79,
+        "log_odds": 0.226
+      },
+      {
+        "word": "love",
+        "tier": 1,
+        "freq": 27,
+        "pct_of_emotion": 8.88,
+        "log_odds": -1.173
+      },
+      {
+        "word": "miss",
+        "tier": 1,
+        "freq": 19,
+        "pct_of_emotion": 6.25,
+        "log_odds": 0.738
+      },
+      {
+        "word": "glad",
+        "tier": 1,
+        "freq": 17,
+        "pct_of_emotion": 5.59,
+        "log_odds": -0.139
+      },
+      {
+        "word": "lost",
+        "tier": 1,
+        "freq": 9,
+        "pct_of_emotion": 2.96,
+        "log_odds": 0.726
+      },
+      {
+        "word": "surprised",
+        "tier": 1,
+        "freq": 9,
+        "pct_of_emotion": 2.96,
+        "log_odds": 0.449
+      },
+      {
+        "word": "anxiety",
+        "tier": 1,
+        "freq": 8,
+        "pct_of_emotion": 2.63,
+        "log_odds": 1.45
+      },
+      {
+        "word": "crazy",
+        "tier": 1,
+        "freq": 7,
+        "pct_of_emotion": 2.3,
+        "log_odds": 0.213
+      },
+      {
+        "word": "hate",
+        "tier": 1,
+        "freq": 7,
+        "pct_of_emotion": 2.3,
+        "log_odds": -0.84
+      },
+      {
+        "word": "shock",
+        "tier": 1,
+        "freq": 6,
+        "pct_of_emotion": 1.97,
+        "log_odds": 0.756
+      },
+      {
+        "word": "confused",
+        "tier": 1,
+        "freq": 5,
+        "pct_of_emotion": 1.64,
+        "log_odds": 0.41
+      },
+      {
+        "word": "hope",
+        "tier": 1,
+        "freq": 5,
+        "pct_of_emotion": 1.64,
+        "log_odds": -1.862
+      },
+      {
+        "word": "hurt",
+        "tier": 1,
+        "freq": 5,
+        "pct_of_emotion": 1.64,
+        "log_odds": -0.15
+      },
+      {
+        "word": "happy",
+        "tier": 1,
+        "freq": 5,
+        "pct_of_emotion": 1.64,
+        "log_odds": -1.508
+      },
+      {
+        "word": "alone",
+        "tier": 1,
+        "freq": 4,
+        "pct_of_emotion": 1.32,
+        "log_odds": 0.131
+      }
+    ],
+    "top_by_distinctiveness": [
+      {
+        "word": "anxiety",
+        "tier": 1,
+        "freq": 8,
+        "pct_of_emotion": 2.63,
+        "log_odds": 1.45
+      },
+      {
+        "word": "shock",
+        "tier": 1,
+        "freq": 6,
+        "pct_of_emotion": 1.97,
+        "log_odds": 0.756
+      },
+      {
+        "word": "miss",
+        "tier": 1,
+        "freq": 19,
+        "pct_of_emotion": 6.25,
+        "log_odds": 0.738
+      },
+      {
+        "word": "lost",
+        "tier": 1,
+        "freq": 9,
+        "pct_of_emotion": 2.96,
+        "log_odds": 0.726
+      },
+      {
+        "word": "surprised",
+        "tier": 1,
+        "freq": 9,
+        "pct_of_emotion": 2.96,
+        "log_odds": 0.449
+      },
+      {
+        "word": "confused",
+        "tier": 1,
+        "freq": 5,
+        "pct_of_emotion": 1.64,
+        "log_odds": 0.41
+      },
+      {
+        "word": "bad",
+        "tier": 1,
+        "freq": 48,
+        "pct_of_emotion": 15.79,
+        "log_odds": 0.226
+      },
+      {
+        "word": "crazy",
+        "tier": 1,
+        "freq": 7,
+        "pct_of_emotion": 2.3,
+        "log_odds": 0.213
+      },
+      {
+        "word": "glad",
+        "tier": 1,
+        "freq": 17,
+        "pct_of_emotion": 5.59,
+        "log_odds": -0.139
+      },
+      {
+        "word": "hurt",
+        "tier": 1,
+        "freq": 5,
+        "pct_of_emotion": 1.64,
+        "log_odds": -0.15
+      },
+      {
+        "word": "hate",
+        "tier": 1,
+        "freq": 7,
+        "pct_of_emotion": 2.3,
+        "log_odds": -0.84
+      },
+      {
+        "word": "love",
+        "tier": 1,
+        "freq": 27,
+        "pct_of_emotion": 8.88,
+        "log_odds": -1.173
+      },
+      {
+        "word": "happy",
+        "tier": 1,
+        "freq": 5,
+        "pct_of_emotion": 1.64,
+        "log_odds": -1.508
+      },
+      {
+        "word": "hope",
+        "tier": 1,
+        "freq": 5,
+        "pct_of_emotion": 1.64,
+        "log_odds": -1.862
+      }
+    ]
+  },
+  "caring": {
+    "n_comments": 1375,
+    "reliable": true,
+    "top_by_frequency": [
+      {
+        "word": "worry",
+        "tier": 1,
+        "freq": 74,
+        "pct_of_emotion": 12.94,
+        "log_odds": 2.535
+      },
+      {
+        "word": "hope",
+        "tier": 1,
+        "freq": 73,
+        "pct_of_emotion": 12.76,
+        "log_odds": 0.302
+      },
+      {
+        "word": "love",
+        "tier": 1,
+        "freq": 58,
+        "pct_of_emotion": 10.14,
+        "log_odds": -0.891
+      },
+      {
+        "word": "safe",
+        "tier": 1,
+        "freq": 38,
+        "pct_of_emotion": 6.64,
+        "log_odds": 2.465
+      },
+      {
+        "word": "happy",
+        "tier": 1,
+        "freq": 32,
+        "pct_of_emotion": 5.59,
+        "log_odds": -0.183
+      },
+      {
+        "word": "glad",
+        "tier": 1,
+        "freq": 29,
+        "pct_of_emotion": 5.07,
+        "log_odds": -0.083
+      },
+      {
+        "word": "bad",
+        "tier": 1,
+        "freq": 25,
+        "pct_of_emotion": 4.37,
+        "log_odds": -0.914
+      },
+      {
+        "word": "concerned",
+        "tier": 1,
+        "freq": 21,
+        "pct_of_emotion": 3.67,
+        "log_odds": 3.173
+      },
+      {
+        "word": "hurt",
+        "tier": 1,
+        "freq": 18,
+        "pct_of_emotion": 3.15,
+        "log_odds": 0.638
+      },
+      {
+        "word": "alone",
+        "tier": 1,
+        "freq": 13,
+        "pct_of_emotion": 2.27,
+        "log_odds": 0.812
+      },
+      {
+        "word": "worried",
+        "tier": 1,
+        "freq": 10,
+        "pct_of_emotion": 1.75,
+        "log_odds": 0.857
+      },
+      {
+        "word": "sad",
+        "tier": 1,
+        "freq": 8,
+        "pct_of_emotion": 1.4,
+        "log_odds": -0.834
+      },
+      {
+        "word": "hate",
+        "tier": 1,
+        "freq": 7,
+        "pct_of_emotion": 1.22,
+        "log_odds": -1.322
+      },
+      {
+        "word": "afraid",
+        "tier": 1,
+        "freq": 7,
+        "pct_of_emotion": 1.22,
+        "log_odds": 0.409
+      },
+      {
+        "word": "lost",
+        "tier": 1,
+        "freq": 7,
+        "pct_of_emotion": 1.22,
+        "log_odds": -0.004
+      }
+    ],
+    "top_by_distinctiveness": [
+      {
+        "word": "concerned",
+        "tier": 1,
+        "freq": 21,
+        "pct_of_emotion": 3.67,
+        "log_odds": 3.173
+      },
+      {
+        "word": "worry",
+        "tier": 1,
+        "freq": 74,
+        "pct_of_emotion": 12.94,
+        "log_odds": 2.535
+      },
+      {
+        "word": "safe",
+        "tier": 1,
+        "freq": 38,
+        "pct_of_emotion": 6.64,
+        "log_odds": 2.465
+      },
+      {
+        "word": "caring",
+        "tier": 1,
+        "freq": 5,
+        "pct_of_emotion": 0.87,
+        "log_odds": 2.089
+      },
+      {
+        "word": "happiness",
+        "tier": 1,
+        "freq": 5,
+        "pct_of_emotion": 0.87,
+        "log_odds": 0.869
+      },
+      {
+        "word": "worried",
+        "tier": 1,
+        "freq": 10,
+        "pct_of_emotion": 1.75,
+        "log_odds": 0.857
+      },
+      {
+        "word": "alone",
+        "tier": 1,
+        "freq": 13,
+        "pct_of_emotion": 2.27,
+        "log_odds": 0.812
+      },
+      {
+        "word": "hurt",
+        "tier": 1,
+        "freq": 18,
+        "pct_of_emotion": 3.15,
+        "log_odds": 0.638
+      },
+      {
+        "word": "upset",
+        "tier": 1,
+        "freq": 6,
+        "pct_of_emotion": 1.05,
+        "log_odds": 0.549
+      },
+      {
+        "word": "anxiety",
+        "tier": 1,
+        "freq": 5,
+        "pct_of_emotion": 0.87,
+        "log_odds": 0.493
+      },
+      {
+        "word": "afraid",
+        "tier": 1,
+        "freq": 7,
+        "pct_of_emotion": 1.22,
+        "log_odds": 0.409
+      },
+      {
+        "word": "hope",
+        "tier": 1,
+        "freq": 73,
+        "pct_of_emotion": 12.76,
+        "log_odds": 0.302
+      },
+      {
+        "word": "angry",
+        "tier": 1,
+        "freq": 5,
+        "pct_of_emotion": 0.87,
+        "log_odds": 0.162
+      },
+      {
+        "word": "lost",
+        "tier": 1,
+        "freq": 7,
+        "pct_of_emotion": 1.22,
+        "log_odds": -0.004
+      },
+      {
+        "word": "glad",
+        "tier": 1,
+        "freq": 29,
+        "pct_of_emotion": 5.07,
+        "log_odds": -0.083
+      }
+    ]
+  },
+  "surprise": {
+    "n_comments": 1330,
+    "reliable": true,
+    "top_by_frequency": [
+      {
+        "word": "surprised",
+        "tier": 1,
+        "freq": 160,
+        "pct_of_emotion": 34.86,
+        "log_odds": 4.098
+      },
+      {
+        "word": "shock",
+        "tier": 1,
+        "freq": 69,
+        "pct_of_emotion": 15.03,
+        "log_odds": 3.642
+      },
+      {
+        "word": "surprise",
+        "tier": 1,
+        "freq": 60,
+        "pct_of_emotion": 13.07,
+        "log_odds": 3.354
+      },
+      {
+        "word": "crazy",
+        "tier": 1,
+        "freq": 18,
+        "pct_of_emotion": 3.92,
+        "log_odds": 0.862
+      },
+      {
+        "word": "bad",
+        "tier": 1,
+        "freq": 17,
+        "pct_of_emotion": 3.7,
+        "log_odds": -1.119
+      },
+      {
+        "word": "love",
+        "tier": 1,
+        "freq": 11,
+        "pct_of_emotion": 2.4,
+        "log_odds": -2.354
+      },
+      {
+        "word": "hope",
+        "tier": 1,
+        "freq": 8,
+        "pct_of_emotion": 1.74,
+        "log_odds": -1.729
+      },
+      {
+        "word": "miss",
+        "tier": 1,
+        "freq": 8,
+        "pct_of_emotion": 1.74,
+        "log_odds": -0.428
+      },
+      {
+        "word": "glad",
+        "tier": 1,
+        "freq": 7,
+        "pct_of_emotion": 1.53,
+        "log_odds": -1.304
+      },
+      {
+        "word": "hate",
+        "tier": 1,
+        "freq": 7,
+        "pct_of_emotion": 1.53,
+        "log_odds": -1.144
+      },
+      {
+        "word": "happy",
+        "tier": 1,
+        "freq": 7,
+        "pct_of_emotion": 1.53,
+        "log_odds": -1.499
+      },
+      {
+        "word": "lost",
+        "tier": 1,
+        "freq": 5,
+        "pct_of_emotion": 1.09,
+        "log_odds": -0.148
+      },
+      {
+        "word": "defeat",
+        "tier": 1,
+        "freq": 4,
+        "pct_of_emotion": 0.87,
+        "log_odds": 2.365
+      },
+      {
+        "word": "alive",
+        "tier": 1,
+        "freq": 4,
+        "pct_of_emotion": 0.87,
+        "log_odds": 0.827
+      },
+      {
+        "word": "trash",
+        "tier": 1,
+        "freq": 3,
+        "pct_of_emotion": 0.65,
+        "log_odds": 0.314
+      }
+    ],
+    "top_by_distinctiveness": [
+      {
+        "word": "surprised",
+        "tier": 1,
+        "freq": 160,
+        "pct_of_emotion": 34.86,
+        "log_odds": 4.098
+      },
+      {
+        "word": "shock",
+        "tier": 1,
+        "freq": 69,
+        "pct_of_emotion": 15.03,
+        "log_odds": 3.642
+      },
+      {
+        "word": "surprise",
+        "tier": 1,
+        "freq": 60,
+        "pct_of_emotion": 13.07,
+        "log_odds": 3.354
+      },
+      {
+        "word": "crazy",
+        "tier": 1,
+        "freq": 18,
+        "pct_of_emotion": 3.92,
+        "log_odds": 0.862
+      },
+      {
+        "word": "lost",
+        "tier": 1,
+        "freq": 5,
+        "pct_of_emotion": 1.09,
+        "log_odds": -0.148
+      },
+      {
+        "word": "miss",
+        "tier": 1,
+        "freq": 8,
+        "pct_of_emotion": 1.74,
+        "log_odds": -0.428
+      },
+      {
+        "word": "bad",
+        "tier": 1,
+        "freq": 17,
+        "pct_of_emotion": 3.7,
+        "log_odds": -1.119
+      },
+      {
+        "word": "hate",
+        "tier": 1,
+        "freq": 7,
+        "pct_of_emotion": 1.53,
+        "log_odds": -1.144
+      },
+      {
+        "word": "glad",
+        "tier": 1,
+        "freq": 7,
+        "pct_of_emotion": 1.53,
+        "log_odds": -1.304
+      },
+      {
+        "word": "happy",
+        "tier": 1,
+        "freq": 7,
+        "pct_of_emotion": 1.53,
+        "log_odds": -1.499
+      },
+      {
+        "word": "hope",
+        "tier": 1,
+        "freq": 8,
+        "pct_of_emotion": 1.74,
+        "log_odds": -1.729
+      },
+      {
+        "word": "love",
+        "tier": 1,
+        "freq": 11,
+        "pct_of_emotion": 2.4,
+        "log_odds": -2.354
+      }
+    ]
+  },
+  "excitement": {
+    "n_comments": 1052,
+    "reliable": true,
+    "top_by_frequency": [
+      {
+        "word": "excited",
+        "tier": 1,
+        "freq": 125,
+        "pct_of_emotion": 29.07,
+        "log_odds": 4.083
+      },
+      {
+        "word": "happy",
+        "tier": 1,
+        "freq": 104,
+        "pct_of_emotion": 24.19,
+        "log_odds": 1.298
+      },
+      {
+        "word": "love",
+        "tier": 1,
+        "freq": 40,
+        "pct_of_emotion": 9.3,
+        "log_odds": -1.036
+      },
+      {
+        "word": "crazy",
+        "tier": 1,
+        "freq": 22,
+        "pct_of_emotion": 5.12,
+        "log_odds": 1.127
+      },
+      {
+        "word": "interested",
+        "tier": 1,
+        "freq": 20,
+        "pct_of_emotion": 4.65,
+        "log_odds": 2.177
+      },
+      {
+        "word": "glad",
+        "tier": 1,
+        "freq": 15,
+        "pct_of_emotion": 3.49,
+        "log_odds": -0.517
+      },
+      {
+        "word": "hope",
+        "tier": 1,
+        "freq": 14,
+        "pct_of_emotion": 3.26,
+        "log_odds": -1.14
+      },
+      {
+        "word": "excitement",
+        "tier": 1,
+        "freq": 7,
+        "pct_of_emotion": 1.63,
+        "log_odds": 3.117
+      },
+      {
+        "word": "bad",
+        "tier": 1,
+        "freq": 7,
+        "pct_of_emotion": 1.63,
+        "log_odds": -1.922
+      },
+      {
+        "word": "proud",
+        "tier": 1,
+        "freq": 4,
+        "pct_of_emotion": 0.93,
+        "log_odds": -0.143
+      },
+      {
+        "word": "sweet",
+        "tier": 1,
+        "freq": 4,
+        "pct_of_emotion": 0.93,
+        "log_odds": -0.245
+      },
+      {
+        "word": "anxiety",
+        "tier": 1,
+        "freq": 4,
+        "pct_of_emotion": 0.93,
+        "log_odds": 0.508
+      },
+      {
+        "word": "surprised",
+        "tier": 1,
+        "freq": 3,
+        "pct_of_emotion": 0.7,
+        "log_odds": -0.829
+      },
+      {
+        "word": "miss",
+        "tier": 1,
+        "freq": 3,
+        "pct_of_emotion": 0.7,
+        "log_odds": -1.278
+      },
+      {
+        "word": "surprise",
+        "tier": 1,
+        "freq": 3,
+        "pct_of_emotion": 0.7,
+        "log_odds": -0.134
+      }
+    ],
+    "top_by_distinctiveness": [
+      {
+        "word": "excited",
+        "tier": 1,
+        "freq": 125,
+        "pct_of_emotion": 29.07,
+        "log_odds": 4.083
+      },
+      {
+        "word": "excitement",
+        "tier": 1,
+        "freq": 7,
+        "pct_of_emotion": 1.63,
+        "log_odds": 3.117
+      },
+      {
+        "word": "interested",
+        "tier": 1,
+        "freq": 20,
+        "pct_of_emotion": 4.65,
+        "log_odds": 2.177
+      },
+      {
+        "word": "happy",
+        "tier": 1,
+        "freq": 104,
+        "pct_of_emotion": 24.19,
+        "log_odds": 1.298
+      },
+      {
+        "word": "crazy",
+        "tier": 1,
+        "freq": 22,
+        "pct_of_emotion": 5.12,
+        "log_odds": 1.127
+      },
+      {
+        "word": "glad",
+        "tier": 1,
+        "freq": 15,
+        "pct_of_emotion": 3.49,
+        "log_odds": -0.517
+      },
+      {
+        "word": "love",
+        "tier": 1,
+        "freq": 40,
+        "pct_of_emotion": 9.3,
+        "log_odds": -1.036
+      },
+      {
+        "word": "hope",
+        "tier": 1,
+        "freq": 14,
+        "pct_of_emotion": 3.26,
+        "log_odds": -1.14
+      },
+      {
+        "word": "bad",
+        "tier": 1,
+        "freq": 7,
+        "pct_of_emotion": 1.63,
+        "log_odds": -1.922
+      }
+    ]
+  },
+  "disgust": {
+    "n_comments": 1013,
+    "reliable": true,
+    "top_by_frequency": [
+      {
+        "word": "bad",
+        "tier": 1,
+        "freq": 221,
+        "pct_of_emotion": 32.45,
+        "log_odds": 1.245
+      },
+      {
+        "word": "disgust",
+        "tier": 2,
+        "freq": 154,
+        "pct_of_emotion": 22.61,
+        "log_odds": 4.179
+      },
+      {
+        "word": "awful",
+        "tier": 1,
+        "freq": 84,
+        "pct_of_emotion": 12.33,
+        "log_odds": 2.746
+      },
+      {
+        "word": "hate",
+        "tier": 1,
+        "freq": 35,
+        "pct_of_emotion": 5.14,
+        "log_odds": 0.13
+      },
+      {
+        "word": "horrible",
+        "tier": 1,
+        "freq": 25,
+        "pct_of_emotion": 3.67,
+        "log_odds": 1.17
+      },
+      {
+        "word": "creepy",
+        "tier": 1,
+        "freq": 23,
+        "pct_of_emotion": 3.38,
+        "log_odds": 1.923
+      },
+      {
+        "word": "trash",
+        "tier": 1,
+        "freq": 8,
+        "pct_of_emotion": 1.17,
+        "log_odds": 0.951
+      },
+      {
+        "word": "love",
+        "tier": 1,
+        "freq": 8,
+        "pct_of_emotion": 1.17,
+        "log_odds": -2.983
+      },
+      {
+        "word": "shame",
+        "tier": 1,
+        "freq": 7,
+        "pct_of_emotion": 1.03,
+        "log_odds": 0.099
+      },
+      {
+        "word": "hope",
+        "tier": 1,
+        "freq": 6,
+        "pct_of_emotion": 0.88,
+        "log_odds": -2.324
+      },
+      {
+        "word": "crap",
+        "tier": 1,
+        "freq": 6,
+        "pct_of_emotion": 0.88,
+        "log_odds": 0.623
+      },
+      {
+        "word": "awkward",
+        "tier": 1,
+        "freq": 6,
+        "pct_of_emotion": 0.88,
+        "log_odds": 0.525
+      },
+      {
+        "word": "glad",
+        "tier": 1,
+        "freq": 6,
+        "pct_of_emotion": 0.88,
+        "log_odds": -1.774
+      },
+      {
+        "word": "crazy",
+        "tier": 1,
+        "freq": 4,
+        "pct_of_emotion": 0.59,
+        "log_odds": -0.941
+      },
+      {
+        "word": "hurt",
+        "tier": 1,
+        "freq": 4,
+        "pct_of_emotion": 0.59,
+        "log_odds": -0.984
+      }
+    ],
+    "top_by_distinctiveness": [
+      {
+        "word": "disgust",
+        "tier": 2,
+        "freq": 154,
+        "pct_of_emotion": 22.61,
+        "log_odds": 4.179
+      },
+      {
+        "word": "awful",
+        "tier": 1,
+        "freq": 84,
+        "pct_of_emotion": 12.33,
+        "log_odds": 2.746
+      },
+      {
+        "word": "creepy",
+        "tier": 1,
+        "freq": 23,
+        "pct_of_emotion": 3.38,
+        "log_odds": 1.923
+      },
+      {
+        "word": "bad",
+        "tier": 1,
+        "freq": 221,
+        "pct_of_emotion": 32.45,
+        "log_odds": 1.245
+      },
+      {
+        "word": "horrible",
+        "tier": 1,
+        "freq": 25,
+        "pct_of_emotion": 3.67,
+        "log_odds": 1.17
+      },
+      {
+        "word": "trash",
+        "tier": 1,
+        "freq": 8,
+        "pct_of_emotion": 1.17,
+        "log_odds": 0.951
+      },
+      {
+        "word": "crap",
+        "tier": 1,
+        "freq": 6,
+        "pct_of_emotion": 0.88,
+        "log_odds": 0.623
+      },
+      {
+        "word": "awkward",
+        "tier": 1,
+        "freq": 6,
+        "pct_of_emotion": 0.88,
+        "log_odds": 0.525
+      },
+      {
+        "word": "hate",
+        "tier": 1,
+        "freq": 35,
+        "pct_of_emotion": 5.14,
+        "log_odds": 0.13
+      },
+      {
+        "word": "shame",
+        "tier": 1,
+        "freq": 7,
+        "pct_of_emotion": 1.03,
+        "log_odds": 0.099
+      },
+      {
+        "word": "glad",
+        "tier": 1,
+        "freq": 6,
+        "pct_of_emotion": 0.88,
+        "log_odds": -1.774
+      },
+      {
+        "word": "hope",
+        "tier": 1,
+        "freq": 6,
+        "pct_of_emotion": 0.88,
+        "log_odds": -2.324
+      },
+      {
+        "word": "love",
+        "tier": 1,
+        "freq": 8,
+        "pct_of_emotion": 1.17,
+        "log_odds": -2.983
+      }
+    ]
+  },
+  "desire": {
+    "n_comments": 801,
+    "reliable": true,
+    "top_by_frequency": [
+      {
+        "word": "hope",
+        "tier": 1,
+        "freq": 57,
+        "pct_of_emotion": 25.0,
+        "log_odds": 0.714
+      },
+      {
+        "word": "love",
+        "tier": 1,
+        "freq": 56,
+        "pct_of_emotion": 24.56,
+        "log_odds": -0.256
+      },
+      {
+        "word": "bad",
+        "tier": 1,
+        "freq": 14,
+        "pct_of_emotion": 6.14,
+        "log_odds": -0.816
+      },
+      {
+        "word": "happy",
+        "tier": 1,
+        "freq": 12,
+        "pct_of_emotion": 5.26,
+        "log_odds": -0.49
+      },
+      {
+        "word": "miss",
+        "tier": 1,
+        "freq": 9,
+        "pct_of_emotion": 3.95,
+        "log_odds": 0.179
+      },
+      {
+        "word": "sweet",
+        "tier": 1,
+        "freq": 4,
+        "pct_of_emotion": 1.75,
+        "log_odds": 0.197
+      },
+      {
+        "word": "desire",
+        "tier": 1,
+        "freq": 4,
+        "pct_of_emotion": 1.75,
+        "log_odds": 2.697
+      },
+      {
+        "word": "excited",
+        "tier": 1,
+        "freq": 3,
+        "pct_of_emotion": 1.32,
+        "log_odds": -0.158
+      },
+      {
+        "word": "crazy",
+        "tier": 1,
+        "freq": 3,
+        "pct_of_emotion": 1.32,
+        "log_odds": -0.379
+      },
+      {
+        "word": "alone",
+        "tier": 1,
+        "freq": 3,
+        "pct_of_emotion": 1.32,
+        "log_odds": 0.062
+      },
+      {
+        "word": "happiness",
+        "tier": 1,
+        "freq": 3,
+        "pct_of_emotion": 1.32,
+        "log_odds": 1.05
+      },
+      {
+        "word": "sad",
+        "tier": 1,
+        "freq": 3,
+        "pct_of_emotion": 1.32,
+        "log_odds": -1.062
+      },
+      {
+        "word": "dark",
+        "tier": 1,
+        "freq": 3,
+        "pct_of_emotion": 1.32,
+        "log_odds": 0.765
+      },
+      {
+        "word": "interested",
+        "tier": 1,
+        "freq": 3,
+        "pct_of_emotion": 1.32,
+        "log_odds": 0.624
+      },
+      {
+        "word": "appreciate",
+        "tier": 1,
+        "freq": 2,
+        "pct_of_emotion": 0.88,
+        "log_odds": -1.115
+      }
+    ],
+    "top_by_distinctiveness": [
+      {
+        "word": "hope",
+        "tier": 1,
+        "freq": 57,
+        "pct_of_emotion": 25.0,
+        "log_odds": 0.714
+      },
+      {
+        "word": "miss",
+        "tier": 1,
+        "freq": 9,
+        "pct_of_emotion": 3.95,
+        "log_odds": 0.179
+      },
+      {
+        "word": "love",
+        "tier": 1,
+        "freq": 56,
+        "pct_of_emotion": 24.56,
+        "log_odds": -0.256
+      },
+      {
+        "word": "happy",
+        "tier": 1,
+        "freq": 12,
+        "pct_of_emotion": 5.26,
+        "log_odds": -0.49
+      },
+      {
+        "word": "bad",
+        "tier": 1,
+        "freq": 14,
+        "pct_of_emotion": 6.14,
+        "log_odds": -0.816
+      }
+    ]
+  },
+  "fear": {
+    "n_comments": 764,
+    "reliable": true,
+    "top_by_frequency": [
+      {
+        "word": "scared",
+        "tier": 1,
+        "freq": 81,
+        "pct_of_emotion": 15.85,
+        "log_odds": 4.137
+      },
+      {
+        "word": "afraid",
+        "tier": 1,
+        "freq": 78,
+        "pct_of_emotion": 15.26,
+        "log_odds": 3.831
+      },
+      {
+        "word": "horrible",
+        "tier": 1,
+        "freq": 50,
+        "pct_of_emotion": 9.78,
+        "log_odds": 2.268
+      },
+      {
+        "word": "fear",
+        "tier": 1,
+        "freq": 42,
+        "pct_of_emotion": 8.22,
+        "log_odds": 3.343
+      },
+      {
+        "word": "worried",
+        "tier": 1,
+        "freq": 25,
+        "pct_of_emotion": 4.89,
+        "log_odds": 1.996
+      },
+      {
+        "word": "cringe",
+        "tier": 2,
+        "freq": 25,
+        "pct_of_emotion": 4.89,
+        "log_odds": 2.093
+      },
+      {
+        "word": "bad",
+        "tier": 1,
+        "freq": 23,
+        "pct_of_emotion": 4.5,
+        "log_odds": -0.905
+      },
+      {
+        "word": "creepy",
+        "tier": 1,
+        "freq": 22,
+        "pct_of_emotion": 4.31,
+        "log_odds": 2.104
+      },
+      {
+        "word": "love",
+        "tier": 1,
+        "freq": 15,
+        "pct_of_emotion": 2.94,
+        "log_odds": -2.14
+      },
+      {
+        "word": "horror",
+        "tier": 1,
+        "freq": 12,
+        "pct_of_emotion": 2.35,
+        "log_odds": 2.429
+      },
+      {
+        "word": "panic",
+        "tier": 1,
+        "freq": 12,
+        "pct_of_emotion": 2.35,
+        "log_odds": 2.881
+      },
+      {
+        "word": "hope",
+        "tier": 1,
+        "freq": 11,
+        "pct_of_emotion": 2.15,
+        "log_odds": -1.51
+      },
+      {
+        "word": "worry",
+        "tier": 1,
+        "freq": 10,
+        "pct_of_emotion": 1.96,
+        "log_odds": 0.278
+      },
+      {
+        "word": "anxiety",
+        "tier": 1,
+        "freq": 7,
+        "pct_of_emotion": 1.37,
+        "log_odds": 0.922
+      },
+      {
+        "word": "dark",
+        "tier": 1,
+        "freq": 6,
+        "pct_of_emotion": 1.17,
+        "log_odds": 0.848
+      }
+    ],
+    "top_by_distinctiveness": [
+      {
+        "word": "scared",
+        "tier": 1,
+        "freq": 81,
+        "pct_of_emotion": 15.85,
+        "log_odds": 4.137
+      },
+      {
+        "word": "afraid",
+        "tier": 1,
+        "freq": 78,
+        "pct_of_emotion": 15.26,
+        "log_odds": 3.831
+      },
+      {
+        "word": "fear",
+        "tier": 1,
+        "freq": 42,
+        "pct_of_emotion": 8.22,
+        "log_odds": 3.343
+      },
+      {
+        "word": "terror",
+        "tier": 1,
+        "freq": 5,
+        "pct_of_emotion": 0.98,
+        "log_odds": 2.908
+      },
+      {
+        "word": "panic",
+        "tier": 1,
+        "freq": 12,
+        "pct_of_emotion": 2.35,
+        "log_odds": 2.881
+      },
+      {
+        "word": "horror",
+        "tier": 1,
+        "freq": 12,
+        "pct_of_emotion": 2.35,
+        "log_odds": 2.429
+      },
+      {
+        "word": "horrible",
+        "tier": 1,
+        "freq": 50,
+        "pct_of_emotion": 9.78,
+        "log_odds": 2.268
+      },
+      {
+        "word": "creepy",
+        "tier": 1,
+        "freq": 22,
+        "pct_of_emotion": 4.31,
+        "log_odds": 2.104
+      },
+      {
+        "word": "cringe",
+        "tier": 2,
+        "freq": 25,
+        "pct_of_emotion": 4.89,
+        "log_odds": 2.093
+      },
+      {
+        "word": "worried",
+        "tier": 1,
+        "freq": 25,
+        "pct_of_emotion": 4.89,
+        "log_odds": 1.996
+      },
+      {
+        "word": "anxiety",
+        "tier": 1,
+        "freq": 7,
+        "pct_of_emotion": 1.37,
+        "log_odds": 0.922
+      },
+      {
+        "word": "dark",
+        "tier": 1,
+        "freq": 6,
+        "pct_of_emotion": 1.17,
+        "log_odds": 0.848
+      },
+      {
+        "word": "worry",
+        "tier": 1,
+        "freq": 10,
+        "pct_of_emotion": 1.96,
+        "log_odds": 0.278
+      },
+      {
+        "word": "crazy",
+        "tier": 1,
+        "freq": 5,
+        "pct_of_emotion": 0.98,
+        "log_odds": -0.496
+      },
+      {
+        "word": "bad",
+        "tier": 1,
+        "freq": 23,
+        "pct_of_emotion": 4.5,
+        "log_odds": -0.905
+      }
+    ]
+  },
+  "remorse": {
+    "n_comments": 669,
+    "reliable": true,
+    "top_by_frequency": [
+      {
+        "word": "regret",
+        "tier": 1,
+        "freq": 39,
+        "pct_of_emotion": 17.11,
+        "log_odds": 3.821
+      },
+      {
+        "word": "hope",
+        "tier": 1,
+        "freq": 31,
+        "pct_of_emotion": 13.6,
+        "log_odds": 0.092
+      },
+      {
+        "word": "bad",
+        "tier": 1,
+        "freq": 28,
+        "pct_of_emotion": 12.28,
+        "log_odds": -0.13
+      },
+      {
+        "word": "guilty",
+        "tier": 1,
+        "freq": 9,
+        "pct_of_emotion": 3.95,
+        "log_odds": 3.129
+      },
+      {
+        "word": "miss",
+        "tier": 1,
+        "freq": 8,
+        "pct_of_emotion": 3.51,
+        "log_odds": 0.065
+      },
+      {
+        "word": "guilt",
+        "tier": 1,
+        "freq": 8,
+        "pct_of_emotion": 3.51,
+        "log_odds": 3.262
+      },
+      {
+        "word": "love",
+        "tier": 1,
+        "freq": 6,
+        "pct_of_emotion": 2.63,
+        "log_odds": -2.434
+      },
+      {
+        "word": "happy",
+        "tier": 1,
+        "freq": 6,
+        "pct_of_emotion": 2.63,
+        "log_odds": -1.151
+      },
+      {
+        "word": "shame",
+        "tier": 1,
+        "freq": 5,
+        "pct_of_emotion": 2.19,
+        "log_odds": 0.592
+      },
+      {
+        "word": "glad",
+        "tier": 1,
+        "freq": 5,
+        "pct_of_emotion": 2.19,
+        "log_odds": -1.124
+      },
+      {
+        "word": "awful",
+        "tier": 1,
+        "freq": 4,
+        "pct_of_emotion": 1.75,
+        "log_odds": 0.071
+      },
+      {
+        "word": "alone",
+        "tier": 1,
+        "freq": 3,
+        "pct_of_emotion": 1.32,
+        "log_odds": 0.062
+      },
+      {
+        "word": "hate",
+        "tier": 1,
+        "freq": 3,
+        "pct_of_emotion": 1.32,
+        "log_odds": -1.42
+      },
+      {
+        "word": "sad",
+        "tier": 1,
+        "freq": 3,
+        "pct_of_emotion": 1.32,
+        "log_odds": -1.062
+      },
+      {
+        "word": "hurt",
+        "tier": 1,
+        "freq": 3,
+        "pct_of_emotion": 1.32,
+        "log_odds": -0.422
+      }
+    ],
+    "top_by_distinctiveness": [
+      {
+        "word": "regret",
+        "tier": 1,
+        "freq": 39,
+        "pct_of_emotion": 17.11,
+        "log_odds": 3.821
+      },
+      {
+        "word": "guilt",
+        "tier": 1,
+        "freq": 8,
+        "pct_of_emotion": 3.51,
+        "log_odds": 3.262
+      },
+      {
+        "word": "guilty",
+        "tier": 1,
+        "freq": 9,
+        "pct_of_emotion": 3.95,
+        "log_odds": 3.129
+      },
+      {
+        "word": "shame",
+        "tier": 1,
+        "freq": 5,
+        "pct_of_emotion": 2.19,
+        "log_odds": 0.592
+      },
+      {
+        "word": "hope",
+        "tier": 1,
+        "freq": 31,
+        "pct_of_emotion": 13.6,
+        "log_odds": 0.092
+      },
+      {
+        "word": "miss",
+        "tier": 1,
+        "freq": 8,
+        "pct_of_emotion": 3.51,
+        "log_odds": 0.065
+      },
+      {
+        "word": "bad",
+        "tier": 1,
+        "freq": 28,
+        "pct_of_emotion": 12.28,
+        "log_odds": -0.13
+      },
+      {
+        "word": "glad",
+        "tier": 1,
+        "freq": 5,
+        "pct_of_emotion": 2.19,
+        "log_odds": -1.124
+      },
+      {
+        "word": "happy",
+        "tier": 1,
+        "freq": 6,
+        "pct_of_emotion": 2.63,
+        "log_odds": -1.151
+      },
+      {
+        "word": "love",
+        "tier": 1,
+        "freq": 6,
+        "pct_of_emotion": 2.63,
+        "log_odds": -2.434
+      }
+    ]
+  },
+  "embarrassment": {
+    "n_comments": 375,
+    "reliable": false,
+    "top_by_frequency": [
+      {
+        "word": "shame",
+        "tier": 1,
+        "freq": 50,
+        "pct_of_emotion": 24.51,
+        "log_odds": 3.28
+      },
+      {
+        "word": "awkward",
+        "tier": 1,
+        "freq": 39,
+        "pct_of_emotion": 19.12,
+        "log_odds": 3.79
+      },
+      {
+        "word": "bad",
+        "tier": 1,
+        "freq": 25,
+        "pct_of_emotion": 12.25,
+        "log_odds": -0.176
+      },
+      {
+        "word": "ashamed",
+        "tier": 1,
+        "freq": 18,
+        "pct_of_emotion": 8.82,
+        "log_odds": 3.919
+      },
+      {
+        "word": "embarrassment",
+        "tier": 2,
+        "freq": 16,
+        "pct_of_emotion": 7.84,
+        "log_odds": 5.163
+      },
+      {
+        "word": "hate",
+        "tier": 1,
+        "freq": 6,
+        "pct_of_emotion": 2.94,
+        "log_odds": -0.729
+      },
+      {
+        "word": "love",
+        "tier": 1,
+        "freq": 4,
+        "pct_of_emotion": 1.96,
+        "log_odds": -2.735
+      },
+      {
+        "word": "cringe",
+        "tier": 2,
+        "freq": 4,
+        "pct_of_emotion": 1.96,
+        "log_odds": 0.767
+      },
+      {
+        "word": "disgust",
+        "tier": 2,
+        "freq": 3,
+        "pct_of_emotion": 1.47,
+        "log_odds": -0.17
+      },
+      {
+        "word": "alone",
+        "tier": 1,
+        "freq": 3,
+        "pct_of_emotion": 1.47,
+        "log_odds": 0.129
+      },
+      {
+        "word": "hope",
+        "tier": 1,
+        "freq": 3,
+        "pct_of_emotion": 1.47,
+        "log_odds": -2.06
+      },
+      {
+        "word": "creepy",
+        "tier": 1,
+        "freq": 3,
+        "pct_of_emotion": 1.47,
+        "log_odds": 0.644
+      },
+      {
+        "word": "glad",
+        "tier": 1,
+        "freq": 2,
+        "pct_of_emotion": 0.98,
+        "log_odds": -1.849
+      },
+      {
+        "word": "sad",
+        "tier": 1,
+        "freq": 2,
+        "pct_of_emotion": 0.98,
+        "log_odds": -1.333
+      },
+      {
+        "word": "shock",
+        "tier": 1,
+        "freq": 2,
+        "pct_of_emotion": 0.98,
+        "log_odds": 0.022
+      }
+    ],
+    "top_by_distinctiveness": [
+      {
+        "word": "embarrassment",
+        "tier": 2,
+        "freq": 16,
+        "pct_of_emotion": 7.84,
+        "log_odds": 5.163
+      },
+      {
+        "word": "ashamed",
+        "tier": 1,
+        "freq": 18,
+        "pct_of_emotion": 8.82,
+        "log_odds": 3.919
+      },
+      {
+        "word": "awkward",
+        "tier": 1,
+        "freq": 39,
+        "pct_of_emotion": 19.12,
+        "log_odds": 3.79
+      },
+      {
+        "word": "shame",
+        "tier": 1,
+        "freq": 50,
+        "pct_of_emotion": 24.51,
+        "log_odds": 3.28
+      },
+      {
+        "word": "bad",
+        "tier": 1,
+        "freq": 25,
+        "pct_of_emotion": 12.25,
+        "log_odds": -0.176
+      },
+      {
+        "word": "hate",
+        "tier": 1,
+        "freq": 6,
+        "pct_of_emotion": 2.94,
+        "log_odds": -0.729
+      }
+    ]
+  },
+  "nervousness": {
+    "n_comments": 208,
+    "reliable": false,
+    "top_by_frequency": [
+      {
+        "word": "worried",
+        "tier": 1,
+        "freq": 31,
+        "pct_of_emotion": 17.32,
+        "log_odds": 3.0
+      },
+      {
+        "word": "nervous",
+        "tier": 1,
+        "freq": 22,
+        "pct_of_emotion": 12.29,
+        "log_odds": 4.19
+      },
+      {
+        "word": "anxiety",
+        "tier": 1,
+        "freq": 22,
+        "pct_of_emotion": 12.29,
+        "log_odds": 2.966
+      },
+      {
+        "word": "worry",
+        "tier": 1,
+        "freq": 19,
+        "pct_of_emotion": 10.61,
+        "log_odds": 1.664
+      },
+      {
+        "word": "anxious",
+        "tier": 1,
+        "freq": 11,
+        "pct_of_emotion": 6.15,
+        "log_odds": 3.313
+      },
+      {
+        "word": "bad",
+        "tier": 1,
+        "freq": 7,
+        "pct_of_emotion": 3.91,
+        "log_odds": -1.337
+      },
+      {
+        "word": "panic",
+        "tier": 1,
+        "freq": 4,
+        "pct_of_emotion": 2.23,
+        "log_odds": 2.204
+      },
+      {
+        "word": "depression",
+        "tier": 1,
+        "freq": 4,
+        "pct_of_emotion": 2.23,
+        "log_odds": 1.444
+      },
+      {
+        "word": "horrible",
+        "tier": 1,
+        "freq": 4,
+        "pct_of_emotion": 2.23,
+        "log_odds": 0.269
+      },
+      {
+        "word": "crazy",
+        "tier": 1,
+        "freq": 3,
+        "pct_of_emotion": 1.68,
+        "log_odds": -0.236
+      },
+      {
+        "word": "alone",
+        "tier": 1,
+        "freq": 3,
+        "pct_of_emotion": 1.68,
+        "log_odds": 0.204
+      },
+      {
+        "word": "love",
+        "tier": 1,
+        "freq": 3,
+        "pct_of_emotion": 1.68,
+        "log_odds": -2.911
+      },
+      {
+        "word": "awful",
+        "tier": 1,
+        "freq": 3,
+        "pct_of_emotion": 1.68,
+        "log_odds": -0.043
+      },
+      {
+        "word": "upset",
+        "tier": 1,
+        "freq": 2,
+        "pct_of_emotion": 1.12,
+        "log_odds": 0.36
+      },
+      {
+        "word": "safe",
+        "tier": 1,
+        "freq": 2,
+        "pct_of_emotion": 1.12,
+        "log_odds": 0.15
+      }
+    ],
+    "top_by_distinctiveness": [
+      {
+        "word": "nervous",
+        "tier": 1,
+        "freq": 22,
+        "pct_of_emotion": 12.29,
+        "log_odds": 4.19
+      },
+      {
+        "word": "anxious",
+        "tier": 1,
+        "freq": 11,
+        "pct_of_emotion": 6.15,
+        "log_odds": 3.313
+      },
+      {
+        "word": "worried",
+        "tier": 1,
+        "freq": 31,
+        "pct_of_emotion": 17.32,
+        "log_odds": 3.0
+      },
+      {
+        "word": "anxiety",
+        "tier": 1,
+        "freq": 22,
+        "pct_of_emotion": 12.29,
+        "log_odds": 2.966
+      },
+      {
+        "word": "worry",
+        "tier": 1,
+        "freq": 19,
+        "pct_of_emotion": 10.61,
+        "log_odds": 1.664
+      },
+      {
+        "word": "bad",
+        "tier": 1,
+        "freq": 7,
+        "pct_of_emotion": 3.91,
+        "log_odds": -1.337
+      }
+    ]
+  },
+  "relief": {
+    "n_comments": 182,
+    "reliable": false,
+    "top_by_frequency": [
+      {
+        "word": "glad",
+        "tier": 1,
+        "freq": 43,
+        "pct_of_emotion": 45.26,
+        "log_odds": 1.44
+      },
+      {
+        "word": "relief",
+        "tier": 1,
+        "freq": 8,
+        "pct_of_emotion": 8.42,
+        "log_odds": 3.938
+      },
+      {
+        "word": "worry",
+        "tier": 1,
+        "freq": 6,
+        "pct_of_emotion": 6.32,
+        "log_odds": 0.801
+      },
+      {
+        "word": "safe",
+        "tier": 1,
+        "freq": 5,
+        "pct_of_emotion": 5.26,
+        "log_odds": 1.268
+      },
+      {
+        "word": "bad",
+        "tier": 1,
+        "freq": 4,
+        "pct_of_emotion": 4.21,
+        "log_odds": -1.548
+      },
+      {
+        "word": "love",
+        "tier": 1,
+        "freq": 4,
+        "pct_of_emotion": 4.21,
+        "log_odds": -2.357
+      },
+      {
+        "word": "crazy",
+        "tier": 1,
+        "freq": 2,
+        "pct_of_emotion": 2.11,
+        "log_odds": -0.275
+      },
+      {
+        "word": "hate",
+        "tier": 1,
+        "freq": 2,
+        "pct_of_emotion": 2.11,
+        "log_odds": -1.313
+      },
+      {
+        "word": "hurt",
+        "tier": 1,
+        "freq": 2,
+        "pct_of_emotion": 2.11,
+        "log_odds": -0.318
+      },
+      {
+        "word": "alone",
+        "tier": 1,
+        "freq": 1,
+        "pct_of_emotion": 1.05,
+        "log_odds": -0.355
+      },
+      {
+        "word": "frustration",
+        "tier": 1,
+        "freq": 1,
+        "pct_of_emotion": 1.05,
+        "log_odds": 2.631
+      },
+      {
+        "word": "disappointed",
+        "tier": 1,
+        "freq": 1,
+        "pct_of_emotion": 1.05,
+        "log_odds": 0.527
+      },
+      {
+        "word": "chicken",
+        "tier": 1,
+        "freq": 1,
+        "pct_of_emotion": 1.05,
+        "log_odds": 1.165
+      },
+      {
+        "word": "paralyzed",
+        "tier": 2,
+        "freq": 1,
+        "pct_of_emotion": 1.05,
+        "log_odds": 4.24
+      },
+      {
+        "word": "suffering",
+        "tier": 1,
+        "freq": 1,
+        "pct_of_emotion": 1.05,
+        "log_odds": 1.369
+      }
+    ],
+    "top_by_distinctiveness": [
+      {
+        "word": "relief",
+        "tier": 1,
+        "freq": 8,
+        "pct_of_emotion": 8.42,
+        "log_odds": 3.938
+      },
+      {
+        "word": "glad",
+        "tier": 1,
+        "freq": 43,
+        "pct_of_emotion": 45.26,
+        "log_odds": 1.44
+      },
+      {
+        "word": "safe",
+        "tier": 1,
+        "freq": 5,
+        "pct_of_emotion": 5.26,
+        "log_odds": 1.268
+      },
+      {
+        "word": "worry",
+        "tier": 1,
+        "freq": 6,
+        "pct_of_emotion": 6.32,
+        "log_odds": 0.801
+      }
+    ]
+  },
+  "pride": {
+    "n_comments": 142,
+    "reliable": false,
+    "top_by_frequency": [
+      {
+        "word": "proud",
+        "tier": 1,
+        "freq": 62,
+        "pct_of_emotion": 56.36,
+        "log_odds": 3.809
+      },
+      {
+        "word": "pride",
+        "tier": 1,
+        "freq": 7,
+        "pct_of_emotion": 6.36,
+        "log_odds": 3.943
+      },
+      {
+        "word": "hope",
+        "tier": 1,
+        "freq": 6,
+        "pct_of_emotion": 5.45,
+        "log_odds": -1.122
+      },
+      {
+        "word": "happy",
+        "tier": 1,
+        "freq": 6,
+        "pct_of_emotion": 5.45,
+        "log_odds": -0.767
+      },
+      {
+        "word": "glad",
+        "tier": 1,
+        "freq": 3,
+        "pct_of_emotion": 2.73,
+        "log_odds": -1.195
+      },
+      {
+        "word": "shame",
+        "tier": 1,
+        "freq": 2,
+        "pct_of_emotion": 1.82,
+        "log_odds": 0.165
+      },
+      {
+        "word": "hate",
+        "tier": 1,
+        "freq": 2,
+        "pct_of_emotion": 1.82,
+        "log_odds": -1.374
+      },
+      {
+        "word": "love",
+        "tier": 1,
+        "freq": 2,
+        "pct_of_emotion": 1.82,
+        "log_odds": -3.007
+      },
+      {
+        "word": "irritable",
+        "tier": 3,
+        "freq": 1,
+        "pct_of_emotion": 0.91,
+        "log_odds": 3.081
+      },
+      {
+        "word": "annoyed",
+        "tier": 1,
+        "freq": 1,
+        "pct_of_emotion": 0.91,
+        "log_odds": 1.308
+      },
+      {
+        "word": "surprised",
+        "tier": 1,
+        "freq": 1,
+        "pct_of_emotion": 0.91,
+        "log_odds": -0.86
+      },
+      {
+        "word": "worthy",
+        "tier": 1,
+        "freq": 1,
+        "pct_of_emotion": 0.91,
+        "log_odds": 1.615
+      },
+      {
+        "word": "mood",
+        "tier": 1,
+        "freq": 1,
+        "pct_of_emotion": 0.91,
+        "log_odds": 2.059
+      },
+      {
+        "word": "sad",
+        "tier": 1,
+        "freq": 1,
+        "pct_of_emotion": 0.91,
+        "log_odds": -1.53
+      },
+      {
+        "word": "frustrated",
+        "tier": 1,
+        "freq": 1,
+        "pct_of_emotion": 0.91,
+        "log_odds": 1.982
+      }
+    ],
+    "top_by_distinctiveness": [
+      {
+        "word": "pride",
+        "tier": 1,
+        "freq": 7,
+        "pct_of_emotion": 6.36,
+        "log_odds": 3.943
+      },
+      {
+        "word": "proud",
+        "tier": 1,
+        "freq": 62,
+        "pct_of_emotion": 56.36,
+        "log_odds": 3.809
+      },
+      {
+        "word": "happy",
+        "tier": 1,
+        "freq": 6,
+        "pct_of_emotion": 5.45,
+        "log_odds": -0.767
+      },
+      {
+        "word": "hope",
+        "tier": 1,
+        "freq": 6,
+        "pct_of_emotion": 5.45,
+        "log_odds": -1.122
+      }
+    ]
+  },
+  "grief": {
+    "n_comments": 96,
+    "reliable": false,
+    "top_by_frequency": [
+      {
+        "word": "lost",
+        "tier": 1,
+        "freq": 6,
+        "pct_of_emotion": 14.63,
+        "log_odds": 1.216
+      },
+      {
+        "word": "miss",
+        "tier": 1,
+        "freq": 5,
+        "pct_of_emotion": 12.2,
+        "log_odds": 0.32
+      },
+      {
+        "word": "sad",
+        "tier": 1,
+        "freq": 3,
+        "pct_of_emotion": 7.32,
+        "log_odds": -0.363
+      },
+      {
+        "word": "love",
+        "tier": 1,
+        "freq": 3,
+        "pct_of_emotion": 7.32,
+        "log_odds": -2.355
+      },
+      {
+        "word": "alive",
+        "tier": 1,
+        "freq": 2,
+        "pct_of_emotion": 4.88,
+        "log_odds": 1.395
+      },
+      {
+        "word": "worried",
+        "tier": 1,
+        "freq": 2,
+        "pct_of_emotion": 4.88,
+        "log_odds": 0.715
+      },
+      {
+        "word": "glad",
+        "tier": 1,
+        "freq": 2,
+        "pct_of_emotion": 4.88,
+        "log_odds": -1.218
+      },
+      {
+        "word": "bad",
+        "tier": 1,
+        "freq": 2,
+        "pct_of_emotion": 4.88,
+        "log_odds": -1.883
+      },
+      {
+        "word": "depression",
+        "tier": 1,
+        "freq": 2,
+        "pct_of_emotion": 4.88,
+        "log_odds": 1.377
+      },
+      {
+        "word": "hope",
+        "tier": 1,
+        "freq": 2,
+        "pct_of_emotion": 4.88,
+        "log_odds": -1.766
+      },
+      {
+        "word": "grief",
+        "tier": 1,
+        "freq": 2,
+        "pct_of_emotion": 4.88,
+        "log_odds": 3.396
+      },
+      {
+        "word": "sweet",
+        "tier": 1,
+        "freq": 2,
+        "pct_of_emotion": 4.88,
+        "log_odds": 0.296
+      },
+      {
+        "word": "shame",
+        "tier": 1,
+        "freq": 1,
+        "pct_of_emotion": 2.44,
+        "log_odds": -0.038
+      },
+      {
+        "word": "surprise",
+        "tier": 1,
+        "freq": 1,
+        "pct_of_emotion": 2.44,
+        "log_odds": 0.142
+      },
+      {
+        "word": "hate",
+        "tier": 1,
+        "freq": 1,
+        "pct_of_emotion": 2.44,
+        "log_odds": -1.571
+      }
+    ],
+    "top_by_distinctiveness": [
+      {
+        "word": "lost",
+        "tier": 1,
+        "freq": 6,
+        "pct_of_emotion": 14.63,
+        "log_odds": 1.216
+      },
+      {
+        "word": "miss",
+        "tier": 1,
+        "freq": 5,
+        "pct_of_emotion": 12.2,
+        "log_odds": 0.32
+      }
+    ]
+  }
+}

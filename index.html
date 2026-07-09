@@ -199,6 +199,342 @@
           and whether rare, precise feeling words are giving way to simpler ones.
         </p>
       </section>
+
+      <section id="data-story" class="data-story post-game-section hidden" aria-labelledby="data-story-title">
+        <div class="section-label">
+          <span>03</span>
+          <span>Evidence trail</span>
+        </div>
+
+        <div class="story-intro">
+          <div>
+            <p class="eyebrow">Three windows into feeling</p>
+            <h2 id="data-story-title">We follow emotion words from books, into Reddit, and then into AI-written movie reviews.</h2>
+          </div>
+          <p>
+            The project starts with a balanced dictionary of 432 emotion words:
+            144 basic labels, 144 middle-specific words, and 144 highly precise
+            words. That dictionary becomes the ruler for the rest of the story.
+          </p>
+        </div>
+
+        <div class="evidence-map" aria-label="Evidence sections">
+          <article>
+            <span>01</span>
+            <h3>Books</h3>
+            <p>Do literary emotion vocabularies become more or less diverse across time?</p>
+          </article>
+          <article>
+            <span>02</span>
+            <h3>Reddit</h3>
+            <p>When people write casually online, do they name feelings or signal them indirectly?</p>
+          </article>
+          <article>
+            <span>03</span>
+            <h3>AI vs Human</h3>
+            <p>When AI imitates human reviews, does it use emotion words with the same texture?</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="data-section post-game-section hidden" aria-labelledby="vocabulary-title">
+        <div class="section-label">
+          <span>04</span>
+          <span>The ruler</span>
+        </div>
+        <div class="split-story">
+          <div class="story-copy">
+            <p class="eyebrow">Vocabulary map</p>
+            <h2 id="vocabulary-title">First, we define what "more granular" means.</h2>
+            <p>
+              Instead of treating every emotion word as equal, the vocabulary is
+              divided into three tiers. Tier 1 words are broad and easy to reach.
+              Tier 3 words are more precise, rarer, and often more literary.
+            </p>
+            <div class="tier-key" aria-label="Tier definitions">
+              <span><b>Tier 1</b> basic labels</span>
+              <span><b>Tier 2</b> middle specificity</span>
+              <span><b>Tier 3</b> precise words</span>
+            </div>
+          </div>
+          <div class="chart-frame constellation-frame">
+            <div class="chart-title">
+              <span>413-word emotion map</span>
+              <strong>Semantic constellation</strong>
+            </div>
+            <div class="word-map-controls" aria-label="Word map controls">
+              <label class="word-search">
+                <span class="sr-only">Search emotion word</span>
+                <input id="wordMapSearch" type="search" placeholder="Find a word..." autocomplete="off" />
+              </label>
+              <div class="trend-legend" aria-label="Frequency trend legend">
+                <span>rarer</span>
+                <i aria-hidden="true"></i>
+                <span>more frequent</span>
+              </div>
+              <div class="zoom-buttons" aria-label="Map zoom controls">
+                <button id="wordMapZoomOut" class="mini-icon-button" type="button" title="Zoom out">
+                  <i data-lucide="minus" aria-hidden="true"></i>
+                  <span class="sr-only">Zoom out</span>
+                </button>
+                <button id="wordMapReset" class="mini-icon-button" type="button" title="Reset map">
+                  <i data-lucide="maximize" aria-hidden="true"></i>
+                  <span class="sr-only">Reset map</span>
+                </button>
+                <button id="wordMapZoomIn" class="mini-icon-button" type="button" title="Zoom in">
+                  <i data-lucide="plus" aria-hidden="true"></i>
+                  <span class="sr-only">Zoom in</span>
+                </button>
+              </div>
+            </div>
+            <div id="wordMapChart" class="word-map-chart" aria-label="Emotion word semantic map"></div>
+            <p class="map-hint">Wheel to zoom · drag to pan · hover for tier and trend</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="data-section post-game-section hidden" aria-labelledby="books-title">
+        <div class="section-label">
+          <span>05</span>
+          <span>Books over time</span>
+        </div>
+        <div class="split-story reverse">
+          <div class="story-copy">
+            <p class="eyebrow">Historical signal</p>
+            <h2 id="books-title">The book data does not tell a simple collapse story.</h2>
+            <p>
+              Across NRC emotion categories, diversity dips in the mid-century
+              and partially recovers later. Some emotion families, like joy,
+              lose diversity; others, like surprise and anticipation, become
+              more spread out.
+            </p>
+            <p>
+              The takeaway is not "all precise words disappeared." It is that
+              emotional vocabulary shifts unevenly, so we need to look at
+              everyday and machine-generated language too.
+            </p>
+          </div>
+          <div class="chart-stack">
+            <div class="chart-frame">
+              <div class="chart-title">
+                <span>Shannon entropy index, 1900 = 100</span>
+                <strong>Emotion diversity by decade</strong>
+              </div>
+              <div id="entropyChart" class="line-chart" aria-label="Entropy line chart"></div>
+            </div>
+            <div class="chart-frame">
+              <div class="chart-title">
+                <span>1900 to 2019, Google Ngram trend</span>
+                <strong>Words moving up and down</strong>
+              </div>
+              <div id="wordTrendChart" class="word-trend-chart" aria-label="Rising and falling words"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="data-section post-game-section hidden" aria-labelledby="reddit-title">
+        <div class="section-label">
+          <span>06</span>
+          <span>Reddit comments</span>
+        </div>
+        <div class="split-story">
+          <div class="story-copy">
+            <p class="eyebrow">Everyday expression</p>
+            <h2 id="reddit-title">Online emotion is often present, but not always named.</h2>
+            <p>
+              Human labels identify more than 38,000 emotional comments. Only
+              29.7% contain a word from the emotion dictionary. That does not
+              mean the rest are emotionless; many comments express feeling
+              through punctuation, context, caps lock, or a story event.
+            </p>
+            <p>
+              When emotion words do appear, they are overwhelmingly basic:
+              Tier 1 words make up 93.84% of dictionary-word tokens, while
+              Tier 3 words account for only 0.56%.
+            </p>
+          </div>
+          <div class="chart-stack">
+            <div class="chart-frame">
+              <div class="chart-title">
+                <span>Human-labeled emotional comments</span>
+                <strong>Coverage funnel</strong>
+              </div>
+              <div id="redditFunnelChart" class="funnel-chart" aria-label="Reddit coverage funnel"></div>
+            </div>
+            <div class="chart-frame">
+              <div class="chart-title">
+                <span>Dictionary-word tokens</span>
+                <strong>Which tier gets used?</strong>
+              </div>
+              <div id="redditTierChart" class="tier-bar-chart" aria-label="Reddit tier usage"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="data-section post-game-section hidden" aria-labelledby="ai-human-title">
+        <div class="section-label">
+          <span>07</span>
+          <span>AI vs Human</span>
+        </div>
+        <div class="story-intro compact">
+          <div>
+            <p class="eyebrow">Movie review experiment</p>
+            <h2 id="ai-human-title">AI does not simply use fewer emotion words. It uses a narrower emotional palette.</h2>
+          </div>
+          <p>
+            In 300 paired movie reviews, AI and humans produce similar amounts
+            of emotion language. But AI's vocabulary is more concentrated:
+            fewer distinct emotion types, heavier reliance on top words, and
+            more untiered or generic labels.
+          </p>
+        </div>
+
+        <div class="ai-grid">
+          <div class="chart-frame">
+            <div class="chart-title">
+              <span>Vocabulary concentration</span>
+              <strong>Human palette vs AI palette</strong>
+            </div>
+            <div id="concentrationChart" class="comparison-metrics" aria-label="Vocabulary concentration comparison"></div>
+          </div>
+          <div class="chart-frame">
+            <div class="chart-title">
+              <span>Tier composition</span>
+              <strong>Specificity mix</strong>
+            </div>
+            <div id="tierCompositionChart" class="stacked-chart" aria-label="Tier composition chart"></div>
+          </div>
+          <div class="chart-frame wide">
+            <div class="chart-title">
+              <span>Signature words</span>
+              <strong>Words that pull human or AI</strong>
+            </div>
+            <div id="signatureWordsChart" class="signature-chart" aria-label="Signature words chart"></div>
+          </div>
+          <div class="chart-frame wide">
+            <div class="chart-title">
+              <span>NRC emotion categories</span>
+              <strong>Composition of the palette</strong>
+            </div>
+            <div id="nrcChart" class="nrc-chart" aria-label="NRC emotion category chart"></div>
+          </div>
+        </div>
+
+        <div class="source-board" aria-labelledby="source-board-title">
+          <div class="source-board-intro">
+            <div>
+              <p class="eyebrow">Source figure board</p>
+              <h3 id="source-board-title">The full AI vs Human figure set stays visible here.</h3>
+            </div>
+            <p>
+              The charts above translate several findings into the website's
+              visual language. These panels keep every original exported figure
+              from the AI vs Human folder in the story, so the audience can
+              inspect the team's full analysis.
+            </p>
+          </div>
+
+          <div class="source-figure-grid">
+            <article class="source-figure wide">
+              <div class="source-figure-copy">
+                <span>Figure 1</span>
+                <h4>Vocabulary collapse</h4>
+                <p>AI uses fewer distinct emotional word types and concentrates more tokens in its most frequent words.</p>
+              </div>
+              <figure>
+                <img src="assets/figures/ai-human/fig_1_vocabulary_collapse.png" alt="Vocabulary collapse comparison between human and AI movie reviews" loading="lazy" />
+              </figure>
+            </article>
+
+            <article class="source-figure wide">
+              <div class="source-figure-copy">
+                <span>Figure 2</span>
+                <h4>Specificity</h4>
+                <p>Human reviews are more likely to reach specific words, while AI leans harder on general emotional labels.</p>
+              </div>
+              <figure>
+                <img src="assets/figures/ai-human/fig_2_specificity.png" alt="Specificity comparison between human and AI movie reviews" loading="lazy" />
+              </figure>
+            </article>
+
+            <article class="source-figure wide">
+              <div class="source-figure-copy">
+                <span>Figure 3</span>
+                <h4>Within-text variety</h4>
+                <p>This compares emotional variety inside each review, including emotion types and category entropy.</p>
+              </div>
+              <figure>
+                <img src="assets/figures/ai-human/fig_3_within_text.png" alt="Within-text emotional variety for human and AI reviews" loading="lazy" />
+              </figure>
+            </article>
+
+            <article class="source-figure">
+              <div class="source-figure-copy">
+                <span>Figure 4</span>
+                <h4>Word bias</h4>
+                <p>Signature words show which terms pull more strongly toward human writing or AI writing.</p>
+              </div>
+              <figure>
+                <img src="assets/figures/ai-human/fig_4_word_bias.png" alt="Word bias between human and AI reviews" loading="lazy" />
+              </figure>
+            </article>
+
+            <article class="source-figure">
+              <div class="source-figure-copy">
+                <span>Figure 4A</span>
+                <h4>Bias by valence</h4>
+                <p>The same word-bias result, grouped by emotional valence, helps reveal where positive and negative wording diverge.</p>
+              </div>
+              <figure>
+                <img src="assets/figures/ai-human/fig_4A_word_bias_valence.png" alt="Word bias grouped by valence" loading="lazy" />
+              </figure>
+            </article>
+
+            <article class="source-figure">
+              <div class="source-figure-copy">
+                <span>Figure 4B</span>
+                <h4>Bias by tier</h4>
+                <p>This version places biased words back into the granularity tiers, connecting word choice to specificity.</p>
+              </div>
+              <figure>
+                <img src="assets/figures/ai-human/fig_4B_word_bias_tier.png" alt="Word bias grouped by specificity tier" loading="lazy" />
+              </figure>
+            </article>
+
+            <article class="source-figure wide">
+              <div class="source-figure-copy">
+                <span>Figure 5</span>
+                <h4>NRC composition</h4>
+                <p>AI and human reviews do not distribute emotion categories in exactly the same way.</p>
+              </div>
+              <figure>
+                <img src="assets/figures/ai-human/fig_5_nrc_composition.png" alt="NRC emotion composition in human and AI reviews" loading="lazy" />
+              </figure>
+            </article>
+
+            <article class="source-figure wide">
+              <div class="source-figure-copy">
+                <span>Figure 6</span>
+                <h4>Tier composition</h4>
+                <p>The tier mix makes the granularity gap visible: AI has a larger untiered or generic share and less Tier 3 usage.</p>
+              </div>
+              <figure>
+                <img src="assets/figures/ai-human/fig_6_tier_composition.png" alt="Tier composition in human and AI reviews" loading="lazy" />
+              </figure>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="story-strip conclusion-strip post-game-section hidden" aria-label="Conclusion">
+        <p>
+          Emotional granularity is not just about having more words. It is about
+          whether a culture, a platform, or a machine gives us room to choose
+          the right word.
+        </p>
+      </section>
     </main>
 
     <footer class="site-footer">
