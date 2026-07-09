@@ -43,7 +43,6 @@
           </h1>
           <p class="lede">
             Do our words still capture the full texture of what we feel?<br />
-            This project explores the decline of emotional granularity in modern language.<br />
             Start with a short scene, describe your inner state, and see how precise your emotional vocabulary is.
           </p>
           <a class="primary-link" href="#experiment">
@@ -180,9 +179,10 @@
           <div>
             <h2 id="handoff-title">Did your emotional granularity score surprise you?</h2>
             <p>
-              Now we move from your answer to larger evidence. The following
-              analysis explores whether emotional vocabulary has become less precise
-              over time.
+              If your score felt low, you're not alone — and if it felt high, keep reading. 
+              We went looking in three very different places: a century of books, millions 
+              of Reddit comments, and AI writing that's trying to sound human. Some of what 
+              we found will surprise you.
             </p>
           </div>
           <a class="secondary-link" href="#analysis-opening">
@@ -194,9 +194,9 @@
 
       <section id="analysis-opening" class="story-strip post-game-section hidden" aria-label="Analysis opening">
         <p>
-          Modern interfaces often compress feeling into a few buttons: like, angry,
-          sad, wow. Our project asks whether emotional language is becoming flatter,
-          and whether rare, precise feeling words are giving way to simpler ones.
+          Like. Angry. Sad. Wow. Four buttons for the whole range of being human.
+          This project asks a simple question: is that compression happening in 
+          our language too — not just our apps?
         </p>
       </section>
 
@@ -222,17 +222,17 @@
           <article>
             <span>01</span>
             <h3>Books</h3>
-            <p>Do literary emotion vocabularies become more or less diverse across time?</p>
+            <p>A hundred years of novels. Has the vocabulary of feeling widened or shrunk?</p>
           </article>
           <article>
             <span>02</span>
             <h3>Reddit</h3>
-            <p>When people write casually online, do they name feelings or signal them indirectly?</p>
+            <p>When people are typing fast and unfiltered, do they still reach for the exact word?</p>
           </article>
           <article>
             <span>03</span>
             <h3>AI vs Human</h3>
-            <p>When AI imitates human reviews, does it use emotion words with the same texture?</p>
+            <p>When a machine tries to sound like us, does it borrow our full vocabulary — or a shortcut version of it?</p>
           </article>
         </div>
       </section>
@@ -245,11 +245,12 @@
         <div class="split-story">
           <div class="story-copy">
             <p class="eyebrow">Vocabulary map</p>
-            <h2 id="vocabulary-title">First, we define what "more granular" means.</h2>
+            <h2 id="vocabulary-title">Not all feeling-words are created equal.</h2>
             <p>
-              Instead of treating every emotion word as equal, the vocabulary is
-              divided into three tiers. Tier 1 words are broad and easy to reach.
-              Tier 3 words are more precise, rarer, and often more literary.
+              "Bad" and "disheartened" are both in the dictionary — but they're not doing
+              the same job. So before comparing anyone's vocabulary, we sorted every
+              word into a tier, from the ones everybody reaches for first to the ones
+              almost nobody uses.
             </p>
             <div class="tier-key" aria-label="Tier definitions">
               <span><b>Tier 1</b> basic labels</span>
@@ -309,9 +310,9 @@
               more spread out.
             </p>
             <p>
-              The takeaway is not "all precise words disappeared." It is that
-              emotional vocabulary shifts unevenly, so we need to look at
-              everyday and machine-generated language too.
+              So "we've lost the words for feelings" isn't quite right. It's closer to:
+              we've traded some words for others. That sent us looking somewhere less
+              polished than novels — everyday speech.
             </p>
           </div>
           <div class="chart-stack">
@@ -343,15 +344,15 @@
             <p class="eyebrow">Everyday expression</p>
             <h2 id="reddit-title">Online emotion is often present, but not always named.</h2>
             <p>
-              Human labels identify more than 38,000 emotional comments. Only
-              29.7% contain a word from the emotion dictionary. That does not
-              mean the rest are emotionless; many comments express feeling
-              through punctuation, context, caps lock, or a story event.
+              Out of 38,000+ emotional Reddit comments, only about 3 in 10 use an actual
+              emotion word. That doesn't mean the rest feel nothing — it means feeling
+              leaks out through ALL CAPS, a well-placed swear, or just telling the story
+              and letting you feel it too.
             </p>
             <p>
-              When emotion words do appear, they are overwhelmingly basic:
-              Tier 1 words make up 93.84% of dictionary-word tokens, while
-              Tier 3 words account for only 0.56%.
+              And when people do reach for a word, they grab the closest one, not the
+              best one: basic, everyday labels make up 94% of what gets used. The precise,
+              specific words? Barely half a percent.
             </p>
           </div>
           <div class="chart-stack">
@@ -384,10 +385,10 @@
             <h2 id="ai-human-title">AI does not simply use fewer emotion words. It uses a narrower emotional palette.</h2>
           </div>
           <p>
-            In 300 paired movie reviews, AI and humans produce similar amounts
-            of emotion language. But AI's vocabulary is more concentrated:
-            fewer distinct emotion types, heavier reliance on top words, and
-            more untiered or generic labels.
+            In 300 paired movie reviews, AI and humans write about the same amount
+            of feeling — but not with the same vocabulary. Humans use 204 distinct
+            emotion words across their reviews. AI uses 117, and leans on its favorites 
+            even harder: just 10 words cover over half of everything it writes.
           </p>
         </div>
 
@@ -431,7 +432,8 @@
             <p>
               The charts above translate several findings into the website's
               visual language. These panels keep every original exported figure
-              from the AI vs Human folder in the story, so the audience can
+              from the AI vs Human folder — including two alternate colorings of
+              the same signature-word result (4A, 4B) — so the audience can
               inspect the team's full analysis.
             </p>
           </div>
@@ -452,7 +454,7 @@
               <div class="source-figure-copy">
                 <span>Figure 2</span>
                 <h4>Specificity</h4>
-                <p>Human reviews are more likely to reach specific words, while AI leans harder on general emotional labels.</p>
+                <p>The specificity gap is modest and noisy — but AI's reliance on generic, colloquial labels over precise ones is not.</p>
               </div>
               <figure>
                 <img src="assets/figures/ai-human/fig_2_specificity.png" alt="Specificity comparison between human and AI movie reviews" loading="lazy" />
@@ -463,7 +465,7 @@
               <div class="source-figure-copy">
                 <span>Figure 3</span>
                 <h4>Within-text variety</h4>
-                <p>This compares emotional variety inside each review, including emotion types and category entropy.</p>
+                <p>Within a single review, human and AI writing use a strikingly similar range of emotion types — the gap shows up elsewhere, not here.</p>
               </div>
               <figure>
                 <img src="assets/figures/ai-human/fig_3_within_text.png" alt="Within-text emotional variety for human and AI reviews" loading="lazy" />
@@ -530,9 +532,9 @@
 
       <section class="story-strip conclusion-strip post-game-section hidden" aria-label="Conclusion">
         <p>
-          Emotional granularity is not just about having more words. It is about
-          whether a culture, a platform, or a machine gives us room to choose
-          the right word.
+          Emotional granularity was never about having more words. It's about
+          whether the culture, the platform, or the machine you're using still
+          leaves room to choose the right one.
         </p>
       </section>
     </main>
