@@ -253,9 +253,9 @@
               almost nobody uses.
             </p>
             <div class="tier-key" aria-label="Tier definitions">
-              <span><b>Tier 1</b> basic labels</span>
-              <span><b>Tier 2</b> middle specificity</span>
-              <span><b>Tier 3</b> precise words</span>
+              <span><i class="tier-marker tier-1" aria-hidden="true"></i><b>Tier 1</b> basic labels</span>
+              <span><i class="tier-marker tier-2" aria-hidden="true"></i><b>Tier 2</b> middle specificity</span>
+              <span><i class="tier-marker tier-3" aria-hidden="true"></i><b>Tier 3</b> precise words</span>
             </div>
           </div>
           <div class="chart-frame constellation-frame">
@@ -268,10 +268,10 @@
                 <span class="sr-only">Search emotion word</span>
                 <input id="wordMapSearch" type="search" placeholder="Find a word..." autocomplete="off" />
               </label>
-              <div class="trend-legend" aria-label="Frequency trend legend">
-                <span>rarer</span>
-                <i aria-hidden="true"></i>
-                <span>more frequent</span>
+              <div class="map-tier-legend" aria-label="Word specificity tier colors">
+                <span><i class="tier-marker tier-1" aria-hidden="true"></i>Tier 1</span>
+                <span><i class="tier-marker tier-2" aria-hidden="true"></i>Tier 2</span>
+                <span><i class="tier-marker tier-3" aria-hidden="true"></i>Tier 3</span>
               </div>
               <div class="zoom-buttons" aria-label="Map zoom controls">
                 <button id="wordMapZoomOut" class="mini-icon-button" type="button" title="Zoom out">
@@ -289,7 +289,7 @@
               </div>
             </div>
             <div id="wordMapChart" class="word-map-chart" aria-label="Emotion word semantic map"></div>
-            <p class="map-hint">Wheel to zoom · drag to pan · hover for tier and trend</p>
+            <p class="map-hint">Color and type style show tier · wheel to zoom · drag to pan · hover for frequency trend</p>
           </div>
         </div>
       </section>
@@ -427,14 +427,13 @@
           <div class="source-board-intro">
             <div>
               <p class="eyebrow">Source figure board</p>
-              <h3 id="source-board-title">The full AI vs Human figure set stays visible here.</h3>
+              <h3 id="source-board-title">The refined AI vs Human evidence, in full.</h3>
             </div>
             <p>
-              The charts above translate several findings into the website's
-              visual language. These panels keep every original exported figure
-              from the AI vs Human folder — including two alternate colorings of
-              the same signature-word result (4A, 4B) — so the audience can
-              inspect the team's full analysis.
+              The charts above introduce the headline findings. Together, these
+              eight refined panels preserve the detailed evidence trail, from
+              vocabulary concentration and specificity to word bias, emotional
+              composition, and frequency.
             </p>
           </div>
 
@@ -475,11 +474,11 @@
             <article class="source-figure">
               <div class="source-figure-copy">
                 <span>Figure 4</span>
-                <h4>Word bias</h4>
-                <p>Signature words show which terms pull more strongly toward human writing or AI writing.</p>
+                <h4>Word bias by tier</h4>
+                <p>Signature words show which terms pull toward human or AI writing, while color places each word in its specificity tier.</p>
               </div>
               <figure>
-                <img src="assets/figures/ai-human/fig_4_word_bias.png" alt="Word bias between human and AI reviews" loading="lazy" />
+                <img src="assets/figures/ai-human/fig_4_word_bias.png" alt="Word bias between human and AI reviews, colored by specificity tier" loading="lazy" />
               </figure>
             </article>
 
@@ -491,17 +490,6 @@
               </div>
               <figure>
                 <img src="assets/figures/ai-human/fig_4A_word_bias_valence.png" alt="Word bias grouped by valence" loading="lazy" />
-              </figure>
-            </article>
-
-            <article class="source-figure">
-              <div class="source-figure-copy">
-                <span>Figure 4B</span>
-                <h4>Bias by tier</h4>
-                <p>This version places biased words back into the granularity tiers, connecting word choice to specificity.</p>
-              </div>
-              <figure>
-                <img src="assets/figures/ai-human/fig_4B_word_bias_tier.png" alt="Word bias grouped by specificity tier" loading="lazy" />
               </figure>
             </article>
 
@@ -524,6 +512,17 @@
               </div>
               <figure>
                 <img src="assets/figures/ai-human/fig_6_tier_composition.png" alt="Tier composition in human and AI reviews" loading="lazy" />
+              </figure>
+            </article>
+
+            <article class="source-figure wide">
+              <div class="source-figure-copy">
+                <span>Figure 7</span>
+                <h4>Emotion-word frequency</h4>
+                <p>Both groups rely mostly on common emotion words. AI clusters more tightly in a middle-common band, while human usage extends further into the most common words and retains a small rare-word tail.</p>
+              </div>
+              <figure>
+                <img src="assets/figures/ai-human/fig_7_emotion_word_frequency.png" alt="Distribution of emotion-word frequency in human and AI reviews" loading="lazy" />
               </figure>
             </article>
           </div>

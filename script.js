@@ -554,18 +554,12 @@ function renderWordMap(words) {
   const padding = 64;
   const xs = data.map((word) => Number(word.x));
   const ys = data.map((word) => Number(word.y));
-  const changes = data.map((word) => Number(word.pct_change)).filter(Number.isFinite);
   const bounds = {
     minX: Math.min(...xs),
     maxX: Math.max(...xs),
     minY: Math.min(...ys),
     maxY: Math.max(...ys)
   };
-  const negative = changes.filter((value) => value < 0).sort((a, b) => a - b);
-  const positive = changes.filter((value) => value >= 0).sort((a, b) => a - b);
-  const low = quantile(negative, 0.05) ?? -1;
-  const high = quantile(positive, 0.95) ?? 1;
-
   const svg = createSvg("svg");
   svg.setAttribute("viewBox", `0 0 ${width} ${height}`);
   svg.setAttribute("role", "img");
@@ -602,7 +596,6 @@ function renderWordMap(words) {
     node.setAttribute("x", x.toFixed(2));
     node.setAttribute("y", y.toFixed(2));
     node.setAttribute("font-size", String(tier === 3 ? 13 : tier === 2 ? 12 : 11));
-    node.setAttribute("fill", trendColor(change, low, high));
     node.textContent = word.word;
     node.addEventListener("pointerenter", (event) => showWordTooltip(event, tooltip, word, tier, change));
     node.addEventListener("pointermove", (event) => positionWordTooltip(event, tooltip));
@@ -702,36 +695,6 @@ function getTier(word) {
 
 function createSvg(tagName) {
   return document.createElementNS("http://www.w3.org/2000/svg", tagName);
-}
-
-function trendColor(value, low, high) {
-  if (!Number.isFinite(value)) return "#8a8578";
-  if (value < 0) {
-    const amount = clamp(Math.abs(value / low), 0, 1);
-    return mixHex("#d8d3c6", "#b33b32", amount);
-  }
-  const amount = clamp(value / high, 0, 1);
-  return mixHex("#d8d3c6", "#2d8f69", amount);
-}
-
-function mixHex(from, to, amount) {
-  const a = hexToRgb(from);
-  const b = hexToRgb(to);
-  const rgb = a.map((channel, index) => Math.round(channel + (b[index] - channel) * amount));
-  return `rgb(${rgb[0]}, ${rgb[1]}, ${rgb[2]})`;
-}
-
-function hexToRgb(hex) {
-  const clean = hex.replace("#", "");
-  return [0, 2, 4].map((start) => parseInt(clean.slice(start, start + 2), 16));
-}
-
-function quantile(values, q) {
-  if (!values.length) return null;
-  const position = (values.length - 1) * q;
-  const base = Math.floor(position);
-  const rest = position - base;
-  return values[base + 1] === undefined ? values[base] : values[base] + rest * (values[base + 1] - values[base]);
 }
 
 function showWordTooltip(event, tooltip, word, tier, change) {
