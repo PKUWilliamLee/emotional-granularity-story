@@ -7,6 +7,12 @@ on:
     paths:
       - '.github/workflows/build_oxford_pet_coursework.yml'
       - 'automation/oxford_build_parts/**'
+  pull_request:
+    branches:
+      - main
+    paths:
+      - '.github/workflows/build_oxford_pet_coursework.yml'
+      - 'automation/oxford_build_parts/**'
   workflow_dispatch:
 
 jobs:
