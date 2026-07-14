@@ -40,13 +40,27 @@ jobs:
           python -m pip install numpy pandas scikit-learn matplotlib Pillow jupyter nbformat nbclient reportlab pytest
 
       - name: Build, train, evaluate, and package
+        shell: bash
         run: |
-          python automation/oxford_pet_build.py --output dist
+          set -o pipefail
+          python automation/oxford_pet_build.py --output dist 2>&1 | tee build.log
 
-      - name: Show outputs
+      - name: Show diagnostic tail
         if: always()
         run: |
+          echo '===== LAST 180 BUILD LOG LINES ====='
+          tail -n 180 build.log || true
+          echo '===== OUTPUT FILES ====='
           find dist -maxdepth 2 -type f -printf '%p %s bytes\n' || true
+
+      - name: Upload diagnostics
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: OxfordIIITPet-build-diagnostics
+          path: build.log
+          if-no-files-found: warn
+          retention-days: 7
 
       - name: Upload completed coursework
         uses: actions/upload-artifact@v4
