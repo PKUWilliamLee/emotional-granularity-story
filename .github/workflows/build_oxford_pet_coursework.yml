@@ -4,15 +4,9 @@ on:
   push:
     branches:
       - automation/oxford-pet-coursework
-    paths:
-      - '.github/workflows/build_oxford_pet_coursework.yml'
-      - 'automation/oxford_build_parts/**'
   pull_request:
     branches:
       - main
-    paths:
-      - '.github/workflows/build_oxford_pet_coursework.yml'
-      - 'automation/oxford_build_parts/**'
   workflow_dispatch:
 
 jobs:
@@ -27,7 +21,6 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-          cache: 'pip'
 
       - name: Install system fonts
         run: |
