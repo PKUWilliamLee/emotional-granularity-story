@@ -39,13 +39,16 @@ jobs:
               font_path=next((p for p in font_candidates if p.exists()),None)
               if font_path is None: raise FileNotFoundError("No usable font")
               try: pdfmetrics.registerFont(TTFont("CourseFont",str(font_path),subfontIndex=0))
-              except TypeError: pdfmetrics.registerFont(TTFont("CourseFont",str(font_path)))'''
-          # The first line has four spaces; normalize a possible indentation mismatch before replacement.
-          old = old.replace('              ', '    ')
-          new = '    pdfmetrics.registerFont(UnicodeCIDFont("STSong-Light"))'
+              except TypeError: pdfmetrics.registerFont(TTFont("CourseFont",str(font_path)))'''.replace('              ', '    ')
           if old not in s:
               raise SystemExit('font block not found')
-          s = s.replace(old, new).replace('"CourseFont"', '"STSong-Light"')
+          s = s.replace(old, '    pdfmetrics.registerFont(UnicodeCIDFont("STSong-Light"))')
+          s = s.replace('"CourseFont"', '"STSong-Light"')
+          marker = 'def create_report(project: Path) -> None:\n    summary='
+          replacement = 'def create_report(project: Path) -> None:\n    from PIL import Image\n    summary='
+          if marker not in s:
+              raise SystemExit('create_report marker not found')
+          s = s.replace(marker, replacement)
           p.write_text(s, encoding='utf-8')
           PY
           python -m py_compile automation/oxford_pet_build.py
