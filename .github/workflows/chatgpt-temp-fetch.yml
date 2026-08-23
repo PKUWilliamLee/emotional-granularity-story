@@ -11,25 +11,49 @@ permissions:
 jobs:
   fetch:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 20
     steps:
-      - name: Retrieve official Dongguan plan through document reader
+      - name: Search for missing official Guangdong planning texts
         shell: bash
         run: |
-          set -euxo pipefail
+          set -u
           mkdir -p output
-          curl -fL --retry 5 --retry-delay 3 --connect-timeout 30 --max-time 600 \
-            'https://r.jina.ai/https://www.dg.gov.cn/attachment/0/430/430408/4572194.pdf' \
-            -o 'output/广东省东莞市.md'
-          wc -c 'output/广东省东莞市.md'
-          test "$(stat -c%s 'output/广东省东莞市.md')" -gt 50000
-          grep -q '东莞市' 'output/广东省东莞市.md'
-          grep -q '第十五个五年规划' 'output/广东省东莞市.md'
-      - name: Upload fetched file
+          python - <<'PY'
+          import urllib.parse, urllib.request, pathlib, time
+          queries = {
+              '阳江': '阳江市国民经济和社会发展第十五个五年规划纲要 PDF',
+              '梅州': '梅州市国民经济和社会发展第十五个五年规划纲要 PDF',
+              '清远': '清远市国民经济和社会发展第十五个五年规划纲要 PDF',
+              '潮州': '潮州市国民经济和社会发展第十五个五年规划纲要 PDF',
+              '珠海': '珠海市国民经济和社会发展第十五个五年规划纲要 PDF',
+              '茂名': '茂名市国民经济和社会发展第十五个五年规划纲要 PDF',
+          }
+          out = pathlib.Path('output')
+          headers = {'User-Agent':'Mozilla/5.0'}
+          for city, q in queries.items():
+              urls = [
+                  'https://s.jina.ai/' + urllib.parse.quote(q, safe=''),
+                  'https://s.jina.ai/?q=' + urllib.parse.quote(q, safe=''),
+                  'https://r.jina.ai/https://www.bing.com/search?q=' + urllib.parse.quote(q, safe=''),
+              ]
+              for i, url in enumerate(urls, 1):
+                  try:
+                      req = urllib.request.Request(url, headers=headers)
+                      with urllib.request.urlopen(req, timeout=180) as r:
+                          data = r.read()
+                      (out / f'{city}_search_{i}.md').write_bytes(data)
+                      print(city, i, len(data), url)
+                  except Exception as e:
+                      (out / f'{city}_search_{i}.error.txt').write_text(repr(e), encoding='utf-8')
+                      print('ERROR', city, i, repr(e))
+                  time.sleep(1)
+          PY
+          find output -type f -maxdepth 1 -printf '%f %s bytes\n' | sort
+      - name: Upload search material
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: chatgpt-official-docs-test
+          name: chatgpt-guangdong-search-material
           path: output/
           if-no-files-found: error
           compression-level: 0
