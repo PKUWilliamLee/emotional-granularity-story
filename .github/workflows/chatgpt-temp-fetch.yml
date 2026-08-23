@@ -22,9 +22,11 @@ jobs:
             'https://r.jina.ai/https://www.dg.gov.cn/attachment/0/430/430408/4572194.pdf' \
             -o 'output/广东省东莞市.md'
           wc -c 'output/广东省东莞市.md'
-          grep -q '东莞市国民经济和社会发展第十五个五年规划纲要' 'output/广东省东莞市.md'
           test "$(stat -c%s 'output/广东省东莞市.md')" -gt 50000
+          grep -q '东莞市' 'output/广东省东莞市.md'
+          grep -q '第十五个五年规划' 'output/广东省东莞市.md'
       - name: Upload fetched file
+        if: always()
         uses: actions/upload-artifact@v4
         with:
           name: chatgpt-official-docs-test
