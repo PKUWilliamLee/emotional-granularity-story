@@ -13,47 +13,47 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 20
     steps:
-      - name: Search for missing official Guangdong planning texts
+      - name: Read known source pages for missing Guangdong plans
         shell: bash
         run: |
           set -u
           mkdir -p output
           python - <<'PY'
-          import urllib.parse, urllib.request, pathlib, time
-          queries = {
-              '阳江': '阳江市国民经济和社会发展第十五个五年规划纲要 PDF',
-              '梅州': '梅州市国民经济和社会发展第十五个五年规划纲要 PDF',
-              '清远': '清远市国民经济和社会发展第十五个五年规划纲要 PDF',
-              '潮州': '潮州市国民经济和社会发展第十五个五年规划纲要 PDF',
-              '珠海': '珠海市国民经济和社会发展第十五个五年规划纲要 PDF',
-              '茂名': '茂名市国民经济和社会发展第十五个五年规划纲要 PDF',
+          import urllib.request, pathlib, time
+          urls = {
+            '阳江_官方发布页': 'https://www.yangjiang.gov.cn/gkmlpt/content/0/963/post_963892.html?jump=true',
+            '阳江_政府公报索引': 'https://www.yangjiang.gov.cn/zwgk/zfgb/mindex.html',
+            '梅州_维基百科': 'https://zh.wikipedia.org/wiki/%E6%A2%85%E5%B7%9E%E5%B8%82',
+            '梅州_年鉴镜像索引': 'https://www.gev.org.cn/news33.html',
+            '清远_年鉴附件页': 'https://www.gev.org.cn/news/10719.html',
+            '潮州_报告索引': 'https://www.mouse0232.cn/20260809datareport.html',
+            '潮州_报告商城': 'https://www.sgpjbg.com.cn/baogao/1287677.html',
+            '珠海_政府首页': 'https://www.zhuhai.gov.cn/',
+            '珠海_人大': 'https://www.zhrd.gov.cn/',
+            '茂名_政府两会专题': 'https://www.maoming.gov.cn/zt2026mmlh/',
+            '茂名_政府首页': 'https://www.maoming.gov.cn/',
           }
-          out = pathlib.Path('output')
-          headers = {'User-Agent':'Mozilla/5.0'}
-          for city, q in queries.items():
-              urls = [
-                  'https://s.jina.ai/' + urllib.parse.quote(q, safe=''),
-                  'https://s.jina.ai/?q=' + urllib.parse.quote(q, safe=''),
-                  'https://r.jina.ai/https://www.bing.com/search?q=' + urllib.parse.quote(q, safe=''),
-              ]
-              for i, url in enumerate(urls, 1):
-                  try:
-                      req = urllib.request.Request(url, headers=headers)
-                      with urllib.request.urlopen(req, timeout=180) as r:
-                          data = r.read()
-                      (out / f'{city}_search_{i}.md').write_bytes(data)
-                      print(city, i, len(data), url)
-                  except Exception as e:
-                      (out / f'{city}_search_{i}.error.txt').write_text(repr(e), encoding='utf-8')
-                      print('ERROR', city, i, repr(e))
-                  time.sleep(1)
+          out=pathlib.Path('output')
+          headers={'User-Agent':'Mozilla/5.0'}
+          for name,url in urls.items():
+            proxy='https://r.jina.ai/'+url
+            try:
+              req=urllib.request.Request(proxy,headers=headers)
+              with urllib.request.urlopen(req,timeout=240) as r:
+                data=r.read()
+              (out/f'{name}.md').write_bytes(data)
+              print(name,len(data),proxy)
+            except Exception as e:
+              (out/f'{name}.error.txt').write_text(repr(e),encoding='utf-8')
+              print('ERROR',name,repr(e))
+            time.sleep(1)
           PY
           find output -type f -maxdepth 1 -printf '%f %s bytes\n' | sort
-      - name: Upload search material
+      - name: Upload page material
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: chatgpt-guangdong-search-material
+          name: chatgpt-guangdong-source-pages
           path: output/
           if-no-files-found: error
           compression-level: 0
