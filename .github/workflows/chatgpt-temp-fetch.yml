@@ -11,35 +11,47 @@ permissions:
 jobs:
   fetch:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 20
     steps:
-      - name: Test official-site retrieval through DNS over HTTPS
+      - name: Try reader variants for official pages
         shell: bash
         run: |
-          set -euxo pipefail
+          set -u
           mkdir -p output
           python - <<'PY'
-          import json, urllib.request
-          host='www.dg.gov.cn'
-          with urllib.request.urlopen('https://dns.google/resolve?name='+host+'&type=A', timeout=60) as r:
-              obj=json.load(r)
-          ips=[a['data'] for a in obj.get('Answer',[]) if a.get('type')==1]
-          print(obj)
-          if not ips: raise SystemExit('no A record')
-          open('output/ip.txt','w').write(ips[0])
+          import urllib.request, pathlib, time
+          targets = {
+            'meizhou_https_www': 'https://www.meizhou.gov.cn/zwgk/fggw/szfwj/content/post_2922703.html',
+            'meizhou_http_www': 'http://www.meizhou.gov.cn/zwgk/fggw/szfwj/content/post_2922703.html',
+            'meizhou_https_no_www': 'https://meizhou.gov.cn/zwgk/fggw/szfwj/content/post_2922703.html',
+            'meizhou_http_no_www': 'http://meizhou.gov.cn/zwgk/fggw/szfwj/content/post_2922703.html',
+            'yangjiang_https_www': 'https://www.yangjiang.gov.cn/gkmlpt/content/0/963/post_963892.html',
+            'yangjiang_http_www': 'http://www.yangjiang.gov.cn/gkmlpt/content/0/963/post_963892.html',
+            'yangjiang_https_jump': 'https://www.yangjiang.gov.cn/gkmlpt/content/0/963/post_963892.html?jump=true',
+            'qingyuan_gev_http': 'http://www.gev.org.cn/news/10719.html',
+            'qingyuan_gev_https': 'https://www.gev.org.cn/news/10719.html',
+          }
+          out=pathlib.Path('output')
+          headers={'User-Agent':'Mozilla/5.0','Accept':'text/plain'}
+          for name,target in targets.items():
+              url='https://r.jina.ai/'+target
+              try:
+                  req=urllib.request.Request(url, headers=headers)
+                  with urllib.request.urlopen(req,timeout=240) as r:
+                      data=r.read()
+                  (out/f'{name}.md').write_bytes(data)
+                  print(name,len(data))
+              except Exception as e:
+                  (out/f'{name}.error.txt').write_text(repr(e),encoding='utf-8')
+                  print('ERROR',name,repr(e))
+              time.sleep(1)
           PY
-          IP="$(cat output/ip.txt)"
-          curl -fL --retry 2 --connect-timeout 30 --max-time 600 \
-            --resolve "www.dg.gov.cn:443:${IP}" \
-            'https://www.dg.gov.cn/attachment/0/430/430408/4572194.pdf' \
-            -o 'output/广东省东莞市.pdf'
-          file 'output/广东省东莞市.pdf'
-          test "$(stat -c%s 'output/广东省东莞市.pdf')" -gt 100000
-      - name: Upload test file
+          find output -maxdepth 1 -type f -printf '%f %s\n' | sort
+      - name: Upload variants
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: chatgpt-doh-test
+          name: chatgpt-reader-variants
           path: output/
           if-no-files-found: error
           compression-level: 0
