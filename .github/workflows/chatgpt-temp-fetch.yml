@@ -1,9 +1,8 @@
 name: ChatGPT Temporary Official Document Fetch
 
 on:
-  push:
-    paths:
-      - '.github/workflows/chatgpt-temp-fetch.yml'
+  pull_request:
+    branches: [main]
   workflow_dispatch:
 
 permissions:
