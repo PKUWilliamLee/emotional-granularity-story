@@ -11,49 +11,35 @@ permissions:
 jobs:
   fetch:
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 15
     steps:
-      - name: Read known source pages for missing Guangdong plans
+      - name: Test official-site retrieval through DNS over HTTPS
         shell: bash
         run: |
-          set -u
+          set -euxo pipefail
           mkdir -p output
           python - <<'PY'
-          import urllib.request, pathlib, time
-          urls = {
-            '阳江_官方发布页': 'https://www.yangjiang.gov.cn/gkmlpt/content/0/963/post_963892.html?jump=true',
-            '阳江_政府公报索引': 'https://www.yangjiang.gov.cn/zwgk/zfgb/mindex.html',
-            '梅州_维基百科': 'https://zh.wikipedia.org/wiki/%E6%A2%85%E5%B7%9E%E5%B8%82',
-            '梅州_年鉴镜像索引': 'https://www.gev.org.cn/news33.html',
-            '清远_年鉴附件页': 'https://www.gev.org.cn/news/10719.html',
-            '潮州_报告索引': 'https://www.mouse0232.cn/20260809datareport.html',
-            '潮州_报告商城': 'https://www.sgpjbg.com.cn/baogao/1287677.html',
-            '珠海_政府首页': 'https://www.zhuhai.gov.cn/',
-            '珠海_人大': 'https://www.zhrd.gov.cn/',
-            '茂名_政府两会专题': 'https://www.maoming.gov.cn/zt2026mmlh/',
-            '茂名_政府首页': 'https://www.maoming.gov.cn/',
-          }
-          out=pathlib.Path('output')
-          headers={'User-Agent':'Mozilla/5.0'}
-          for name,url in urls.items():
-            proxy='https://r.jina.ai/'+url
-            try:
-              req=urllib.request.Request(proxy,headers=headers)
-              with urllib.request.urlopen(req,timeout=240) as r:
-                data=r.read()
-              (out/f'{name}.md').write_bytes(data)
-              print(name,len(data),proxy)
-            except Exception as e:
-              (out/f'{name}.error.txt').write_text(repr(e),encoding='utf-8')
-              print('ERROR',name,repr(e))
-            time.sleep(1)
+          import json, urllib.request
+          host='www.dg.gov.cn'
+          with urllib.request.urlopen('https://dns.google/resolve?name='+host+'&type=A', timeout=60) as r:
+              obj=json.load(r)
+          ips=[a['data'] for a in obj.get('Answer',[]) if a.get('type')==1]
+          print(obj)
+          if not ips: raise SystemExit('no A record')
+          open('output/ip.txt','w').write(ips[0])
           PY
-          find output -type f -maxdepth 1 -printf '%f %s bytes\n' | sort
-      - name: Upload page material
+          IP="$(cat output/ip.txt)"
+          curl -fL --retry 2 --connect-timeout 30 --max-time 600 \
+            --resolve "www.dg.gov.cn:443:${IP}" \
+            'https://www.dg.gov.cn/attachment/0/430/430408/4572194.pdf' \
+            -o 'output/广东省东莞市.pdf'
+          file 'output/广东省东莞市.pdf'
+          test "$(stat -c%s 'output/广东省东莞市.pdf')" -gt 100000
+      - name: Upload test file
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: chatgpt-guangdong-source-pages
+          name: chatgpt-doh-test
           path: output/
           if-no-files-found: error
           compression-level: 0
